@@ -1,0 +1,70 @@
+.banner{
+  width: 100%;
+  font-family: sans-serif;
+  padding: 10px;
+  color: #333;
+}
+.banner .top *{
+  min-width: 50%;
+}
+.banner > *{
+	margin-bottom: 10px;
+}
+.banner .bnrBtPan p,
+.banner .intro{
+	color: #555;
+	margin-bottom: 10px;
+}
+
+.banner .contact .extLnk{
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+.banner .contact p{
+  text-shadow: 1px 4px 2px #ff980755;
+}
+.banner .contact a{
+  width: 30px;
+  height: 30px;
+  border: 1px solid #777;
+  background: #0002;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.banner .contact .svg {
+  width: 20px;
+  height: 20px;
+}
+.banner .auth{
+  justify-content: flex-end;
+}
+.banner button{
+  background: none;
+  border: 1.5px solid;
+  color: #55a9ff;
+  border-radius: 99px;
+}
+.banner .myPro .myPic{
+  border-radius: 50%;
+  border: 3px solid #0099ff;
+}
+.banner .myPro .myPic img{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  filter: brightness(1.2);
+  object-position: 0 -10px;
+}
+
+.bnrbtn2 {
+  width: max-content;
+}
+.bnrbtn2 button{
+  margin-right: 10px;
+}
+.bnrbtn2 button svg{
+  margin-right: 10px;
+  height: 18px;
+  fill: #0099ff;
+}

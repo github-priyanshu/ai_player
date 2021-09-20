@@ -1,0 +1,60 @@
+.banner .top{
+	align-items: stretch;
+}
+.bannerBox{
+	width: 300px;
+	height: 250px;
+	transform-style: preserve-3d;
+	transition: all 1s;
+	transform: perspective(5000px) rotateY(0deg);
+	margin-bottom: 70px;
+}
+.bannerBox .banner3d{
+	transform-style: preserve-3d;
+}
+
+.bannerBox .banner3d > div{
+	position: absolute;
+	border: 2px solid #333;
+	background: #333;
+}
+.bannerBox .banner3d > div .poster{
+	width: 100%;
+	height: 100%;
+}
+.bannerBox .banner3d > div img{
+	position: absolute;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.bannerBox .banner3d > div .data{
+	position: absolute;
+	bottom: 0px;
+	padding: 10px;
+}
+
+.bannerBox .banner3d > div .data .name{
+	color: #fff;
+	text-align: center;
+	font-size: 2em;
+	text-shadow: 1px 5px 2px #00000091;
+	margin-bottom: 8px;
+}
+.bannerBox .banner3d > div .data button{
+	background: #fff;
+	color: #333;
+	border: none;
+	padding: 7px 20px;
+}
+
+@media screen and (max-width: 900px){
+	.banner .top .left{
+		display: none;
+	}
+
+	.banner .top .right{
+		width: 100%		
+	}
+}

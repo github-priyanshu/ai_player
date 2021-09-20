@@ -1,0 +1,49 @@
+.dgBx{
+	width: 100vw;
+	z-index: 1000;
+	height: 100vh;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: #0009;
+	display: none;
+}
+.dgBx.active{
+	display: flex;
+}
+.dg{
+	/*text-align: center;*/
+	font-family: sans-serif;
+	background: #fff;
+	box-shadow: 0 10px 60px 10px #0000003d;
+	border-radius: 5px;
+	overflow: hidden
+}
+.dg p{
+	/*color: #fff;*/
+	margin: 10px;
+	max-width: 250px;
+	font-size: .9em;
+}
+.dg .btp{
+	width: 100%;
+	border-top: 1px solid #888;
+}
+.dg .btp button{
+	width: 50%;
+	background: none;
+	border: none;
+	outline: none;
+	border-radius: 0px;
+	font-size: .9em;
+}
+.dg .btp button.yes{
+	background: #0099ff;
+	color: #fff;
+	font-size: 1em;
+}
+
+.dg p span{
+	font-size: 1.1em;
+	color: #ff065a;
+}

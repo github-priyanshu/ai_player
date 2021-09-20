@@ -1,0 +1,330 @@
+
+button a{
+	text-decoration: none;
+	color: unset;
+}
+.tran{
+	transform: scale(1.2);
+	transition: all cubic-bezier(0.23, 0.31, 0, 1.6) .5s;
+}
+.tran.active{
+	transform: scale(1);
+}
+*{
+	margin: 0;padding: 0;
+	box-sizing: border-box;
+	position: relative;
+	user-select: none;
+	-webkit-user-select: none;
+	-webkit-user-drag: none;
+	user-drag: none;
+	font-family: Merienda,sans-serif;
+}
+svg{
+	pointer-events: none;
+}
+span{
+	pointer-events: none;
+}
+.flex{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.c{flex-flow: column;}
+.body{
+	width: 100vw;
+	min-height: 100vh;
+	background: linear-gradient(-75deg, #f1f1ff 50%, #fff 50%);
+	background-attachment: fixed;
+	color: #333;
+	align-items: flex-start;
+}
+.body.dark{
+	background: #111;
+	color: #fff;
+}
+.vidPan{
+	width: 100vw;
+}
+.videoBox{
+	background: #111;
+	width: max-content;
+	color: #fff;
+	font-family: monospace;
+	overflow: hidden;
+	display: none;
+	font-family: Glory;
+}
+.videoBox *{
+	font-family: Glory;
+}
+
+.videoBox.active{
+	display: flex;
+}
+.videoBox .controls
+{
+	width: 100%;
+	height: calc(100%);
+	background: #0002;
+	opacity: 0;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+}
+.videoBox .controls.active{
+	opacity: 1;
+	pointer-events: unset;
+}
+.videoBox .controls .fr{
+	pointer-events: auto;
+}
+.videoBox .controls .top{
+	width: 100%;
+	height: calc(100% - 50px);
+}
+.videoBox .controls .top .fr{
+	width: 50%;
+	height: 100%;
+}
+.videoBox .controls .top .center{
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	pointer-events: none;
+	justify-content: space-around;
+	transform: translateY(25px);
+}
+.videoBox .controls .top .center .d{
+	width: 50px;
+	height: 50px;
+	border: 1px solid #fff5;
+	pointer-events: auto;
+	cursor: pointer;
+	border-radius: 50%;
+	backdrop-filter: blur(2px) brightness(.5);
+	pointer-events: none;
+}
+
+.videoBox .controls.active .top .center .d{
+	pointer-events: auto;
+}
+
+.videoBox .controls .top .center .d svg{
+	width: 30px;
+	height: 30px;
+	fill: #fffb;
+}
+
+
+
+
+
+.videoBox .controls .bottom{
+	width: calc(100% - 20px);
+	height: 50px;
+	left: 10px;
+}
+.videoBox .controls .bottom .vidDataPan{
+	width: 100%;
+	justify-content: space-between;
+}
+
+.videoBox .controls .bottom .vidDataPan .fullScrPan{
+	width: 25px;
+	height: 17px;
+	border-radius: 1.5px;
+	cursor: pointer;
+	overflow: hidden;
+	border: 2px solid #bfbfbf;
+}
+.videoBox .controls .bottom .vidDataPan .fullScrPan.active{
+	width: 17px;
+	border: none;
+}
+.videoBox .controls .bottom .vidDataPan .fullScrPan.active > div{
+	width: 31px;
+	height: 25px;
+	flex-flow: row wrap;
+	position: absolute;
+}
+.videoBox .controls .bottom .vidDataPan .fullScrPan.active > div > div{
+	border: 1px solid #bfbfbf;
+	width: 10px;
+	height: 10px;
+	margin: 1px;
+	top: 0px;
+}
+.videoBox .controls .bottom .linePan{
+	width: calc(100%);
+	padding: 10px 0;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.videoBox .controls .bottom .linePan .line{
+	width: 100%;
+	height: 5px;
+	background: #fff5;
+	border-radius: 50px;
+}
+
+.videoBox .controls .bottom .linePan .line .filled{
+	width: 0%;
+	height: 100%;
+	background: #55a9ff;
+	border-radius: 50px;
+	pointer-events: none;
+	backdrop-filter: blur(2px) brightness(.5);
+	max-width: 100%;
+}
+
+.speedChPan .speedLine .filledLine::before,
+.videoBox .controls .bottom .linePan .line .filled::before{
+	background: #fff;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  content: '';
+  position: absolute;
+  right: -2.5px;
+  border: 1px solid #55a9ff;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px #55a9ff;
+  transform: scale(2);
+}
+
+.controls .top .speedPan{
+	position: absolute;	
+	top: 5px;
+	right: 5px;
+	align-items: flex-end;
+	cursor: pointer;
+}
+
+.speedChPan{
+	position: absolute;
+	pointer-events: none;
+	display: none;
+	bottom: 50px;
+	left: 50%;
+	transform: translateX(-50%) scale(1.2);
+	transition: all ease .25s;
+	overflow: hidden;
+	border-radius: 5px;
+	backdrop-filter: blur(2px) brightness(.5);
+	padding: 20px;
+	flex-flow: column;
+}
+
+.speedChPan.active{
+	width: 80%;
+	padding: 10px;
+	display: flex;
+	pointer-events: auto;
+	cursor: pointer;
+	transform: translateX(-50%) scale(1.0);
+}
+
+.speedChPan .topBtn{
+	width: 100%;
+	height: 100%;
+	justify-content: space-between;
+	color: #fff;
+	margin-bottom: 13px;
+	padding: 0 3px;
+}
+
+
+.speedChPan .topBtn div.rBtn{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 1px solid #fff;
+}
+
+.speedChPan .topBtn div.rBtn span{
+	/*transform: scale(2);*/
+}
+.speedChPan .topBtn div.btn{
+	padding: 7px 20px;
+	border: 1px solid #fff;
+}
+
+.speedChPan .speedLine .filledLine,
+.speedChPan .speedLine{
+	width: 100%;
+	height: 5px;
+	pointer-events: auto;
+	border-radius: 9px;
+	background: #fff4;
+	max-width: 100%;
+}
+
+.speedChPan .speedLine .dots{
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background: #fff;
+	pointer-events: none;
+}
+.speedChPan .speedLine{
+	justify-content: space-between;
+}
+.speedChPan .speedLine .filledLine{
+	width: 25.4%;
+	pointer-events: none;
+	background: #55a9ff;
+	position: absolute;left: 0;
+}
+
+.videoBox video{
+	width: 100vw;
+  height: calc(100vw*9/16);
+	max-height: 100vh;
+	pointer-events: none;
+}
+.videoBox .messBox{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	font-size: 5vw;
+	color: #fff;
+	--shadow: 0 5px 5px #0005;
+	text-shadow: var(--shadow);
+	transform: translate(-50%,-50%);
+	font-family: sans-serif;
+	pointer-events: none;
+	transition: all .25s;
+	opacity: 0;
+}
+
+.videoBox .messBox.active{
+	opacity: 1;
+}
+.videoBox .messBox > svg{
+	height: 20px;
+	margin-right: 5px;
+}
+.videoBox .messBox > *{
+	filter: drop-shadow( var(--shadow));
+	font-size: 3vw;
+	fill: #fff;
+	display: inline-block;
+}
+.speedPan .speedIco{
+	padding: 6px 12px;
+	border-radius: 2px;
+	border: 1px solid #fff;
+	backdrop-filter: blur(2px) brightness(.5);
+}
+
+
+@media screen and (max-width: 400px){
+.videoBox .controls .top .center .d {
+	transform: scale(.7);
+}
+.videoBox .controls .bottom {
+  padding: 10px 0;
+}

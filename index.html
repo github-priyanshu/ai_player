@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2157601897307862"
+     crossorigin="anonymous"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ai-player</title>
+	<meta name="theme-color" content="#222">
+	<link rel="manifest" href="manifest.json">
+	<link rel="shortcut icon" href="logo/logo.ico" type="image/x-icon">
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/video data.css">
+	<link rel="stylesheet" type="text/css" href="css/loader.css">
+	<link rel="stylesheet" href="css/dialog.css">
+	<link rel="stylesheet" href="css/3d.css">
+	<link rel="stylesheet" href="css/banner.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Glory:wght@400&family=Merienda&display=swap" rel="stylesheet">
+
+</head>
+<style>
+
+</style>
+<body class="body">
+
+	<div class="banner">
+		<div class="top flex">
+			<div class="left">
+				<div class="intro">
+					<span fs="1.5em">Introducing the new</span> <div col="#55a9ff" fs="3em" ff="Glory">Ai-Player.</div>
+				</div>
+				<p fs=".8em" col="#111">
+					This video player includes all the functions of MX Player and YouTube.
+					<a href="#">Learn More.</a>
+				</p>
+			</div>
+			<div class="right flex">
+				<div class="bannerBox">
+				</div>
+			</div>
+		</div>
+		
+		<div class="bnrBtPan flex c" fs=".8em">
+			<p col="#111">You can watch <span fs="1.4em" col="#ff005c" ff="glory">New Bollywood</span> movies free.</p>
+			<div class="bnrbtn2 flex">
+				<button id="downBtn" class="flex downBtn">Get App</button>
+				<a href="#ml" onclick="togMovlist('add')"><button>Watch Now</button></a>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="vidPan flex c">
+		<div class="videoBox flex c">
+			<video width="100%"></video>
+			
+			<div class="controls tran">
+				<div class="top flex">
+					<div class="fr l" forWhat='brightness' skipTime=" - 5"></div>
+					<div class="fr r" forWhat='sound' skipTime=" + 5"></div>
+
+					<div class="flex center flex">
+						<div class="d flex d1" id="prevBtn" title="Previous" onclick="video.currentTime-=5"></div>
+						<div class="d flex d2" id="playBtn" title="Play/Pause"></div>
+						<div class="d flex d3" id="nextBtn" title="Next" onclick="video.currentTime+=5"></div>
+					</div>
+
+					<div class="speedPan flex c">
+						<div class="speedIco" fs="1.2em" title="speed">Speed</div>
+					</div>
+				</div>
+
+				<div class="bottom flex c" forWhat="duration">
+					<div class="vidDataPan flex">
+						<div class="timePan">
+							<div class="time">
+								<span id="playTime" col="#55a9ff" fs="1.1em">00:00</span><span id="totalTime" col="#fff" fs=".8em">/00:00</span>
+							</div>								
+						</div>
+
+						<div class="fullScrPan flex">
+							<div class="flex">
+							</div>
+						</div>
+					</div>
+
+					<div class="linePan" forWhat=duration>
+						<div class="line">
+							<div class="filled"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="controlToggler"></div>
+			</div>
+
+			<div class="loader flex">
+		    <div class="out"></div>
+		    <div class="mid"></div>
+		    <div class="in"></div>
+		  </div>
+
+
+			<div class="speedChPan flex" forWhat="speed">
+				<div class="topBtn flex">
+					<div class="rBtn flex" onclick="alterSpeed(`-5`)"><span>-</span></div>
+					<div class="btn" onclick="resetSpeed()">RESET</div>
+					<div class="rBtn flex" onclick="alterSpeed(`+5`)"><span>+</span></div>
+				</div>
+				<div class="speedLine flex">
+					<div class="filledLine"></div>
+					<div class="dots"></div><div class="dots"></div><div class="dots"></div><div class="dots"></div><div class="dots"></div>
+				</div>
+			</div>
+
+			<div class="messBox flex"><span>x</span>100%</div>
+		</div>
+
+		<div class="dataBox">
+			<div class="currentVideo">
+				<div class="name">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+				<div class="curData flex">
+					<div class="left flex"></div>
+					<div class="right"></div>
+				</div>
+			</div>
+
+			<div id="ml" class="w100p moviesListPan active">				
+				<div class="w100p flex moviesList"></div>
+			</div>
+
+			<div class="btnPan flex">
+				<p col="#999" fs="2em">Tap to</p>
+				<div class="flex buttons c">
+
+					<div class="left flex">
+						<input onchange="importViaLink()" type="text" placeholder="Your link here">	
+						<button onclick="importViaLink()">Go</button>
+					</div>
+					<div class="right flex">
+						<button onclick="linkPaste()">Paste Link</button>
+						<button class="btn2" onclick="getViaDevice()"><input type="file" hidden id="files" accept=".mp4,.mkv,.wav,.ogg,.mp3">Import via Device</button>
+					</div>
+					<button id="downBtn2" class="flex downBtn">Get App</button>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="banner">
+		<div class="contact flex c">
+			<p fs="2em" col="#ec00ff">Developer Contact.</p>
+
+			<div class="myPro flex c">
+				<div class="myPic flex c">
+					<img src="img/pk.png" alt="Developer">
+				</div>
+
+				<div class="extLnk flex">
+					<a href="https://www.youtube.com/c/AwesomeCode" class="flex">
+						<img class="svg" src="icons/yt.svg" alt="">
+					</a>
+					<a href="#" class="flex">
+						<img class="svg" src="icons/fb.svg" alt="">
+					</a>
+					<a href="mailto:public.priyanshu@gmail.com?subject=Regarding the Ai-Player." class="flex">
+						<img class="svg" src="icons/gm.svg" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="auth flex"><i>-Priyanshu</i></div>
+	</div>
+
+	<div class="dgBx flex" onclick="dialog.hide();">
+
+		<div class="dg">
+			<p>Want to watch <span>Sershah</span>.</p>
+			<div class="btp flex">
+				<button class="flex" onclick="dialog.hide();"><span>No</span></button>
+				<button class="flex yes" onclick="dialog.hide();dialog.success()"><span>Yes</span></button>
+			</div>
+		</div>
+	</div>
+	<script src="js/variables.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/passive/get3dblock.js"></script>
+	<script src="js/loading.js"></script>
+	<script src="js/videoInterface.js"></script>
+	<script src="js/moviesList.js"></script>
+	<script src="js/dialog.js"></script>
+	<script src="js/passive/dataSender.js"></script>
+
+	<!-- pw -->
+	<script src="pwa.js"></script>
+	
+	<script>
+		function togMovlist(t="toggle"){
+			// op(".moviesListPan").classList[t]("active");
+		}
+	</script>
+</body>
+</html>

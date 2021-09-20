@@ -1,0 +1,251 @@
+*{
+	--outshade: inset 2px 2px 2px #fff, inset -2px -2px 2px #0003;
+	--inshade: inset -2px -2px 2px #fff, inset 2px 2px 2px #0003;
+}
+.disabled{
+	opacity: 0;
+	pointer-events: none;
+}
+.w100p{
+	width: 100%;
+}
+.vidPan{
+	font-family: sans-serif;
+}
+.vidPan .dataBox{
+	width: 100%;
+	border-bottom: 1px solid #aaa;
+}
+.vidPan .dataBox .currentVideo{
+	width: 100%;
+	padding: 5px 10px;
+	display: none;
+	background: #fff;
+	text-transform: capitalize;
+}
+.vidPan .dataBox .currentVideo.active{
+	display: block;
+}
+.vidPan .dataBox .currentVideo > *{
+	margin-top: 3px 0;
+}
+.vidPan .dataBox .currentVideo .name{
+	font-weight: bold;
+}
+.vidPan .dataBox .currentVideo .curData{
+	width: 100%;
+	justify-content: space-between;
+}
+
+.curData .left{
+	font-size: .8em;
+	margin-top: 4px;
+}
+.curData .left i{
+	width: 5px;
+	height: 5px;
+	background: #777;
+	border-radius: 5px;
+	display: inline-block;
+	margin: 2px;
+}
+ button{
+	padding: 5px 9px;
+	cursor: pointer;
+	border-radius: 2px;
+	border: 1px solid;
+	color: #555;
+}
+
+.moviesListPan ::-webkit-scrollbar{
+	width: 0;
+	height: 0;
+}
+.moviesListPan .movie{
+	justify-content: space-between;
+    padding: 5px 10px;
+    background: linear-gradient(281deg, #ffffff 50%, #00000012 50%);
+    min-width: 150px;
+    max-width: 150px;
+    flex-flow: column;
+    margin: 5px;
+    margin-right: 10px;
+    border: 1px solid #aaa;
+    height: 80px;
+    border-radius: 2px;
+    box-shadow: var(--outshade);
+    transition: all .15s
+}
+.moviesListPan .movie .btns{
+	position: absolute;
+	bottom: 5px;
+}
+.moviesListPan .movie:hover{
+  /*box-shadow: var(--inshade);*/
+  background: linear-gradient(281deg, #00000012 50%, #ffffff 50%);
+
+}
+.moviesListPan .movie .nameSize{
+	align-self: flex-start;
+	text-align: left;
+}
+.movie .nameSize .curData{
+	justify-content: flex-start;
+}
+.moviesListPan .movie .nameSize h4{
+	font-family: Glory;
+}
+
+
+.moviesListPan .moviesList .realMovieHead span{
+	color: rgb(233 30 99);
+  font-size: 1.1em;
+  font-weight: bold;
+}
+.moviesListPan .moviesList .realMovieHead{
+	margin: 10px 0;
+  font-size: 1.3em;
+  text-align: center;
+  color: #444;
+}
+.moviesListPan .moviesList{
+	display: none;
+}
+/*moviesListPan activated*/
+.moviesListPan.active .moviesList{
+	display: flex;
+	flex-flow: column;
+}
+.moviesListPan .realMovieList{
+	align-content: flex-start;
+	justify-content: center;
+	flex-flow: row wrap;
+	overflow: auto;
+	/*max-height: 90vh;*/
+	width: 100%;
+}
+
+.moviesListPan .realMovieList .movieSubCat{
+	background: #fff;
+	border-radius: 5px;
+	margin: 10px;
+	padding: 10px;
+	box-shadow: 0 5px 10px #00000026;
+}
+
+.moviesListPan .subCatMovieList::after,
+.moviesListPan .subCatMovieList::before{
+	content: '';
+	position: sticky;
+	width: 10px;
+	height: 100%;
+	top: 0;
+	z-index: 10;
+	pointer-events: none;
+}
+
+.moviesListPan .subCatMovieList::before{
+	left: 0;
+	background: linear-gradient(90deg, #fff,#0000);
+}
+
+.moviesListPan .subCatMovieList::after{
+	background: linear-gradient(90deg, #0000,#fff);
+	right: 0;
+}
+
+.moviesListPan .realMovieList .subCatMovieList{
+	justify-content: flex-start;
+	overflow: auto;
+	height: 185px;
+	flex-flow: column wrap;
+}
+
+.btnPan{
+	flex-flow: column;
+	font-family: -webkit-pictograph;
+	margin: 30px 0;
+}
+.btnPan p{
+	font-weight: 800;
+	letter-spacing: 2px;
+	margin-bottom: 20px;
+}
+.btnPan .buttons{
+	/*flex-flow: row wrap;*/
+}
+.btnPan button::before,
+.btnPan button{
+	width: 150px;
+	text-align: center;
+	margin: 5px;
+	padding: 10px;
+	border-radius: 2px;
+	background: linear-gradient(88deg, #a400ff, #ff005c);
+	color: #fff;
+	border: none;
+	transition: all .25s;
+}
+.btnPan button:hover{
+	filter: brightness(1.3);
+}
+.btnPan button.btn2::before,
+.btnPan button.btn2{
+	background: linear-gradient(90deg, #2196f3, #ff00de);
+}
+.btnPan button::before{
+	content: '';
+	width: 90%;
+	left: 2%;
+	top: 2px;
+	opacity: .5;
+	z-index: -1;
+	position: absolute;
+	height: 100%;
+	padding: 0;
+	filter: blur(3px);
+}
+.btnPan .left{
+  display: none;
+}
+
+.btnPan .left input{
+	padding: 5px;
+  outline: none;
+  border-radius: 2px;
+  width: 150px;
+  border: 1px solid #666;
+}
+.btnPan.active .left{
+  display: block;
+}
+.btnPan.active .left button{
+  width: 50px;
+  padding: 7px;
+}
+.btnPan.active .right{
+  display: none;
+}
+.moviesList div button{
+	padding: 5px;
+	border-radius: 99px;
+	width: 30px;
+	height: 30px;
+	background: none;
+	border-radius: #444;
+	fill: #444;
+	display: inline-block;
+	/*box-shadow: ;*/
+}
+.moviesList div button svg{
+	width: 15px;
+	height: 15px;
+}
+.downBtn svg{
+	pointer-events: none;
+  fill: #fff;
+  margin-right: 4px;
+}
+#downBtn2{
+	margin-top: 20px;
+}
