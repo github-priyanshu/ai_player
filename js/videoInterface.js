@@ -211,9 +211,13 @@ function stopPlaying(){
 
 /*screen rotate for get full screen*/
 window.onresize=autoFullScr;
+document.onresize=autoFullScr;
 function autoFullScr(){
 	log(window.innerWidth> window.innerHeight && videoApplied)
 	if(window.innerWidth> window.innerHeight && videoApplied && !fullScr){
+		fullScrPan.click();
+	}
+	if(window.innerWidth< window.innerHeight && videoApplied && fullScr){
 		fullScrPan.click();
 	}
 }
