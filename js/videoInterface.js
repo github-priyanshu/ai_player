@@ -40,7 +40,7 @@ function importViaLink(){
 }
 
 function setLink(lnk){
-	if(navigator.onLine){
+	if(!navigator.onLine){
 		video.src=lnk;
 		playing=false;
 		video.onprogress=()=>{
@@ -218,4 +218,12 @@ function autoFullScr(){
 	}else if(screen.orientation.angle%180!=0 && videoApplied && !fullScr){
 		fullScrPan.click();
 	}
+}
+
+
+function storeCurVid(){
+	vidSource.timeWatched=video.currentTime;
+	let data=JSON.stringify(vidSource);
+	localStorage.setItem("aiCurVid",data);
+	log(data)
 }

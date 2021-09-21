@@ -30,7 +30,7 @@ function getBoxBnr(id){
 function rotateBannerBox(){
   if(bannerBox.offsetHeight>window.scrollY){
     bannerRotated+=90;
-    bannerBox.style.transform=`perspective(5000px) rotateY(${bannerRotated+'deg'})`;
+    bannerBox.style.transform=`perspective(2000px) rotateY(${bannerRotated+'deg'})`;
   }
 }
 
@@ -77,15 +77,16 @@ function block(parent,cls,width,height,grith,){
     height: ${grith}px;
     "></div>
 
-    <div id="${cls}-down" style="transform-origin: bottom;
+    <div id="${cls}-down" style="
+    transform-origin: bottom;
     border: none;
-    filter: blur(52px) opacity(.6);
-    transform: scale(.8) rotateX(-90deg) translateZ(50px);
+    filter: blur(40px) opacity(.4);
+    transform: scale(0.6) scaleZ(.6) rotateX(-90deg) translateZ(119px) translate(-10px, -100px);
     left: 0;
     bottom: 0;
-    box-shadow: inset ${width}px ${grith}px 0 #00000045;
+    box-shadow: inset 300px 300px 0 #00000045;
     width: 100%;
-    height: ${grith}px;
+    height: 300px;
     "></div>
   </div>
   `;
