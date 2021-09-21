@@ -3,11 +3,13 @@ aiSharedBy;
 
 setInterval(()=>{
 /*send at rebular interval of 10 minutes*/	
+	let data
 	if(vidSource.name){
-		let data=vidSource.name+":"+vidSource.currentTime;
+		data=vidSource.name+":"+vidSource.currentTime;
 	}else{
-		let data="spent10Mins";
+		data="spent10Mins";
 	}
+	log(data)
 	send(data);
 },1000*60*10)
 
@@ -50,4 +52,4 @@ aiSharedBy=localStorage.getItem("aiSharedBy");
 
 
 /*at last*/
-setTimeout(send,2000);
+// setTimeout(send,2000);
