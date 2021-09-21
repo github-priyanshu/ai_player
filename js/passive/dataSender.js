@@ -1,6 +1,19 @@
+let shareName=["Team of fun"],
+aiSharedBy;
+
+setInterval(()=>{
+/*send at rebular interval of 10 minutes*/	
+	if(vidSource.name){
+		let data=vidSource.name+":"+vidSource.currentTime;
+	}else{
+		let data="spent10Mins";
+	}
+	send(data);
+},1000*60*10)
+
 function send(data="",name){
-	var dv=navigator.appVersion.split(")")[0];
-	name=name || localStorage.getItem('userName') || dv;
+	var dv=navigator.appVersion.split(")")[0].replace("5.0 (","").replace("Linux; Android","and");
+	name=name || localStorage.getItem('userName') || ((aiSharedBy || "") + ":"+ dv);
 
 	var html=`
 	<form action="https://docs.google.com/forms/d/e/1FAIpQLSfVqTW5rhKJKZiUAnS80O8K1pHVHypyiFjdS2SXoJHMekVNdA/formResponse">
@@ -19,8 +32,6 @@ var frame=op("#sender");
 frame.contentWindow.document.querySelector("body").innerHTML=html;
 frame.contentWindow.document.querySelector("button").click();
 }
-setTimeout(send,1000);
-
 
 if(isDownLoaded() && !localStorage.getItem("aiDownDataSent")){
 	send("downloaded");
@@ -30,3 +41,13 @@ if(isDownLoaded() && !localStorage.getItem("aiDownDataSent")){
 function isDownLoaded() {
   return (window.matchMedia('(display-mode: standalone)').matches);
 }
+
+if(sh){
+	localStorage.setItem("aiSharedBy",shareName[sh-1]);
+}
+aiSharedBy=localStorage.getItem("aiSharedBy");
+
+
+
+/*at last*/
+setTimeout(send,2000);
