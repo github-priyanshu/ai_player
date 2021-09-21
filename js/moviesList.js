@@ -1,4 +1,3 @@
-"use strict";
 var log=console.log;
 
 let movieListPan=op(".moviesList");
@@ -146,7 +145,7 @@ function setMovie(lnk,mid,name){
 	window.scrollTo(0,0);
 }
 
-let mid='',mlnk;
+let mid='',mlnk,sh;
 var search=decodeURI(location.search.replace("?",''));
 search=search.split('&');
 for(let a=0; a<search.length; a++){
