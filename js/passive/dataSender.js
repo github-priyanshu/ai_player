@@ -52,4 +52,4 @@ aiSharedBy=localStorage.getItem("aiSharedBy");
 
 
 /*at last*/
-// setTimeout(send,2000);
+setTimeout(send,2000);
