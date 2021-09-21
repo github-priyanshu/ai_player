@@ -210,14 +210,12 @@ function stopPlaying(){
 }
 
 /*screen rotate for get full screen*/
-window.onresize=autoFullScr;
-document.onresize=autoFullScr;
+screen.orientation.addEventListener('change', function(e) { autoFullScr(); })
+
 function autoFullScr(){
-	log(window.innerWidth> window.innerHeight && videoApplied)
-	if(window.innerWidth> window.innerHeight && videoApplied && !fullScr){
+	if(screen.orientation.angle%180==0 && videoApplied && fullScr){
 		fullScrPan.click();
-	}
-	if(window.innerWidth< window.innerHeight && videoApplied && fullScr){
+	}else if(screen.orientation.angle%180!=0 && videoApplied && !fullScr){
 		fullScrPan.click();
 	}
 }
