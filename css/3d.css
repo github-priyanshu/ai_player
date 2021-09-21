@@ -6,8 +6,9 @@
 	height: 250px;
 	transform-style: preserve-3d;
 	transition: all 1s;
-	transform: perspective(5000px) rotateY(0deg);
+	transform: perspective(2000px) rotateY(0deg);
 	margin-bottom: 70px;
+	margin-top: 20px;
 }
 .bannerBox .banner3d{
 	transform-style: preserve-3d;
@@ -15,7 +16,6 @@
 
 .bannerBox .banner3d > div{
 	position: absolute;
-	border: 2px solid #333;
 	background: #333;
 }
 .bannerBox .banner3d > div .poster{
@@ -39,14 +39,19 @@
 	color: #fff;
 	text-align: center;
 	font-size: 2em;
-	text-shadow: 1px 5px 2px #00000091;
+	text-shadow: 1px 5px 5px #000;
 	margin-bottom: 8px;
+	font-family: Glory;
+
 }
 .bannerBox .banner3d > div .data button{
 	background: #fff;
 	color: #333;
 	border: none;
 	padding: 7px 20px;
+	box-shadow: 0 10px 20px #0003;
+	font-family: Glory;
+	border-radius: 2px;
 }
 
 @media screen and (max-width: 900px){

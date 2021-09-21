@@ -5,7 +5,7 @@ button a{
 }
 .tran{
 	transform: scale(1.2);
-	transition: all cubic-bezier(0.23, 0.31, 0, 1.6) .5s;
+	transition: all ease-in-out .12s;
 }
 .tran.active{
 	transform: scale(1);
