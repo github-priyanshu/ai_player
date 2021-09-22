@@ -10,7 +10,7 @@ var Newly_Added=[
 
 ["Bell Bottom","https://dl.dc03.workers.dev/BollyWood/Amazon.Prime/Bell.Bottom.2021/Bell.Bottom.2021.480p.Hindi.WEB-DL.ESub.x264-DudeFilms.co.mkv",20],
 ];
-setInterval(rotateBannerBox,3000);
+// setInterval(rotateBannerBox,3000);
 
 
 function getBoxBnr(id){
@@ -30,7 +30,7 @@ function getBoxBnr(id){
 function rotateBannerBox(){
   if(bannerBox.offsetHeight>window.scrollY){
     bannerRotated+=90;
-    bannerBox.style.transform=`perspective(2000px) rotateY(${bannerRotated+'deg'})`;
+    bannerBox.style.transform=`perspective(2000px) rotateY(${bannerRotated+15+'deg'})`;
   }
 }
 
@@ -81,7 +81,7 @@ function block(parent,cls,width,height,grith,){
     transform-origin: bottom;
     border: none;
     filter: blur(40px) opacity(.4);
-    transform: scale(0.6) scaleZ(.6) rotateX(-90deg) translateZ(119px) translate(-10px, -100px);
+    transform: scale(0.6) scaleZ(0.6) rotateX(-90deg) translateZ(107px) translate(-100px, -154px) rotate(45deg);
     left: 0;
     bottom: 0;
     box-shadow: inset 300px 300px 0 #00000045;

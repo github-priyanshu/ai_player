@@ -15,28 +15,27 @@ link={
 },
 importPan=op(".btnPan .right");
 
-var vidSource={},
+var vidSource=null,
 timeChInterval,
 vidDuration,
-videoApplied=false;
+videoApplied=false,
+msgInterval,
+videoStoringInterval;
 
 /*get player start*/
-function checkBuffering(){
-	log(video.buffered.end(0))
-}
 
 function linkPaste(whatDo="add"){
 	link.pan.classList[whatDo]('active')
 }
 
 function importViaLink(){
-	vidSource={
+	vidSource= vidSource || {
 		name:decodeURI(link.input.value),
 		src:link.input.value
 	}
 	load.show();
 	linkPaste('remove');
-	setLink(vidSource.src)
+	setLink(vidSource.src);
 }
 
 function setLink(lnk){
@@ -49,6 +48,9 @@ function setLink(lnk){
 			}
 		}
 		vidOnStart();
+
+		clearInterval(videoStoringInterval);
+		videoStoringInterval= setInterval(storeCurVid,5000);
 	}else{
 		alert("You are offline!");
 		stopPlaying();
@@ -59,10 +61,8 @@ function setLink(lnk){
 function notLoaded(){
 	if(video.readyState==4){
 		load.hide();
-		// loded stop loading animation
 	}else{
 		load.show();
-		// not loded start loading animaiton
 	}
 }
 
@@ -80,8 +80,9 @@ function getViaDevice(){
 	filesIn.click();
 	filesIn.onchange=(e)=>{
 		vidSource=filesIn.files[0];
-		applyVideo()	
+		applyVideo();
 	}
+	localStorage.removeItem("aiCurVid");
 }
 
 function chDispTime(){
@@ -101,11 +102,11 @@ function applyData(){/*funciton will be called after the video is started to be 
 	timeChInterval=setInterval(()=>{
 		chDispTime();
 		notLoaded();
-		checkBuffering();
 	},1000)
+	clearInterval(msgInterval);
 	showDataForUser();
 
-	document.title=vidSource.name+" : Ai-Player"
+	document.title=vidSource.name+" : Ai-Player";
 }
 
 function playPause(){
@@ -187,6 +188,9 @@ function vidOnStart(){
 	location.assign("#watching");
 	try{send(vidSource.name)}catch{};
 
+
+	showLoadingMsg();
+
 	window.onhashchange=(e)=>{
 		if(location.hash!="#watching"){
 			stopPlaying();
@@ -194,13 +198,15 @@ function vidOnStart(){
 	}
 }
 
-function stopPlaying(){
+function stopPlaying(){/*to stop the video forcefully*/
 	vidSource={},
 	timeChInterval,
 	vidDuration,
 	videoApplied=false;
 
+	clearInterval(videoStoringInterval);
 	clearInterval(timeChInterval)
+	clearInterval(msgInterval);
 	/*show intro*/
 
 	op(".banner").style.display="";
@@ -222,8 +228,31 @@ function autoFullScr(){
 
 
 function storeCurVid(){
-	vidSource.timeWatched=video.currentTime;
-	let data=JSON.stringify(vidSource);
+	let data={
+		name: vidSource.name,
+		src: vidSource.src,
+		time: video.currentTime,
+	}
+	data=JSON.stringify(data);
 	localStorage.setItem("aiCurVid",data);
-	log(data)
+}
+
+function showLoadingMsg(){
+	curVidDataPan.elem.classList.add('active');
+	let msg=["/...Please wait while loading.","/...It will be there in seconds.","/...Almost there!","/...Unfortunately It is taking longer than expected.","/...Fetching"];
+
+	let num=0;
+	funXXX();
+	clearInterval(msgInterval);
+	msgInterval= setInterval(funXXX,4000)
+	function funXXX(){
+		curVidDataPan.name.innerHTML=msg[num] || msg[4];
+		curVidDataPan.sizeAndTime.innerHTML=``;
+		num++;
+	}
+}
+
+video.onended=()=>{
+	clearInterval(videoStoringInterval);
+	localStorage.removeItem("aiCurVid");
 }

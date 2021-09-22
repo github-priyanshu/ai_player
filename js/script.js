@@ -14,6 +14,7 @@ changePan= op('.changePan'),
 
 duration={
 	line: op(".linePan"),
+	lineReal: op(".linePan .line"),
 	filled: op('.linePan .filled'),
 	percentage: 0
 },
