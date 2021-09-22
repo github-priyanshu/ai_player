@@ -18,7 +18,6 @@ button a{
 	-webkit-user-select: none;
 	-webkit-user-drag: none;
 	user-drag: none;
-	font-family: Merienda,sans-serif;
 }
 svg{
 	pointer-events: none;
@@ -32,12 +31,14 @@ span{
 	justify-content: center;
 }
 .c{flex-flow: column;}
+
 .body{
 	width: 100vw;
 	min-height: 100vh;
 	background: linear-gradient(-75deg, #f1f1ff 50%, #fff 50%);
 	background-attachment: fixed;
 	color: #333;
+	font-family: Merienda,sans-serif;
 	align-items: flex-start;
 }
 .body.dark{
@@ -51,7 +52,6 @@ span{
 	background: #111;
 	width: max-content;
 	color: #fff;
-	font-family: monospace;
 	overflow: hidden;
 	display: none;
 	font-family: Glory;
@@ -294,7 +294,7 @@ span{
 	--shadow: 0 5px 5px #0005;
 	text-shadow: var(--shadow);
 	transform: translate(-50%,-50%);
-	font-family: sans-serif;
+	font-family: glory;
 	pointer-events: none;
 	transition: all .25s;
 	opacity: 0;

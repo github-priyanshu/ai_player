@@ -9,6 +9,12 @@
 	transform: perspective(2000px) rotateY(0deg);
 	margin-bottom: 70px;
 	margin-top: 20px;
+	animation: rot3d 15s linear infinite;
+}
+@keyframes rot3d{
+	100%{
+		transform: perspective(2000px) rotateY(360deg);
+	}
 }
 .bannerBox .banner3d{
 	transform-style: preserve-3d;

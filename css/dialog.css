@@ -13,7 +13,6 @@
 }
 .dg{
 	/*text-align: center;*/
-	font-family: sans-serif;
 	background: #fff;
 	box-shadow: 0 10px 60px 10px #0000003d;
 	border-radius: 5px;
@@ -35,12 +34,12 @@
 	border: none;
 	outline: none;
 	border-radius: 0px;
-	font-size: .9em;
+	font-size: 1em;
+	font-family: glory;
 }
 .dg .btp button.yes{
-	background: #0099ff;
-	color: #fff;
-	font-size: 1em;
+	/*background: #0099ff;*/
+	color: #0099ff;
 }
 
 .dg p span{

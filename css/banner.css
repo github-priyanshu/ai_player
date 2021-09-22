@@ -1,6 +1,6 @@
 .banner{
   width: 100%;
-  font-family: sans-serif;
+  font-family: Merienda;
   padding: 10px;
   color: #333;
 }
@@ -16,6 +16,9 @@
 	margin-bottom: 10px;
 }
 
+.banner .contact{
+  font-family: glory;
+}
 .banner .contact .extLnk{
   justify-content: flex-start;
   margin-top: 10px;
