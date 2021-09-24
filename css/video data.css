@@ -55,7 +55,7 @@
 	cursor: pointer;
 	border-radius: 2px;
 	border: 1px solid;
-	color: #555;
+	color: #919191;
 	font-family: glory;
 	font-size: 1.1em;
 }
@@ -66,27 +66,29 @@
 }
 .moviesListPan .movie{
 	justify-content: space-between;
-    padding: 5px 10px;
-    background: linear-gradient(281deg, #ffffff 50%, #00000012 50%);
-    min-width: 150px;
-    max-width: 150px;
-    flex-flow: column;
-    margin: 5px;
-    margin-right: 10px;
-    border: 1px solid #aaa;
-    height: 80px;
-    border-radius: 2px;
-    box-shadow: var(--outshade);
-    transition: all .15s
+  padding: 5px 10px;
+  background: linear-gradient(281deg, #ffffff 50%, #00000012 50%);
+  min-width: 150px;
+  max-width: 150px;
+  flex-flow: column;
+  margin: 5px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  height: 80px;
+  border-radius: 3px;
+  box-shadow: 0px 3px 8px #0001;
+  transition: all .15s
+}
+
+.moviesListPan .movie:nth-of-type(2n){
+  background: linear-gradient(281deg, #00000012 50%, #ffffff 50%);
 }
 .moviesListPan .movie .btns{
 	position: absolute;
 	bottom: 5px;
 }
 .moviesListPan .movie:hover{
-  /*box-shadow: var(--inshade);*/
-  background: linear-gradient(281deg, #00000012 50%, #ffffff 50%);
-
+	transform: scale(1.09);
 }
 .moviesListPan .movie .nameSize{
 	align-self: flex-start;
@@ -134,6 +136,9 @@
 	margin: 10px;
 	padding: 10px;
 	box-shadow: 0 5px 10px #00000026;
+	border-left: 5px solid #00b3c0;
+	padding-left: 5px;
+	filter: hue-rotate(calc(var(--i)*85deg));
 }
 
 .moviesListPan .subCatMovieList::after,
@@ -251,4 +256,8 @@
 }
 #downBtn2{
 	margin-top: 20px;
+}
+.notWorking{
+	filter: brightness(.5);
+	pointer-events: none;
 }
