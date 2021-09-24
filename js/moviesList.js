@@ -1,11 +1,12 @@
 var log=console.log;
 
 let movieListPan=op(".moviesList");
-/*give the next index 23*/
+/*give the next index 24*/
 let movies={
 Newly_Added,
 Bollywood:[
 /*["name","link",1],*/
+["PM Narendra Modi","https://dl.dc03.workers.dev/BollyWood/MX.Player/PM.Narendra.Modi.2021/PM.Narendra.Modi.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv",23],
 ["Ankahi Kahaniya","https://dl.dc03.workers.dev/BollyWood/NetFlix/Ankahi.Kahaniya.2021/Ankahi.Kahaniya.2021.WebRip.480p.Hindi.DD.5.1.x264.ESub-DudeFilms.in.mkv",21],
 
 ["Bell Bottom","https://dl.dc03.workers.dev/BollyWood/Amazon.Prime/Bell.Bottom.2021/Bell.Bottom.2021.480p.Hindi.WEB-DL.ESub.x264-DudeFilms.co.mkv",20],
