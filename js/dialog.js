@@ -11,6 +11,13 @@ var dialog={
 	},
 	inside: (txt)=>{
 		op('.dgBx .dg p').innerHTML=txt;
+	},
+	buttons:(no="No",yes="Yes")=>{
+		op(".dgBx .btp button span").innerText=no;
+		op(".dgBx .btp .yes span").innerText=yes;
+	},
+	activateYesBtn: ()=>{
+		op(".dgBx .btp .yes span").classList.toggle("notWorking");
 	}
 }
 let elem,preVid=localStorage.getItem("aiCurVid");
@@ -33,3 +40,26 @@ if(mid){
 		video.currentTime=vidSource.time;
 	}
 }
+/*
+var lastTimeLoad=localStorage.getItem("aiLastTime");
+
+localStorage.setItem("aiLastTime",new Date().getTime());
+
+
+if(((new Date().getTime() - lastTimeLoad) < 20000) && !localStorage.getItem("aiFeedbacksent")){
+	getFeedbackHTML();
+}
+
+function getFeedbackHTML(){
+
+	log('feeding ');
+	dialog.inside(`
+			<h2 class="txtCen">Found any problem!</h2>
+			<p fs=" .9em">Report a file here.</p>
+
+			<div>
+			  <label>input</label>
+			</div>	
+		`)
+	// localStorage.setItem("aiFeedbacksent",true);
+}*/

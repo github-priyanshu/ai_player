@@ -2,7 +2,7 @@ let bannerRotated=0,
 bannerBox=op(".bannerBox");
 
 var Newly_Added=[
-  ["Ankahi Kahaniya","https://dl.dc03.workers.dev/BollyWood/NetFlix/Ankahi.Kahaniya.2021/Ankahi.Kahaniya.2021.WebRip.480p.Hindi.DD.5.1.x264.ESub-DudeFilms.in.mkv",21],
+["Jungle.Cruise","https://dl.dc03.workers.dev/HollyWood/Jungle.Cruise.2021/Jungle.Cruise.2021.Hindi.(CAM).English.480p.WEB-DL.ESub-DudeFilms.in.mkv",24],
 
 ["Bhuj The Pride of India","https://pagalfilm.bar/load/Bollywood New Films/Bhuj The Pride of India 2021 Full Movie/Bhuj The Pride of India Hindi 2021 Hdrip.mkv",1],
 
@@ -10,7 +10,7 @@ var Newly_Added=[
 
 ["Bell Bottom","https://dl.dc03.workers.dev/BollyWood/Amazon.Prime/Bell.Bottom.2021/Bell.Bottom.2021.480p.Hindi.WEB-DL.ESub.x264-DudeFilms.co.mkv",20],
 ];
-// setInterval(rotateBannerBox,3000);
+setInterval(rotateBannerBox,3000);
 
 
 function getBoxBnr(id){
@@ -30,7 +30,7 @@ function getBoxBnr(id){
 function rotateBannerBox(){
   if(bannerBox.offsetHeight>window.scrollY){
     bannerRotated+=90;
-    bannerBox.style.transform=`perspective(2000px) rotateY(${bannerRotated+15+'deg'})`;
+    bannerBox.style.transform=`perspective(2000px) rotateY(${bannerRotated+'deg'})`;
   }
 }
 

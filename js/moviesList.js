@@ -1,12 +1,15 @@
 var log=console.log;
 
 let movieListPan=op(".moviesList");
-/*give the next index 24*/
+/*give the next index 25*/
 let movies={
 Newly_Added,
 Bollywood:[
 /*["name","link",1],*/
+["Jungle.Cruise","https://dl.dc03.workers.dev/HollyWood/Jungle.Cruise.2021/Jungle.Cruise.2021.Hindi.(CAM).English.480p.WEB-DL.ESub-DudeFilms.in.mkv",24],
+
 ["PM Narendra Modi","https://dl.dc03.workers.dev/BollyWood/MX.Player/PM.Narendra.Modi.2021/PM.Narendra.Modi.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv",23],
+
 ["Ankahi Kahaniya","https://dl.dc03.workers.dev/BollyWood/NetFlix/Ankahi.Kahaniya.2021/Ankahi.Kahaniya.2021.WebRip.480p.Hindi.DD.5.1.x264.ESub-DudeFilms.in.mkv",21],
 
 ["Bell Bottom","https://dl.dc03.workers.dev/BollyWood/Amazon.Prime/Bell.Bottom.2021/Bell.Bottom.2021.480p.Hindi.WEB-DL.ESub.x264-DudeFilms.co.mkv",20],
@@ -72,7 +75,7 @@ let movieHTML=`<div class="realMovieHead">Top <span col='#e73070'>New Movies</sp
 var mnum=1;
 for(let val in movies){
 	let catName=val.replaceAll("_"," ");
-	movieHTML+=`<div class="movieSubCat">
+	movieHTML+=`<div class="movieSubCat" style="--i: ${mnum};">
 		<div class="subCatHead" ff="glory">${catName}</div>
 		<div class="subCatMovieList flex">
 			${getsubCatMoviesList(val)}
