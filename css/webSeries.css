@@ -1,0 +1,39 @@
+.moviesListPan .poster{
+	width: 200px;
+	height: 160px;
+	margin: 5px;
+
+  background: linear-gradient(281deg, #ffffff 50%, #00000012 50%);
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-shadow: 0px 3px 8px #0001;
+}
+
+.moviesListPan .poster img{
+	height: 130px;
+	border-radius: 3px;
+	object-fit: cover;
+}
+.moviesListPan .poster .data{
+	height: 30px;
+}
+.moviesListPan .poster .data .name{
+	color: #333;
+	margin: 0;
+	text-shadow: 1px 1px 3px #0003;
+}
+.moviesListPan .poster button{
+	width: 100px;
+	border-radius: 2px;
+}
+.dataBox .menuBtn button{
+	min-width: 112px;
+  height: 30px;
+  border-radius: 2px;
+  margin: 5px;
+  background: #fff;
+  border: none;
+  BOX-SHADOW: 0px 2px 7px #0004;
+  color: #444;
+  margin-bottom: 19px;
+}

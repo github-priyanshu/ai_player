@@ -6,7 +6,7 @@ let movies={
 Newly_Added,
 Bollywood:[
 /*["name","link",1],*/
-["Jungle.Cruise","https://dl.dc03.workers.dev/HollyWood/Jungle.Cruise.2021/Jungle.Cruise.2021.Hindi.(CAM).English.480p.WEB-DL.ESub-DudeFilms.in.mkv",24],
+["Jungle Cruise","https://dl.dc03.workers.dev/HollyWood/Jungle.Cruise.2021/Jungle.Cruise.2021.Hindi.(CAM).English.480p.WEB-DL.ESub-DudeFilms.in.mkv",24],
 
 ["PM Narendra Modi","https://dl.dc03.workers.dev/BollyWood/MX.Player/PM.Narendra.Modi.2021/PM.Narendra.Modi.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv",23],
 
@@ -69,13 +69,18 @@ English_Movies_hindi_dubbed:[
 ],
 };
 
-let movieHTML=`<div class="realMovieHead">Top <span col='#e73070'>New Movies</span> here free.</div>
+let movieHTML=`<div class="realMovieHead center">Top <span col='#e73070'>New Movies & Web Series</span> here free.</div>
+	<div class="flex menuBtn">
+		<a href="#Bollywood"><button class="flex">Bollywood</button></a>
+		<a href="#English_Movies_hindi_dubbed"><button class="flex">English Movies</button></a>
+		<a href="#WebSeries"><button class="flex">Web Series</button></a>
+	</div>
 <div class="realMovieList">`;
 
 var mnum=1;
 for(let val in movies){
 	let catName=val.replaceAll("_"," ");
-	movieHTML+=`<div class="movieSubCat" style="--i: ${mnum};">
+	movieHTML+=`<div class="movieSubCat" id="${val}" style="--i: ${mnum};">
 		<div class="subCatHead" ff="glory">${catName}</div>
 		<div class="subCatMovieList flex">
 			${getsubCatMoviesList(val)}
@@ -107,11 +112,12 @@ function getsubCatMoviesList(subCat){
 				<button class="flex" ${onclickAttrxx} title="play">${elems.play}</button>
 				<a href="${val[1]}" download='${val[0]}' onclick="sendDownInfo('${val[0]}')"><button>${elems.download}</button></a>
 			</div>
-		</div>`
+		</div>`;
 		mnum++;
 	}
 	return htmlXX;
 }
+addWebSeries();
 movieHTML+="</div>";
 
 // op('.moviesListPan .num').innerText=num+' items';
@@ -132,7 +138,7 @@ opp(".getLink").forEach(val=>{
 	val.addEventListener("click",e=>{
 		e.stopPropagation();
 		let link=val.closest(".movie").getAttribute("mid");
-		copy(document.URL.split('#')[0]+`?mid=${link}`);
+		copy(getURI()+`?mid=${link}`);
 	})
 })
 
@@ -156,9 +162,12 @@ for(let a=0; a<search.length; a++){
 	eval(search[a])
 }
 
-if(mlnk){setTimeout(()=>{
+if(mlnk){
+setTimeout(()=>{
 	link.input.value=mlnk;link.btn.click();
-},1000)}
+},500)
+localStorage.removeItem("aiCurVid");
+}
 
 try{history.replaceState('/','/','/');}catch{}
 
@@ -176,4 +185,39 @@ function copy(txt) {
 }
 function sendDownInfo(data){
 	try{send("DOWN:"+data)}catch{}
+}
+
+function addWebSeries(){
+	let seriesList=[
+		// ["Midnight Mass","https://bit.ly/3EUO9Mk"],
+		["Kota Factory season 2","https://bit.ly/3ALcKAB"],
+		/*["Web Series 3","imglink"],*/
+	]
+
+	movieHTML+=`<div id="WebSeries" class="movieSubCat" style="--i: 0;">
+		<div class="subCatHead" ff="glory">Web Series</div>
+		<div class="subCatMovieList flex">
+			${getWebSeriesList()}
+		</div>
+	</div>`;
+
+	function getWebSeriesList(){
+		let htmlxx=``;
+		seriesList.map((val,num)=>{
+		htmlxx+=`
+			<div class="poster flex c" ff="glory" onclick="this.children[2].click()">
+			  <img class="w100p" src="${val[1]}" alt="${val[0]}">
+			  <div class="data flex">
+			    <div class="name" fs=".9em">${val[0]}</div>
+			  </div>
+			  <a href="webseries/index.html?ws='${val[0]}'" hidden></a>
+			</div>`;
+		});
+		return htmlxx;
+	}
+
+}
+
+function getURI(){
+	return document.URL.split('#')[0];
 }

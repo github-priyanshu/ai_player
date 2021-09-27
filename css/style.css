@@ -37,7 +37,7 @@ span{
 .body{
 	width: 100vw;
 	min-height: 100vh;
-	background: linear-gradient(-75deg, #f1f1ff 50%, #fff 50%);
+	background: radial-gradient(circle at 0% 100%,#f1f1ff 30%, #00a1ff22 30%, #fff 50%, #f1f1ff 50%,#f1f1ff 60%, #fff 60%, #b400ff24 90%, #f1f1ff 90%);
 	background-attachment: fixed;
 	color: #333;
 	font-family: Merienda,sans-serif;
