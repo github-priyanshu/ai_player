@@ -1,7 +1,7 @@
 var log=console.log;
 
 let movieListPan=op(".moviesList");
-/*give the next index 25*/
+/*give the next index 26*/
 let movies={
 Newly_Added,
 Bollywood:[
@@ -57,6 +57,8 @@ South_Indian:[
 ],*/
 English_Movies_hindi_dubbed:[
 /*["name","link",1],*/
+["No One Gets Out Alive","https://dl.dc03.workers.dev/hollywood/NetFlix%20Movies/No.One.Gets.Out.Alive.2021/No.One.Gets.Out.Alive.2021.Hindi-English.720p.WEB-DL.ESub-DudeFilms.in.mkv",25],
+
 ["Free Guy","https://dl.dc03.workers.dev/HollyWood/Free.Guy.2021.HDCAM/Free.Guy.2021.Dual.Audio.Hindi.English.480p.HDCAM-DudeFilms.in.mkv",22],
 
 	["Blue Miracle","https://pagalfilm.bar/load/Hindi Dubbed New Movies/Blue Miracle 2021 Hindi Dubbed Full Movie/Blue Miracle Hindi Dubbed Hdrip.mkv",12],
