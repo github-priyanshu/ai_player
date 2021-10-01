@@ -116,7 +116,10 @@ function getsubCatMoviesList(subCat){
 			<div class="btns">
 				<button title="copy link" class="flex getLink">${elems.share}</button>
 				<button class="flex" ${onclickAttrxx} title="play">${elems.play}</button>
-				<a href="${val[1]}" download='${val[0]}' onclick="sendDownInfo('${val[0]}')"><button>${elems.download}</button></a>
+				<button onclick="checkDownTrue(this.children[0]);">
+					<a href="${val[1]}" download='${val[0]}' name="${val[0]}" onclick="sendDownInfo('${val[0]}')"></a>
+					${elems.download}
+				</button>
 			</div>
 		</div>`;
 		mnum++;
@@ -224,4 +227,17 @@ function addWebSeries(){
 
 function getURI(){
 	return document.URL.split('#')[0];
+}
+
+function checkDownTrue(elem){
+	if(isDownLoaded){
+		elem.click();
+	}else{
+		dialog.inside(`<span col="#444" ff="glory">Open in App to enable downloading feature.</span>`)
+		dialog.buttons("Close","Ok");
+		dialog.show();
+		if(readyToDownload){
+			downBtn1.click();
+		}
+	}
 }
