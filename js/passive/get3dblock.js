@@ -2,7 +2,11 @@ let bannerRotated=0,
 bannerBox=op(".bannerBox");
 
 var Newly_Added=[
-["No One Gets Out Alive","https://dl.dc03.workers.dev/hollywood/NetFlix%20Movies/No.One.Gets.Out.Alive.2021/No.One.Gets.Out.Alive.2021.Hindi-English.720p.WEB-DL.ESub-DudeFilms.in.mkv",25,"https://bit.ly/3ilOOwF"],
+["Run Hide Fight","https://dl.dc03.workers.dev/hollywood/Run.Hide.Fight.2021/Run.Hide.Fight.2021.Hindi-English.480p.WEB-DL.ESub-DudeFilms.in.mkv",27,"https://bit.ly/3A08hcn"],
+
+["Sounds Like Love","https://dl.dc03.workers.dev/hollywood/NetFlix%20Movies/Sounds.Like.Love.2021/Sounds.Like.Love.2021.Dual.Audio.Hindi-English.480p.WEB-DL.ESub-DudeFilms.in.mkv",26,"https://bit.ly/3omxDyK"],
+
+["The Suicide Squad","https://dl.dc03.workers.dev/hollywood/The.Suicide.Squad.2021.NEW/The.Suicide.Squad.2021.Dual.Audio.Hindi-English.480p.WEB-DL.ESub-DudeFilms.in.mkv",25,"https://bit.ly/3F9RF5K"],
 
 ["Jungle Cruise","https://dl.dc03.workers.dev/HollyWood/Jungle.Cruise.2021/Jungle.Cruise.2021.Hindi.(CAM).English.480p.WEB-DL.ESub-DudeFilms.in.mkv",24,"./img/na/na (1).png"],
 
@@ -46,7 +50,7 @@ function block(parent,cls,width,height,grith,){
     width: 100%;
     box-shadow: inset ${width}px ${height}px 0 #00000014;
     height: 100%;
-    ">${getWsBnr(0)}</div>
+    ">${getBoxBnr(0)}</div>
 
     <div id="${cls}-botton" style="transform-origin: center; transform: translateZ(0) rotateY(180deg);
     left:0;
@@ -62,7 +66,7 @@ function block(parent,cls,width,height,grith,){
     height: 100%;
     box-shadow: inset ${width}px ${height}px 0 #0000002b;
     width: ${grith}px;
-    ">${getBoxBnr(0)}</div>
+    ">${getBoxBnr(3)}</div>
 
     <div id="${cls}-right" style="transform-origin: right; transform: rotateY(90deg);
     right: 0;
