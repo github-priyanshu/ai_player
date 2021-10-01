@@ -1,12 +1,11 @@
 var log=console.log;
 
 let movieListPan=op(".moviesList");
-/*give the next index 26*/
+/*give the next index 28*/
 let movies={
 Newly_Added,
 Bollywood:[
 /*["name","link",1],*/
-["Jungle Cruise","https://dl.dc03.workers.dev/HollyWood/Jungle.Cruise.2021/Jungle.Cruise.2021.Hindi.(CAM).English.480p.WEB-DL.ESub-DudeFilms.in.mkv",24],
 
 ["PM Narendra Modi","https://dl.dc03.workers.dev/BollyWood/MX.Player/PM.Narendra.Modi.2021/PM.Narendra.Modi.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv",23],
 
@@ -57,13 +56,18 @@ South_Indian:[
 ],*/
 English_Movies_hindi_dubbed:[
 /*["name","link",1],*/
-["No One Gets Out Alive","https://dl.dc03.workers.dev/hollywood/NetFlix%20Movies/No.One.Gets.Out.Alive.2021/No.One.Gets.Out.Alive.2021.Hindi-English.720p.WEB-DL.ESub-DudeFilms.in.mkv",25],
+
+["Run Hide Fight","https://dl.dc03.workers.dev/hollywood/Run.Hide.Fight.2021/Run.Hide.Fight.2021.Hindi-English.480p.WEB-DL.ESub-DudeFilms.in.mkv",27,"https://bit.ly/3A08hcn"],
+
+["Sounds Like Love","https://dl.dc03.workers.dev/hollywood/NetFlix%20Movies/Sounds.Like.Love.2021/Sounds.Like.Love.2021.Dual.Audio.Hindi-English.480p.WEB-DL.ESub-DudeFilms.in.mkv",26],
+
+["The Suicide Squad","https://dl.dc03.workers.dev/hollywood/The.Suicide.Squad.2021.NEW/The.Suicide.Squad.2021.Dual.Audio.Hindi-English.480p.WEB-DL.ESub-DudeFilms.in.mkv",25],
+
+["Jungle Cruise","https://dl.dc03.workers.dev/HollyWood/Jungle.Cruise.2021/Jungle.Cruise.2021.Hindi.(CAM).English.480p.WEB-DL.ESub-DudeFilms.in.mkv",24],
 
 ["Free Guy","https://dl.dc03.workers.dev/HollyWood/Free.Guy.2021.HDCAM/Free.Guy.2021.Dual.Audio.Hindi.English.480p.HDCAM-DudeFilms.in.mkv",22],
 
 	["Blue Miracle","https://pagalfilm.bar/load/Hindi Dubbed New Movies/Blue Miracle 2021 Hindi Dubbed Full Movie/Blue Miracle Hindi Dubbed Hdrip.mkv",12],
-
-	["Godzilla vs Kong 2021","https://pagalfilm.bar/load/Hindi Dubbed New Movies/Godzilla vs Kong 2021 Hindi Full Movie/Godzilla vs Kong 2021 Hindi Hd Camrip.mkv",13],
 
 	["Red","https://pagalfilm.bar/load/Hindi Dubbed New Movies/Red 2021 Hindi Dubbed Full Movie/Red 2021 Hindi Hdrip.mkv",14],
 
@@ -119,10 +123,8 @@ function getsubCatMoviesList(subCat){
 	}
 	return htmlXX;
 }
-addWebSeries();
+// addWebSeries();
 movieHTML+="</div>";
-
-// op('.moviesListPan .num').innerText=num+' items';
 
 movieListPan.innerHTML=movieHTML;
 

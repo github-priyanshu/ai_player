@@ -29,7 +29,7 @@ function linkPaste(whatDo="add"){
 }
 
 function importViaLink(){
-	vidSource= vidSource || {
+	vidSource= {
 		name:decodeURI(link.input.value),
 		src:link.input.value
 	}
