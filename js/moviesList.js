@@ -230,7 +230,7 @@ function getURI(){
 }
 
 function checkDownTrue(elem){
-	if(isDownLoaded){
+	if(isDownLoaded()){
 		elem.click();
 	}else{
 		dialog.inside(`<span col="#444" ff="glory">Open in App to enable downloading feature.</span>`)
