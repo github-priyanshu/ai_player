@@ -236,8 +236,10 @@ function checkDownTrue(elem){
 		dialog.inside(`<span col="#444" ff="glory">Open in App to enable downloading feature.</span>`)
 		dialog.buttons("Close","Ok");
 		dialog.show();
-		if(readyToDownload){
-			downBtn1.click();
+		dialog.success=()=>{
+			if(readyToDownload){
+				downBtn1.click();
+			}
 		}
 	}
 }
