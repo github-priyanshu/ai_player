@@ -119,7 +119,7 @@ function getsubCatMoviesList(subCat){
 	}
 	return htmlXX;
 }
-//addWebSeries();
+addWebSeries();
 movieHTML+="</div>";
 
 // op('.moviesListPan .num').innerText=num+' items';
