@@ -24,6 +24,19 @@ videoStoringInterval;
 
 /*get player start*/
 
+video.onerror=(e)=>{
+	log(videoBox.classList.contains("active"))
+	if(videoBox.classList.contains("active")){
+		let errCode=video.error.code-1;
+		let msgAry=["Loading was interrupted. Try again.","This video is not supported in this Browser.","Check your network connectivity","Video or audio not found!"];
+		let msg=msgAry[errCode];
+		dialog.inside(`<span col="#f00" ff="glory">Error :</span><br><span ff="glory" col="#444">/...${msg}</span>`);
+		dialog.buttons("Close","Ok")
+		dialog.success=()=>{null};
+		dialog.show();
+	}
+}
+
 function linkPaste(whatDo="add"){
 	link.pan.classList[whatDo]('active')
 }

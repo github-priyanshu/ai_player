@@ -2,6 +2,7 @@ var dgbx=op('.dgBx');
 var dialog={
 	show:()=>{
 		dgbx.classList.add("active");
+		resetColS();
 	},
 	hide:()=>{
 		dgbx.classList.remove("active");
