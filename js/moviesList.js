@@ -1,11 +1,13 @@
 var log=console.log;
 
 let movieListPan=op(".moviesList");
-/*give the next index 28*/
+/*give the next index 29*/
 let movies={
 Newly_Added,
 Bollywood:[
 /*["name","link",1],*/
+
+["Shiddat","https://dl.dc03.workers.dev/BollyWood/hotstar/Shiddat.2021/Shiddat.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv",28],
 
 ["PM Narendra Modi","https://dl.dc03.workers.dev/BollyWood/MX.Player/PM.Narendra.Modi.2021/PM.Narendra.Modi.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv",23],
 

@@ -27,7 +27,7 @@ speed={
 	percentage: 25
 },
 
-speedBtn=op(".speedIco"),
+speedBtn=op("#speedIco"),
 speedChPan=op('.speedChPan'),
 stoppedPropagation=[playBtn,nextBtn,prevBtn,duration.line,speed.line,...opp(".topBtn div")],
 
@@ -40,10 +40,30 @@ timeBox={
 },
 downBtn = document.querySelectorAll('.downBtn'),
 downBtn2=downBtn[1],
-downBtn1=downBtn[0]
+downBtn1=downBtn[0],
+
+quality={
+	btn: op("#qualityIco"),
+	options: [480,720,1080],
+	choosen: 480,
+	showOptions:()=>{
+		let htmlxx=``;
+		for(val of quality.options){
+			htmlxx+=`<div class="option" ff="glory" onclick="applyQuality(${val});">${val}p</div>`
+		}
+		htmlxx+="";
+		op("#qlOpt").innerHTML=htmlxx;
+		op("#qlBox").classList.add("active");
+
+		document.onclick=e=>{
+			if(op("#qlBox").classList.contains("active")){
+				op("#qlBox").classList.remove("active");
+			}
+		}
+
+	}
+}
 ;
-
-
 
 var elems,
 playing=false,
@@ -74,6 +94,10 @@ nextBtn.innerHTML=elems.next;
 prevBtn.innerHTML=elems.previous;
 downBtn1.innerHTML=elems.download+"App";
 downBtn2.innerHTML=elems.download+"App";
+speedBtn.innerHTML=elems.speed;
+quality.btn.innerHTML=elems.quality;
+quality.btn.style.display="none";
+
 
 speedIco.addEventListener('click',e=>{
 	e.stopPropagation();
@@ -81,6 +105,15 @@ speedIco.addEventListener('click',e=>{
 	controlBox.classList.remove('active');
 	videoBox.removeEventListener('mousemove',addMsMoveToCon);
 })
+
+
+function applyQuality(val){
+	let sr=video.src,curTm=video.currentTime;
+	sr=sr.replaceAll("480",val).replaceAll("720",val).replaceAll("1080",val);
+	
+	video.src=sr;
+	video.currentTime=curTm;
+}
 
 /*pause play*/
 playBtn.addEventListener('click',()=>{

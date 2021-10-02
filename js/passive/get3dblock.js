@@ -2,6 +2,9 @@ let bannerRotated=0,
 bannerBox=op(".bannerBox");
 
 var Newly_Added=[
+
+["Shiddat","https://dl.dc03.workers.dev/BollyWood/hotstar/Shiddat.2021/Shiddat.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv",28,"https://bit.ly/3F6ST1H"],
+
 ["Run Hide Fight","https://dl.dc03.workers.dev/hollywood/Run.Hide.Fight.2021/Run.Hide.Fight.2021.Hindi-English.480p.WEB-DL.ESub-DudeFilms.in.mkv",27,"https://bit.ly/3A08hcn"],
 
 ["Sounds Like Love","https://dl.dc03.workers.dev/hollywood/NetFlix%20Movies/Sounds.Like.Love.2021/Sounds.Like.Love.2021.Dual.Audio.Hindi-English.480p.WEB-DL.ESub-DudeFilms.in.mkv",26,"https://bit.ly/3omxDyK"],

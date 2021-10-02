@@ -34,11 +34,17 @@ if(mid){
 	preVid=JSON.parse(preVid);
 	dialog.inside(`Want to continue previous video! <br> <span ff="glory" fc="#e73070">${preVid.name}</span> <div class="flex" style="margin-top: 10px;" onclick="localStorage.removeItem('aiCurVid')"><span fs=".9em" ff="sans-serif" col="#666">Don't ask for this.</span></div>`);
 	resetColS();
+	log(preVid)
 	dialog.show();
 	dialog.success=()=>{
 		vidSource=preVid;
-		importViaLink();
-		video.currentTime=vidSource.time;
+		log(vidSource)
+		
+		load.show();
+		linkPaste('remove');
+		setLink(vidSource.src);
+
+		video.currentTime=Math.floor(vidSource.time);
 	}
 }
 /*

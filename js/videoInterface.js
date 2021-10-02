@@ -209,6 +209,12 @@ function vidOnStart(){
 			stopPlaying();
 		}
 	}
+	let sr=video.src;
+	if(sr.includes("480") || sr.includes("720") || sr.includes("1080")){
+		quality.btn.style.display=""
+	}else{
+		quality.btn.style.display="none"
+	}
 }
 
 function stopPlaying(){/*to stop the video forcefully*/
@@ -246,8 +252,10 @@ function storeCurVid(){
 		src: vidSource.src,
 		time: video.currentTime,
 	}
-	data=JSON.stringify(data);
-	localStorage.setItem("aiCurVid",data);
+	if(data.name){
+		data=JSON.stringify(data);
+		localStorage.setItem("aiCurVid",data);
+	}
 }
 
 function showLoadingMsg(){
