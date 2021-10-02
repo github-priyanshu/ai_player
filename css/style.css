@@ -12,6 +12,7 @@ button a{
 .tran.active{
 	transform: scale(1);
 }
+
 *{
 	margin: 0;padding: 0;
 	box-sizing: border-box;
@@ -23,6 +24,8 @@ button a{
 }
 svg{
 	pointer-events: none;
+	width: 30px;
+	height: 30px;
 }
 span{
 	pointer-events: none;
@@ -316,17 +319,38 @@ span{
 	display: inline-block;
 }
 .speedPan .speedIco{
-	padding: 6px 12px;
-	border-radius: 2px;
-	border: 1px solid #fff;
-	backdrop-filter: blur(2px) brightness(.5);
+	margin: 0 6px;
 }
 
 
 @media screen and (max-width: 400px){
-.videoBox .controls .top .center .d {
-	transform: scale(.7);
+	.videoBox .controls .top .center .d {
+		transform: scale(.7);
+	}
+	.videoBox .controls .bottom {
+	  padding: 10px 0;
+	}
 }
-.videoBox .controls .bottom {
-  padding: 10px 0;
+
+
+.videoBox #qlBox{
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 5px;
+  box-shadow: 0 10px 30px #0002;
+  background: #fff;
+  color: #333;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+.videoBox #qlBox.active{
+	display: block;	
+}
+
+.videoBox #qlBox .option{
+	padding: 5px 0;
 }
