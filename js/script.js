@@ -55,12 +55,15 @@ quality={
 		op("#qlOpt").innerHTML=htmlxx;
 		op("#qlBox").classList.add("active");
 
-		document.onclick=e=>{
+		setTimeout(()=>{
+			document.addEventListener("click",removeQbox);
+		},100)
+		function removeQbox(){
 			if(op("#qlBox").classList.contains("active")){
 				op("#qlBox").classList.remove("active");
+				document.removeEventListener("click",removeQbox);
 			}
 		}
-
 	}
 }
 ;
