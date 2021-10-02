@@ -39,6 +39,7 @@
 </style>
 <body class="body">
 
+
 	<div class="banner">
 		<div class="top flex">
 			<div class="left">
@@ -81,8 +82,9 @@
 						<div class="d flex d3" id="nextBtn" title="Next" onclick="video.currentTime+=5"></div>
 					</div>
 
-					<div class="speedPan flex c">
-						<div class="speedIco" fs="1.2em" title="speed">Speed</div>
+					<div class="speedPan flex">
+						<div class="speedIco" fs="1.2em" title="speed" id="speedIco"></div>
+						<div class="speedIco" fs="1.2em" title="speed" onclick="quality.showOptions()" id="qualityIco"></div>
 					</div>
 				</div>
 
@@ -116,7 +118,6 @@
 		    <div class="in"></div>
 		  </div>
 
-
 			<div class="speedChPan flex" forWhat="speed">
 				<div class="topBtn flex">
 					<div class="rBtn flex" onclick="alterSpeed(`-5`)"><span>-</span></div>
@@ -130,6 +131,11 @@
 			</div>
 
 			<div class="messBox flex"><span>x</span>100%</div>
+
+			<div class="qualityBox" id="qlBox">
+				<div class="head" ff="Merienda" col="#e73070">Choose video quality</div>
+				<div class="options" id="qlOpt"></div>
+			</div>
 		</div>
 
 		<div class="dataBox">
@@ -209,10 +215,10 @@
 	<script src="js/videoInterface.js"></script>
 	<script id="mainMovieJs" src="js/moviesList.js"></script>
 	<script src="js/dialog.js"></script>
-	<script src="js/passive/dataSender.js"></script>
+	<!-- <script src="js/passive/dataSender.js"></script> -->
 
 	<!-- pw -->
-	<script src="pwa.js"></script>
+	<!-- <script src="pwa.js"></script> -->
 	
 	<script>
 		if(!document.contains(op("#mainMovieJs"))){
