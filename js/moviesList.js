@@ -128,7 +128,7 @@ function getsubCatMoviesList(subCat){
 	}
 	return htmlXX;
 }
-// addWebSeries();
+addWebSeries();
 movieHTML+="</div>";
 
 movieListPan.innerHTML=movieHTML;
@@ -171,25 +171,27 @@ for(let a=0; a<search.length; a++){
 	eval(search[a])
 }
 
+try{history.replaceState('/','/','/');}catch{}
+
+
 var vidSource={};
 if(ws){
 	vidSource={
 		name:mname,
 		src:mlnk
 	}
+	log(vidSource);
 
 	load.show();
 	// linkPaste('remove');
 	setLink(vidSource.src);
 }
 else if(mlnk){
-setTimeout(()=>{
-	link.input.value=mlnk;link.btn.click();
-},500)
-localStorage.removeItem("aiCurVid");
+	setTimeout(()=>{
+		link.input.value=mlnk;link.btn.click();
+	},500)
 }
-
-try{history.replaceState('/','/','/');}catch{}
+localStorage.removeItem("aiCurVid");
 
 
 function copy(txt) {
