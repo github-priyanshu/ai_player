@@ -17,7 +17,7 @@ var Newly_Added=[
 
 ["Shershaah","https://pagalfilm.bar/load/Bollywood New Films/Shershaah 2021 Full Movie/Shershaah 2021 Hindi Hdrip.mkv",2,"./img/na/na (3).png"],
 
-["Bell Bottom","https://dl.gdc02.workers.dev/0:/BollyWood/Amazon.Prime/Bell.Bottom.2021/Bell.Bottom.2021.480p.Hindi.WEB-DL.ESub.x264-DudeFilms.co.mkv",20,"./img/na/na (4).png"],
+//["Bell Bottom","https://dl.gdc02.workers.dev/0:/BollyWood/Amazon.Prime/Bell.Bottom.2021/Bell.Bottom.2021.480p.Hindi.WEB-DL.ESub.x264-DudeFilms.co.mkv",20,"./img/na/na (4).png"],
 ];
 
 
