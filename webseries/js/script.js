@@ -20,7 +20,7 @@ function showLink(link){
 	var htmlxx="";
 	link.map((val,num)=>{
 		htmlxx+=`<div class="flex episode">
-			<a href="?mlnk='${val}'">Episode ${num+1}</a>
+			<a href="?ws=true&mlnk='${val}'&mname='${ws+" Episode "+(num+1)}'">Episode ${num+1}</a>
 		</div>`;
 	})
 
