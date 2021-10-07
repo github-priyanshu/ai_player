@@ -14,6 +14,7 @@ function applyLoad(ret){
 	log(ret)
 	loadImg(ret.imglink);
 	showLink(ret.episode);
+	checkEvAUrl();
 }
 
 function showLink(link){
