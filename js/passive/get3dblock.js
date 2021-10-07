@@ -1,23 +1,19 @@
 let bannerRotated=0,
-bannerBox=op(".bannerBox");
+bannerBox=op(".bannerBox"),
+mainSite="https://dl.gdc03.workers.dev/0:";
+;
 
 var Newly_Added=[
 
-["Shiddat","https://dl.gdc02.workers.dev/0:/BollyWood/hotstar/Shiddat.2021/Shiddat.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv",28,"https://bit.ly/3F6ST1H"],
+["Shiddat",`${mainSite}/BollyWood/hotstar/Shiddat.2021/Shiddat.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv`,28,"https://bit.ly/3F6ST1H"],
 
-["Run Hide Fight","https://dl.gdc02.workers.dev/0:/hollywood/Run.Hide.Fight.2021/Run.Hide.Fight.2021.Hindi-English.480p.WEB-DL.ESub-DudeFilms.in.mkv",27,"https://bit.ly/3A08hcn"],
+["Run Hide Fight",`${mainSite}/hollywood/Run.Hide.Fight.2021/Run.Hide.Fight.2021.Hindi-English.480p.WEB-DL.ESub-DudeFilms.in.mkv`,27,"https://bit.ly/3A08hcn"],
 
-["Sounds Like Love","https://dl.gdc02.workers.dev/0:/hollywood/NetFlix%20Movies/Sounds.Like.Love.2021/Sounds.Like.Love.2021.Dual.Audio.Hindi-English.480p.WEB-DL.ESub-DudeFilms.in.mkv",26,"https://bit.ly/3omxDyK"],
+["Bhuj The Pride of India","https://pagalfilm.rest/load/Bollywood New Films/Bhuj The Pride of India 2021 Full Movie/Bhuj The Pride of India Hindi 2021 Hdrip.mkv",1,"./img/na/na (2).png"],
 
-["The Suicide Squad","https://dl.gdc02.workers.dev/0:/hollywood/The.Suicide.Squad.2021.NEW/The.Suicide.Squad.2021.Dual.Audio.Hindi-English.480p.WEB-DL.ESub-DudeFilms.in.mkv",25,"https://bit.ly/3F9RF5K"],
+["Shershaah","https://pagalfilm.rest/load/Bollywood New Films/Shershaah 2021 Full Movie/Shershaah 2021 Hindi Hdrip.mkv",2,"./img/na/na (3).png"],
 
-["Jungle Cruise","https://dl.gdc02.workers.dev/0:/HollyWood/Jungle.Cruise.2021/Jungle.Cruise.2021.Hindi.(CAM).English.480p.WEB-DL.ESub-DudeFilms.in.mkv",24,"./img/na/na (1).png"],
-
-["Bhuj The Pride of India","https://pagalfilm.bar/load/Bollywood New Films/Bhuj The Pride of India 2021 Full Movie/Bhuj The Pride of India Hindi 2021 Hdrip.mkv",1,"./img/na/na (2).png"],
-
-["Shershaah","https://pagalfilm.bar/load/Bollywood New Films/Shershaah 2021 Full Movie/Shershaah 2021 Hindi Hdrip.mkv",2,"./img/na/na (3).png"],
-
-//["Bell Bottom","https://dl.gdc02.workers.dev/0:/BollyWood/Amazon.Prime/Bell.Bottom.2021/Bell.Bottom.2021.480p.Hindi.WEB-DL.ESub.x264-DudeFilms.co.mkv",20,"./img/na/na (4).png"],
+["Bell Bottom",`${mainSite}/BollyWood/Amazon.Prime/Bell.Bottom.2021/Bell.Bottom.2021.480p.Hindi.WEB-DL.ESub.x264-DudeFilms.co.mkv`,20,"./img/na/na (4).png"],
 ];
 
 
@@ -53,7 +49,7 @@ function block(parent,cls,width,height,grith,){
     width: 100%;
     box-shadow: inset ${width}px ${height}px 0 #00000014;
     height: 100%;
-    ">${getBoxBnr(0)}</div>
+    ">${getWsBnr(0)}</div>
 
     <div id="${cls}-botton" style="transform-origin: center; transform: translateZ(0) rotateY(180deg);
     left:0;
