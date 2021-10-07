@@ -5,11 +5,14 @@ var al=opp("a");
 var urlLoader=op("#urlLoader");
 log(urlLoader)
 
-al.forEach(val=>{
-	if(!val.hasAttribute("download") && !val.getAttribute("href").startsWith("#")){
-			// log(val)
-			val.addEventListener("click",()=>{
-				urlLoader.classList.add("active");
-			})
-		}
-})
+function checkEvAUrl(){
+	al.forEach(val=>{
+		if(!val.hasAttribute("download") && !val.getAttribute("href").startsWith("#")){
+				// log(val)
+				val.addEventListener("click",()=>{
+					urlLoader.classList.add("active");
+				})
+			}
+	})
+}
+checkEvAUrl();
