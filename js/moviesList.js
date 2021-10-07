@@ -7,21 +7,17 @@ Newly_Added,
 Bollywood:[
 /*["name","link",1],*/
 
-["Shiddat","https://dl.gdc02.workers.dev/0:/BollyWood/hotstar/Shiddat.2021/Shiddat.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv",28],
+["Shiddat",`${mainSite}/BollyWood/hotstar/Shiddat.2021/Shiddat.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv`,28],
 
-["PM Narendra Modi","https://dl.gdc02.workers.dev/0:/BollyWood/MX.Player/PM.Narendra.Modi.2021/PM.Narendra.Modi.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv",23],
+["PM Narendra Modi",`${mainSite}/BollyWood/MX.Player/PM.Narendra.Modi.2021/PM.Narendra.Modi.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv`,23],
 
-["Ankahi Kahaniya","https://dl.gdc02.workers.dev/0:/BollyWood/NetFlix/Ankahi.Kahaniya.2021/Ankahi.Kahaniya.2021.WebRip.480p.Hindi.DD.5.1.x264.ESub-DudeFilms.in.mkv",21],
+["Ankahi Kahaniya",`${mainSite}/BollyWood/NetFlix/Ankahi.Kahaniya.2021/Ankahi.Kahaniya.2021.WebRip.480p.Hindi.DD.5.1.x264.ESub-DudeFilms.in.mkv`,21],
 
-// ["Bell Bottom","https://dl.gdc02.workers.dev/0:/BollyWood/Amazon.Prime/Bell.Bottom.2021/Bell.Bottom.2021.480p.Hindi.WEB-DL.ESub.x264-DudeFilms.co.mkv",20],
+// ["Bell Bottom",`${mainSite}/BollyWood/Amazon.Prime/Bell.Bottom.2021/Bell.Bottom.2021.480p.Hindi.WEB-DL.ESub.x264-DudeFilms.co.mkv`,20],
 
-["Kya Meri Sonam Gupta Bewafa Hai","https://dl.gdc02.workers.dev/0:/BollyWood/Zee5/Kya.Meri.Sonam.Gupta.Bewafa.Hai.2021/Kya.Meri.Sonam.Gupta.Bewafa.Hai.2021.Hindi.480p.WEB-DL.x264-DudeFilms.co.mkv",19],
+["Kya Meri Sonam Gupta Bewafa Hai",`${mainSite}/BollyWood/Zee5/Kya.Meri.Sonam.Gupta.Bewafa.Hai2021/Kya.Meri.Sonam.Gupta.Bewafa.Hai.2021.Hindi.480p.WEB-DL.x264-DudeFilms.co.mkv`,19],
 
-["Bhoot Police","https://dl.gdc02.workers.dev/0:/BollyWood/Hotstar/Bhoot.Police.2021/Bhoot.Police.2021.Hindi.480p.WEB-DL.DD5.1.ESub.x264-DudeFilms.co.mkv",18],
-
-["Helmet","https://wenzs-my.sharepoint.com/:v:/g/personal/dudecloud_free_stulive_com/ESazKp049XtCvMCSyWGjaCABBaRa3_Lqji0F9BLVXjgmKQ?e=7t4dLc",17],
-
-["200 Halla Ho","https://dl.gdc02.workers.dev/0:/BollyWood/Zee5/200.Halla.Ho.2021/200.Halla.Ho.2021.480p.HDRip.Hindi.x264.ESub-DudeFilms.co.mkv",16],
+["Bhoot Police",`${mainSite}/BollyWood/Hotstar/Bhoot.Police.2021/Bhoot.Police.2021.Hindi.480p.WEB-DL.DD5.1.ESub.x264-DudeFilms.co.mkv`,18],
 
 	["Bhuj The Pride of India","https://pagalfilm.rest/load/Bollywood New Films/Bhuj The Pride of India 2021 Full Movie/Bhuj The Pride of India Hindi 2021 Hdrip.mkv",1],
 
@@ -48,26 +44,22 @@ Bollywood:[
 ],
 /*
 South_Indian:[
-	["Koi Jaane Na","https://pagalfilm.bar/load/Bollywood New Films/Koi Jaane Na Hindi 2021 Full Movie/Koi Jaane Na Hindi 2021 Hdrip.mkv",1],
+	["Koi Jaane Na","https://pagalfilm.rest/load/Bollywood New Films/Koi Jaane Na Hindi 2021 Full Movie/Koi Jaane Na Hindi 2021 Hdrip.mkv",1],
 
-	["Madam Chief Minister","https://pagalfilm.bar/load/Bollywood New Films/Madam Chief Minister 2021 Full Movie/Madam Chief Minister Hindi 2021 720 Hdrip.mkv",1],
+	["Madam Chief Minister","https://pagalfilm.rest/load/Bollywood New Films/Madam Chief Minister 2021 Full Movie/Madam Chief Minister Hindi 2021 720 Hdrip.mkv",1],
 
-	["Sardar Ka Grandson","https://pagalfilm.bar/load/Bollywood New Films/Sardar Ka Grandson Full Movie/Sardar Ka Grandson 2021 720p Hdrip.mkv",1],
+	["Sardar Ka Grandson","https://pagalfilm.rest/load/Bollywood New Films/Sardar Ka Grandson Full Movie/Sardar Ka Grandson 2021 720p Hdrip.mkv",1],
 
-	["Radhe","https://pagalfilm.bar/load/Bollywood New Films/Radhe 2021 Hindi Full Movie/Radhe 2021 Hindi 720 Hdrip.mkv",1],
+	["Radhe","https://pagalfilm.rest/load/Bollywood New Films/Radhe 2021 Hindi Full Movie/Radhe 2021 Hindi 720 Hdrip.mkv",1],
 ],*/
 English_Movies_hindi_dubbed:[
 /*["name","link",1],*/
 
-["Run Hide Fight","https://dl.gdc02.workers.dev/0:/hollywood/Run.Hide.Fight.2021/Run.Hide.Fight.2021.Hindi-English.480p.WEB-DL.ESub-DudeFilms.in.mkv",27,"https://bit.ly/3A08hcn"],
+["Run Hide Fight",`${mainSite}/hollywood/Run.Hide.Fight.2021/Run.Hide.Fight.2021.Hindi-English.480p.WEB-DL.ESub-DudeFilms.in.mkv`,27,"https://bit.ly/3A08cn"],
 
-["Sounds Like Love","https://dl.gdc02.workers.dev/0:/hollywood/NetFlix%20Movies/Sounds.Like.Love.2021/Sounds.Like.Love.2021.Dual.Audio.Hindi-English.480p.WEB-DL.ESub-DudeFilms.in.mkv",26],
+["Sounds Like Love",`${mainSite}/hollywood/NetFlix%20Movies/Sounds.Like.Love2021/Sounds.Like.Love.2021.Dual.Audio.Hindi-English.480p.WEB-DL.ESub-DudeFilms.in.mkv`,26],
 
-["The Suicide Squad","https://dl.gdc02.workers.dev/0:/hollywood/The.Suicide.Squad.2021.NEW/The.Suicide.Squad.2021.Dual.Audio.Hindi-English.480p.WEB-DL.ESub-DudeFilms.in.mkv",25],
-
-["Jungle Cruise","https://dl.gdc02.workers.dev/0:/HollyWood/Jungle.Cruise.2021/Jungle.Cruise.2021.Hindi.(CAM).English.480p.WEB-DL.ESub-DudeFilms.in.mkv",24],
-
-["Free Guy","https://dl.gdc02.workers.dev/0:/HollyWood/Free.Guy.2021.HDCAM/Free.Guy.2021.Dual.Audio.Hindi.English.480p.HDCAM-DudeFilms.in.mkv",22],
+["Free Guy",`${mainSite}/HollyWood/Free.Guy.2021.HDCAM/Free.Guy.2021.Dual.Audio.Hindi.English.480p.HDCAM-DudeFilms.in.mkv`,22],
 
 	["Blue Miracle","https://pagalfilm.rest/load/Hindi Dubbed New Movies/Blue Miracle 2021 Hindi Dubbed Full Movie/Blue Miracle Hindi Dubbed Hdrip.mkv",12],
 
