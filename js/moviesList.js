@@ -55,6 +55,8 @@ South_Indian:[
 English_Movies_hindi_dubbed:[
 /*["name","link",1],*/
 
+["There’s Someone Inside Your House",`${mainSite}/HollyWood/NetFlix/There%E2%80%99s.Someone.Inside.Your.House.2021/There%E2%80%99s.Someone.Inside.Your.House.2021.Hindi.English.480p.WEB-DL.ESub-DudeFilms.in.mkv`,29],
+
 ["Run Hide Fight",`${mainSite}/hollywood/Run.Hide.Fight.2021/Run.Hide.Fight.2021.Hindi-English.480p.WEB-DL.ESub-DudeFilms.in.mkv`,27,"https://bit.ly/3A08cn"],
 
 ["Sounds Like Love",`${mainSite}/hollywood/NetFlix%20Movies/Sounds.Like.Love2021/Sounds.Like.Love.2021.Dual.Audio.Hindi-English.480p.WEB-DL.ESub-DudeFilms.in.mkv`,26],
@@ -205,6 +207,7 @@ function addWebSeries(){
 	let seriesList=[
 		// ["Midnight Mass","https://bit.ly/3EUO9Mk"],
 		["Kota Factory season 2","https://bit.ly/3ALcKAB"],
+		["House of Secrets","https://bit.ly/3v3bYNt"]
 		/*["Web Series 3","imglink"],*/
 	]
 
