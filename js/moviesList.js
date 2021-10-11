@@ -110,10 +110,10 @@ function getsubCatMoviesList(subCat){
 				</div>
 			</div>
 			<div class="btns">
-				<button title="copy link" class="flex getLink">${elems.share}</button>
-				<button class="flex" ${onclickAttrxx} title="play">${elems.play}</button>
+				<button title="copy link" class="flex getLink">${elems.share}<span style="display: none;">${val[0]}</span></button>
+				<button class="flex" ${onclickAttrxx} title="play">${elems.play}<span style="display: none;">${val[0]}</span></button>
 				<button onclick="checkDownTrue(this.children[0]);">
-					<a href="${val[1]}" download='${val[0]}' name="${val[0]}" onclick="sendDownInfo('${val[0]}')"></a>
+					<a href="${val[1]}" download='${val[0]}' onclick="sendDownInfo('${val[0]}')"><span style="display: none;">${val[0]}</span></a>
 					${elems.download}
 				</button>
 			</div>
