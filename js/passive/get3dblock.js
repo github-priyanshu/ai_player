@@ -4,6 +4,8 @@ mainSite="https://dl.gdc03.workers.dev/0:";
 ;
 
 var Newly_Added=[
+["Sanak (2021)",`${mainSite}/BollyWood/hotstar/Sanak.2021/Sanak.2021.Hindi.720p.WEB-DL.ESub-DudeFilms.in.mkv`,30,"https://bit.ly/3j5kDKu"],
+
 ["There’s Someone Inside Your House",`${mainSite}/HollyWood/NetFlix/There%E2%80%99s.Someone.Inside.Your.House.2021/There%E2%80%99s.Someone.Inside.Your.House.2021.Hindi.English.480p.WEB-DL.ESub-DudeFilms.in.mkv`,29,"https://bit.ly/3ajRJl6"],
 
 ["Shiddat",`${mainSite}/BollyWood/hotstar/Shiddat.2021/Shiddat.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv`,28,"https://bit.ly/3F6ST1H"],
@@ -11,10 +13,6 @@ var Newly_Added=[
 ["Run Hide Fight",`${mainSite}/hollywood/Run.Hide.Fight.2021/Run.Hide.Fight.2021.Hindi-English.480p.WEB-DL.ESub-DudeFilms.in.mkv`,27,"https://bit.ly/3A08hcn"],
 
 ["Bhuj The Pride of India","https://pagalfilm.rest/load/Bollywood New Films/Bhuj The Pride of India 2021 Full Movie/Bhuj The Pride of India Hindi 2021 Hdrip.mkv",1,"./img/na/na (2).png"],
-
-["Shershaah","https://pagalfilm.rest/load/Bollywood New Films/Shershaah 2021 Full Movie/Shershaah 2021 Hindi Hdrip.mkv",2,"./img/na/na (3).png"],
-
-["Bell Bottom",`${mainSite}/BollyWood/Amazon.Prime/Bell.Bottom.2021/Bell.Bottom.2021.480p.Hindi.WEB-DL.ESub.x264-DudeFilms.co.mkv`,20,"./img/na/na (4).png"],
 ];
 
 
@@ -50,7 +48,7 @@ function block(parent,cls,width,height,grith,){
     width: 100%;
     box-shadow: inset ${width}px ${height}px 0 #00000014;
     height: 100%;
-    ">${getWsBnr(0)}</div>
+    ">${getBoxBnr(0)}</div>
 
     <div id="${cls}-botton" style="transform-origin: center; transform: translateZ(0) rotateY(180deg);
     left:0;
@@ -58,7 +56,7 @@ function block(parent,cls,width,height,grith,){
     width: 100%;
     height: 100%;
     box-shadow: inset ${width}px ${height}px 0 #0000003d;
-    ">${getBoxBnr(0)}</div>
+    ">${getBoxBnr(1)}</div>
 
     <div id="${cls}-left" style="transform-origin: left; transform: rotateY(-90deg);
     left: 0;
@@ -66,7 +64,7 @@ function block(parent,cls,width,height,grith,){
     height: 100%;
     box-shadow: inset ${width}px ${height}px 0 #0000002b;
     width: ${grith}px;
-    ">${getBoxBnr(3)}</div>
+    ">${getBoxBnr(2)}</div>
 
     <div id="${cls}-right" style="transform-origin: right; transform: rotateY(90deg);
     right: 0;
@@ -74,7 +72,7 @@ function block(parent,cls,width,height,grith,){
     box-shadow: inset ${width}px ${height}px 0 #0000002b;
     height: 100%;
     width: ${grith}px;
-    ">${getBoxBnr(2)}</div>
+    ">${getBoxBnr(3)}</div>
 
     <div id="${cls}-up" style="transform-origin: top; transform: rotateX(90deg);
     left: 0;
