@@ -6,7 +6,7 @@ let movies={
 Newly_Added,
 Bollywood:[
 /*["name","link",1],*/
-["Sanak (2021)",`${mainSite}/BollyWood/hotstar/Sanak.2021/Sanak.2021.Hindi.720p.WEB-DL.ESub-DudeFilms.in.mkv`,30,"https://bit.ly/3j5kDKu"],
+["Sanak (2021)",`${mainSite}/BollyWood/hotstar/Sanak.2021/Sanak.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv`,30,"https://bit.ly/3j5kDKu"],
 
 ["Shiddat",`${mainSite}/BollyWood/hotstar/Shiddat.2021/Shiddat.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv`,28],
 
