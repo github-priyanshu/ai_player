@@ -1,4 +1,4 @@
-let shareName=["Team of fun","Online Tutorials"],
+let shareName=["Team of fun"],
 aiSharedBy;
 
 setInterval(()=>{

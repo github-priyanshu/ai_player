@@ -6,7 +6,11 @@ let movies={
 Newly_Added,
 Bollywood:[
 /*["name","link",1],*/
-["Sanak (2021)",`${mainSite}/BollyWood/hotstar/Sanak.2021/Sanak.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv`,30,"https://bit.ly/3j5kDKu"],
+["Sardar Udham","https://dl.gdc03.workers.dev/0:/BollyWood/Amazon.Prime/Sardar.Udham.2021/Sardar.Udham.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv",32],
+
+["Rashmi Rocket",`${mainSite}/BollyWood/Zee5/Rashmi.Rocket.2021/Rashmi.Rocket.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv`,31],
+
+["Sanak (2021)",`${mainSite}/BollyWood/hotstar/Sanak.2021/Sanak.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv`,30],
 
 ["Shiddat",`${mainSite}/BollyWood/hotstar/Shiddat.2021/Shiddat.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv`,28],
 
@@ -205,6 +209,8 @@ function sendDownInfo(data){
 function addWebSeries(){
 	let seriesList=[
 		// ["Midnight Mass","https://bit.ly/3EUO9Mk"],
+		["My Name","https://bit.ly/3BSziAc"],
+		["Tabbar SonyLiv","https://bit.ly/3FWSBdZ"],
 		["Kota Factory season 2","https://bit.ly/3ALcKAB"],
 		["House of Secrets","https://bit.ly/3v3bYNt"]
 		/*["Web Series 3","imglink"],*/
