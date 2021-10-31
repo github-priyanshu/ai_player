@@ -4,12 +4,15 @@ mainSite="https://dl.gdc03.workers.dev/0:";
 ;
 
 var Newly_Added=[
+["Hum Do Hamare Do",`${mainSite}/BollyWood/hotstar/Hum.Do.Hamare.Do.2021/Hum.Do.Hamare.Do.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv`,33,"https://bit.ly/31m0Alf"],
+
+["Army of Thieves",`${mainSite}/HollyWood/NetFlix/Army.of.Thieves.2021/Army.of.Thieves.2021.Dual.Audio.Hindi.English.480p.WEB-DL.ESub-DudeFilms.in.mkv`,34,"https://bit.ly/3CCN36A"],
 
 ["Rashmi Rocket",`${mainSite}/BollyWood/Zee5/Rashmi.Rocket.2021/Rashmi.Rocket.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv`,31,"https://bit.ly/30rkoD0"],
 
 ["Sanak (2021)",`${mainSite}/BollyWood/hotstar/Sanak.2021/Sanak.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv`,30,"https://bit.ly/3j5kDKu"],
 
-["Sardar Udham","https://dl.gdc03.workers.dev/0:/BollyWood/Amazon.Prime/Sardar.Udham.2021/Sardar.Udham.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv",32,"https://bit.ly/2Z47DxZ"],
+["Sardar Udham",`${mainSite}/BollyWood/Amazon.Prime/Sardar.Udham.2021/Sardar.Udham.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv`,32,"https://bit.ly/2Z47DxZ"],
 
 ["There’s Someone Inside Your House",`${mainSite}/HollyWood/NetFlix/There%E2%80%99s.Someone.Inside.Your.House.2021/There%E2%80%99s.Someone.Inside.Your.House.2021.Hindi.English.480p.WEB-DL.ESub-DudeFilms.in.mkv`,29,"https://bit.ly/3ajRJl6"],
 
@@ -22,6 +25,7 @@ var Newly_Added=[
 
 
 let webseries=[
+  // ["Army Of Thieves","webseries/index.html?ws='Army Of Thieves'","https://bit.ly/3CCN36A"],
   ["My Name","webseries/index.html?ws='My Name'","https://bit.ly/3BSziAc"],
   ["Tabbar SonyLiv","webseries/index.html?ws='Tabbar SonyLiv'","https://bit.ly/3FWSBdZ"],
   ["Kota Factory season 2","webseries/index.html?ws='Kota Factory season 2'","https://bit.ly/3ALcKAB"],
@@ -55,6 +59,15 @@ function block(parent,cls,width,height,grith,){
     width: 100%;
     box-shadow: inset ${width}px ${height}px 0 #00000014;
     height: 100%;
+    ">${getBoxBnr(0)}</div>
+
+
+    <div id="${cls}-left" style="transform-origin: left; transform: rotateY(-90deg);
+    left: 0;
+    top: 0;
+    height: 100%;
+    box-shadow: inset ${width}px ${height}px 0 #0000002b;
+    width: ${grith}px;
     ">${getWsBnr(0)}</div>
 
     <div id="${cls}-botton" style="transform-origin: center; transform: translateZ(0) rotateY(180deg);
@@ -65,21 +78,13 @@ function block(parent,cls,width,height,grith,){
     box-shadow: inset ${width}px ${height}px 0 #0000003d;
     ">${getWsBnr(1)}</div>
 
-    <div id="${cls}-left" style="transform-origin: left; transform: rotateY(-90deg);
-    left: 0;
-    top: 0;
-    height: 100%;
-    box-shadow: inset ${width}px ${height}px 0 #0000002b;
-    width: ${grith}px;
-    ">${getBoxBnr(1)}</div>
-
     <div id="${cls}-right" style="transform-origin: right; transform: rotateY(90deg);
     right: 0;
     top: 0;
     box-shadow: inset ${width}px ${height}px 0 #0000002b;
     height: 100%;
     width: ${grith}px;
-    ">${getBoxBnr(2)}</div>
+    ">${getBoxBnr(1)}</div>
 
     <div id="${cls}-up" style="transform-origin: top; transform: rotateX(90deg);
     left: 0;
