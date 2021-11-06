@@ -1,11 +1,14 @@
 var log=console.log;
 
 let movieListPan=op(".moviesList");
-/*give the next index 35*/
 let movies={
 Newly_Added,
 Bollywood:[
 /*["name","link",1],*/
+["Sooryavanshi",`${mainSite}/BollyWood/Sooryavanshi.2021.HQ.PreDVDRip/Sooryavanshi.2021.Hindi.480p.HQ.Pre.DVDRip-DudeFilms.in.mkv`,37,"https://bit.ly/3kacepE"],
+
+["Jai Bhim",`${mainSite}/South.Movies/Jai.Bhim.2021/Jai.Bhim.2021.480p.WEB-DL.Hindi-Tamil.DD5.1.ESub.x264-DudeFilms.in.mkv`,35,"https://bit.ly/3kcnHoK"],
+
 ["Hum Do Hamare Do",`${mainSite}/BollyWood/hotstar/Hum.Do.Hamare.Do.2021/Hum.Do.Hamare.Do.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv`,33],
 
 ["Sardar Udham","https://dl.gdc03.workers.dev/0:/BollyWood/Amazon.Prime/Sardar.Udham.2021/Sardar.Udham.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv",32],
@@ -59,6 +62,8 @@ South_Indian:[
 ],*/
 English_Movies_hindi_dubbed:[
 /*["name","link",1],*/
+["Marvel Eternals",`${mainSite}/HollyWood/Eternals.2021.HDcam/Eternals.2021.Hindi.English.480p.CAMRip-DudeFilms.in%20-.mkv`,36],
+
 ["Army of Thieves",`${mainSite}/HollyWood/NetFlix/Army.of.Thieves.2021/Army.of.Thieves.2021.Dual.Audio.Hindi.English.480p.WEB-DL.ESub-DudeFilms.in.mkv`,34],
 
 
@@ -212,7 +217,8 @@ function sendDownInfo(data){
 
 function addWebSeries(){
 	let seriesList=[
-		// ["Midnight Mass","https://bit.ly/3EUO9Mk"],
+	  ["Akkad Bakkad Rafu Chakkar","https://bit.ly/3nZX07X"],
+		["Call My Agent","https://bit.ly/3o75oTf"],
 		["My Name","https://bit.ly/3BSziAc"],
 		["Tabbar SonyLiv","https://bit.ly/3FWSBdZ"],
 		["Kota Factory season 2","https://bit.ly/3ALcKAB"],

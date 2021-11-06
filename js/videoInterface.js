@@ -218,6 +218,7 @@ function vidOnStart(){
 }
 
 function stopPlaying(){/*to stop the video forcefully*/
+	log('I sttoped')
 	vidSource={},
 	timeChInterval,
 	vidDuration,

@@ -38,7 +38,6 @@ if(mid){
 	dialog.show();
 	dialog.success=()=>{
 		vidSource=preVid;
-		log(vidSource)
 		
 		load.show();
 		linkPaste('remove');
