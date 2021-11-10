@@ -16,8 +16,8 @@
 	content: "";
 	position: absolute;
 	animation: l 2s ease infinite;
-	height: 5px;
-	background: linear-gradient(90deg,transparent,#0099ff,transparent);
+	height: 3px;
+	background: #0099ff;
 	width: 100%;
 }
 @keyframes l{

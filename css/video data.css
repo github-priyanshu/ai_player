@@ -15,7 +15,7 @@
 .vidPan .dataBox{
 	width: 100%;
 	border-bottom: 1px solid #aaa;
-	font-family: Merienda;
+	font-family: Encode Sans SC;
 }
 .vidPan .dataBox .currentVideo{
 	width: 100%;
@@ -171,7 +171,7 @@
 
 .btnPan{
 	flex-flow: column;
-	font-family: Merienda;
+	font-family: Encode Sans SC;
 	margin: 30px 0;
 }
 .btnPan p{

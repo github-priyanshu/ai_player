@@ -37,13 +37,17 @@ span{
 }
 .c{flex-flow: column;}
 
+html{
+	--allWidth: calc(100vw - 10px);
+	width: var(--allWidth);
+}
 .body{
-	width: 100vw;
+	width: 100%;
 	min-height: 100vh;
 	background: radial-gradient(circle at 0% 100%,#f1f1ff 30%, #00a1ff22 30%, #fff 50%, #f1f1ff 50%,#f1f1ff 60%, #fff 60%, #b400ff24 90%, #f1f1ff 90%);
 	background-attachment: fixed;
 	color: #333;
-	font-family: Merienda,sans-serif;
+	font-family: Encode Sans SC,sans-serif;
 	align-items: flex-start;
 }
 .body.dark{
@@ -51,7 +55,7 @@ span{
 	color: #fff;
 }
 .vidPan{
-	width: 100vw;
+	width: var(--allWidth);
 }
 .videoBox{
 	background: #111;
@@ -285,8 +289,8 @@ span{
 }
 
 .videoBox video{
-	width: 100vw;
-  height: calc(100vw*9/16);
+	width: var(--allWidth);
+  height: calc(var(--allWidth)*9/16);
 	max-height: 100vh;
 	pointer-events: none;
 }
@@ -353,4 +357,16 @@ span{
 
 .videoBox #qlBox .option{
 	padding: 5px 0;
+}
+::-webkit-scrollbar{
+	height: 0;
+	width: 10px;
+}
+
+::-webkit-scrollbar-track{
+	background: #fff;
+}
+::-webkit-scrollbar-thumb{
+	background: #999;
+	border-radius: 2px;
 }

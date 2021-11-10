@@ -1,0 +1,28 @@
+.overlay{
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	pointer-events: none;
+	background: none;
+	top: 0;
+	left: 0;
+}
+.overlay > *{
+	pointer-events: auto;
+}
+#helpIco{
+	bottom: 20px;
+	right: 20px;
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: #005aff;
+	box-shadow: 0 0 50px 10px #0072ff;
+	cursor: pointer;
+	filter: hue-rotate(756deg);
+}
+
+#helpIco svg{
+	fill: #fff;
+}
