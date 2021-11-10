@@ -12,8 +12,11 @@
 }
 .banner .bnrBtPan p,
 .banner .intro{
-	color: #555;
+	color: #fff;
 	margin-bottom: 10px;
+}
+a{
+  color: #fff;
 }
 
 .banner .contact{
@@ -27,24 +30,23 @@
   text-shadow: 1px 4px 2px #ff980755;
 }
 .banner .contact a{
-  width: 30px;
-  height: 30px;
-  border: 1px solid #777;
-  background: #0002;
-  border-radius: 50%;
-  margin-right: 5px;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 2px;
+  margin: 0 10px;
 }
 .banner .contact .svg {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 }
 .banner .auth{
   justify-content: flex-end;
 }
 .banner button{
   background: none;
-  border: 1.5px solid;
-  color: #55a9ff;
+  color: #fff;
+  background: #ff2767;
   border-radius: 99px;
 }
 .banner .myPro .myPic{
@@ -57,7 +59,6 @@
   object-fit: cover;
   border-radius: 50%;
   filter: brightness(1.2);
-  object-position: 0 -10px;
 }
 
 .bnrbtn2 {
@@ -69,5 +70,5 @@
 .bnrbtn2 button svg{
   margin-right: 10px;
   height: 18px;
-  fill: #0099ff;
+  fill: #fff;
 }

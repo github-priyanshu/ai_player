@@ -60,6 +60,15 @@
 	border-radius: 2px;
 }
 
+@media screen and (max-width: 400px){
+	.videoBox .controls .top .center .d {
+		transform: scale(.7);
+	}
+	.videoBox .controls .bottom {
+	  padding: 10px 0;
+	}
+}
+
 @media screen and (max-width: 900px){
 	.banner .top .left{
 		display: none;

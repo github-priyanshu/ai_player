@@ -44,7 +44,9 @@ html{
 .body{
 	width: 100%;
 	min-height: 100vh;
-	background: radial-gradient(circle at 0% 100%,#f1f1ff 30%, #00a1ff22 30%, #fff 50%, #f1f1ff 50%,#f1f1ff 60%, #fff 60%, #b400ff24 90%, #f1f1ff 90%);
+	background: url("../img/bg/bgh.jpg");
+	background: url("https://images.unsplash.com/photo-1524169220946-12efd782aab4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80");
+	background-size: cover;
 	background-attachment: fixed;
 	color: #333;
 	font-family: Encode Sans SC,sans-serif;
@@ -325,17 +327,6 @@ html{
 .speedPan .speedIco{
 	margin: 0 6px;
 }
-
-
-@media screen and (max-width: 400px){
-	.videoBox .controls .top .center .d {
-		transform: scale(.7);
-	}
-	.videoBox .controls .bottom {
-	  padding: 10px 0;
-	}
-}
-
 
 .videoBox #qlBox{
   display: none;
