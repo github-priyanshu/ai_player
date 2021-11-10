@@ -1,87 +1,23 @@
 var log=console.log;
 
-let movieListPan=op(".moviesList");
+let movieListPan=op(".moviesList"),
+maxNew=window.innerWidth / 170 * 2 + 2;
+
 let movies={
-Newly_Added,
-Bollywood:[
-/*["name","link",1],*/
-["Sooryavanshi",`${mainSite}/BollyWood/Sooryavanshi.2021.HQ.PreDVDRip/Sooryavanshi.2021.Hindi.480p.HQ.Pre.DVDRip-DudeFilms.in.mkv`,37,"https://bit.ly/3kacepE"],
-
-["Jai Bhim",`${mainSite}/South.Movies/Jai.Bhim.2021/Jai.Bhim.2021.480p.WEB-DL.Hindi-Tamil.DD5.1.ESub.x264-DudeFilms.in.mkv`,35,"https://bit.ly/3kcnHoK"],
-
-["Hum Do Hamare Do",`${mainSite}/BollyWood/hotstar/Hum.Do.Hamare.Do.2021/Hum.Do.Hamare.Do.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv`,33],
-
-["Sardar Udham","https://dl.gdc03.workers.dev/0:/BollyWood/Amazon.Prime/Sardar.Udham.2021/Sardar.Udham.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv",32],
-
-["Rashmi Rocket",`${mainSite}/BollyWood/Zee5/Rashmi.Rocket.2021/Rashmi.Rocket.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv`,31],
-
-["Sanak (2021)",`${mainSite}/BollyWood/hotstar/Sanak.2021/Sanak.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv`,30],
-
-["Shiddat",`${mainSite}/BollyWood/hotstar/Shiddat.2021/Shiddat.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv`,28],
-
-["PM Narendra Modi",`${mainSite}/BollyWood/MX.Player/PM.Narendra.Modi.2021/PM.Narendra.Modi.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv`,23],
-
-["Ankahi Kahaniya",`${mainSite}/BollyWood/NetFlix/Ankahi.Kahaniya.2021/Ankahi.Kahaniya.2021.WebRip.480p.Hindi.DD.5.1.x264.ESub-DudeFilms.in.mkv`,21],
-
-["Kya Meri Sonam Gupta Bewafa Hai",`${mainSite}/BollyWood/Zee5/Kya.Meri.Sonam.Gupta.Bewafa.Hai2021/Kya.Meri.Sonam.Gupta.Bewafa.Hai.2021.Hindi.480p.WEB-DL.x264-DudeFilms.co.mkv`,19],
-
-["Bhoot Police",`${mainSite}/BollyWood/Hotstar/Bhoot.Police.2021/Bhoot.Police.2021.Hindi.480p.WEB-DL.DD5.1.ESub.x264-DudeFilms.co.mkv`,18],
-
-	["Bhuj The Pride of India","https://pagalfilm.rest/load/Bollywood New Films/Bhuj The Pride of India 2021 Full Movie/Bhuj The Pride of India Hindi 2021 Hdrip.mkv",1],
-
-	["Shershaah","https://pagalfilm.rest/load/Bollywood New Films/Shershaah 2021 Full Movie/Shershaah 2021 Hindi Hdrip.mkv",2],
-
-	["Mimi","https://pagalfilm.rest/load/Bollywood New Films/Mimi 2021 Full Movie/Mimi 2021 HDRip.mkv",3],
-
-	["Hungama 2","https://pagalfilm.rest/load/Bollywood New Films/Hungama 2 2021 Full Movie/Hungama 2 2021 Hindi Hdrip.mkv",4],
-
-	["14 Phere","https://pagalfilm.rest/load/Bollywood New Films/14 Phere 2021 Full Movie/14 Phere 2021 Hindi Hdrip.mkv",5],
-
-	["Sherni","https://pagalfilm.rest/load/Bollywood New Films/Sherni 2021 Hindi Full Movie/Sherni 2021 Hindi Hdrip.mkv",6],
-
-	["Pagglait","https://pagalfilm.rest/load/Bollywood New Films/Pagglait Hindi 2021 Full Movie/Pagglait Hindi 2021 Hdrip.mkv",7],
-
-	["Koi Jaane Na","https://pagalfilm.rest/load/Bollywood New Films/Koi Jaane Na Hindi 2021 Full Movie/Koi Jaane Na Hindi 2021 Hdrip.mkv",8],
-
-	["Madam Chief Minister","https://pagalfilm.rest/load/Bollywood New Films/Madam Chief Minister 2021 Full Movie/Madam Chief Minister Hindi 2021 720 Hdrip.mkv",9],
-
-	["Sardar Ka Grandson","https://pagalfilm.rest/load/Bollywood New Films/Sardar Ka Grandson Full Movie/Sardar Ka Grandson 2021 720p Hdrip.mkv",10],
-
-	["Radhe","https://pagalfilm.rest/load/Bollywood New Films/Radhe 2021 Hindi Full Movie/Radhe 2021 Hindi 720 Hdrip.mkv",11],
-
-],
-/*
-South_Indian:[
-	["Koi Jaane Na","https://pagalfilm.rest/load/Bollywood New Films/Koi Jaane Na Hindi 2021 Full Movie/Koi Jaane Na Hindi 2021 Hdrip.mkv",1],
-
-	["Madam Chief Minister","https://pagalfilm.rest/load/Bollywood New Films/Madam Chief Minister 2021 Full Movie/Madam Chief Minister Hindi 2021 720 Hdrip.mkv",1],
-
-	["Sardar Ka Grandson","https://pagalfilm.rest/load/Bollywood New Films/Sardar Ka Grandson Full Movie/Sardar Ka Grandson 2021 720p Hdrip.mkv",1],
-
-	["Radhe","https://pagalfilm.rest/load/Bollywood New Films/Radhe 2021 Hindi Full Movie/Radhe 2021 Hindi 720 Hdrip.mkv",1],
-],*/
-English_Movies_hindi_dubbed:[
-/*["name","link",1],*/
-["Marvel Eternals",`${mainSite}/HollyWood/Eternals.2021.HDcam/Eternals.2021.Hindi.English.480p.CAMRip-DudeFilms.in%20-.mkv`,36],
-
-["Army of Thieves",`${mainSite}/HollyWood/NetFlix/Army.of.Thieves.2021/Army.of.Thieves.2021.Dual.Audio.Hindi.English.480p.WEB-DL.ESub-DudeFilms.in.mkv`,34],
-
-
-["There’s Someone Inside Your House",`${mainSite}/HollyWood/NetFlix/There%E2%80%99s.Someone.Inside.Your.House.2021/There%E2%80%99s.Someone.Inside.Your.House.2021.Hindi.English.480p.WEB-DL.ESub-DudeFilms.in.mkv`,29],
-
-["Run Hide Fight",`${mainSite}/hollywood/Run.Hide.Fight.2021/Run.Hide.Fight.2021.Hindi-English.480p.WEB-DL.ESub-DudeFilms.in.mkv`,27,"https://bit.ly/3A08cn"],
-
-["Sounds Like Love",`${mainSite}/hollywood/NetFlix%20Movies/Sounds.Like.Love2021/Sounds.Like.Love.2021.Dual.Audio.Hindi-English.480p.WEB-DL.ESub-DudeFilms.in.mkv`,26],
-
-["Free Guy",`${mainSite}/HollyWood/Free.Guy.2021.HDCAM/Free.Guy.2021.Dual.Audio.Hindi.English.480p.HDCAM-DudeFilms.in.mkv`,22],
-
-	["Blue Miracle","https://pagalfilm.rest/load/Hindi Dubbed New Movies/Blue Miracle 2021 Hindi Dubbed Full Movie/Blue Miracle Hindi Dubbed Hdrip.mkv",12],
-
-	["Red","https://pagalfilm.rest/load/Hindi Dubbed New Movies/Red 2021 Hindi Dubbed Full Movie/Red 2021 Hindi Hdrip.mkv",14],
-
-	["The Wife","https://pagalfilm.rest/load/Hindi Dubbed New Movies/The Wife 2021 Hindi Dubbed Full Movie/The Wife 2021 Hindi Dubbed Hdrip.mkv",15],
-],
+newly_added:[],
+Bollywood:[],
+South_Indian:[],
+English_Movies_hindi_dubbed:[],
 };
+
+for(let i=0; i<allMovies.length; i++){
+	let key=["Bollywood","South_Indian","English_Movies_hindi_dubbed"],
+	cat=allMovies[i][4];
+	movies[key[cat-1]].push(allMovies[i]);
+	if(i<=maxNew){
+		movies.newly_added.push(allMovies[i]);
+	}
+}
 
 let movieHTML=`<div class="realMovieHead center">Top <span col='#e73070'>New Movies & Web Series</span> here free.</div>
 	<div class="flex menuBtn">
@@ -93,14 +29,16 @@ let movieHTML=`<div class="realMovieHead center">Top <span col='#e73070'>New Mov
 
 var mnum=1;
 for(let val in movies){
-	let catName=val.replaceAll("_"," ");
-	movieHTML+=`<div class="movieSubCat" id="${val}" style="--i: ${mnum};">
-		<div class="subCatHead" ff="glory">${catName}</div>
-		<div class="subCatMovieList flex">
-			${getsubCatMoviesList(val)}
-		</div>
-	</div>`;
-	mnum++;
+	if(movies[val].length!=0){
+		let catName=val.replaceAll("_"," ");
+		movieHTML+=`<div class="movieSubCat" id="${val}" style="--i: ${mnum};">
+			<div class="subCatHead" ff="glory">${catName}</div>
+			<div class="subCatMovieList flex">
+				${getsubCatMoviesList(val)}
+			</div>
+		</div>`;
+		mnum++;
+	}
 }
 
 function getsubCatMoviesList(subCat){
@@ -216,16 +154,6 @@ function sendDownInfo(data){
 }
 
 function addWebSeries(){
-	let seriesList=[
-	  ["Akkad Bakkad Rafu Chakkar","https://bit.ly/3nZX07X"],
-		["Call My Agent","https://bit.ly/3o75oTf"],
-		["My Name","https://bit.ly/3BSziAc"],
-		["Tabbar SonyLiv","https://bit.ly/3FWSBdZ"],
-		["Kota Factory season 2","https://bit.ly/3ALcKAB"],
-		["House of Secrets","https://bit.ly/3v3bYNt"]
-		/*["Web Series 3","imglink"],*/
-	]
-
 	movieHTML+=`<div id="WebSeries" class="movieSubCat" style="--i: 0;">
 		<div class="subCatHead" ff="glory">Web Series</div>
 		<div class="subCatMovieList flex">
@@ -235,10 +163,10 @@ function addWebSeries(){
 
 	function getWebSeriesList(){
 		let htmlxx=``;
-		seriesList.map((val,num)=>{
+		webseries.map((val,num)=>{
 		htmlxx+=`
 			<div class="poster flex c" ff="glory" onclick="this.children[2].click()">
-			  <img class="w100p" src="${val[1]}" alt="${val[0]}">
+			  <img class="w100p" src="${val[2]}" alt="${val[0]}">
 			  <div class="data flex">
 			    <div class="name" fs=".9em">${val[0]}</div>
 			  </div>

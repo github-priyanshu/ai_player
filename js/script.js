@@ -10,7 +10,7 @@ prevBtn=op("#prevBtn"),
 controlBox=op(".controls"),
 speedIco=op('.speedIco'),
 changePan= op('.changePan'),
-// bottomPan=op(".controls > .bottom"),
+helpIco=op("#helpIco"),
 
 duration={
 	line: op(".linePan"),
@@ -100,6 +100,7 @@ downBtn2.innerHTML=elems.download+"App";
 speedBtn.innerHTML=elems.speed;
 quality.btn.innerHTML=elems.quality;
 quality.btn.style.display="none";
+helpIco.innerHTML=elems.help;
 
 
 speedIco.addEventListener('click',e=>{
