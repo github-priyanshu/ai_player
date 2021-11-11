@@ -45,7 +45,6 @@ html{
 	width: 100%;
 	min-height: 100vh;
 	background: url("../img/bg/bgh.jpg");
-	background: url("https://images.unsplash.com/photo-1524169220946-12efd782aab4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80");
 	background-size: cover;
 	background-attachment: fixed;
 	color: #333;
