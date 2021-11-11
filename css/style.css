@@ -38,7 +38,7 @@ span{
 .c{flex-flow: column;}
 
 html{
-	--allWidth: calc(100vw - 10px);
+	--allWidth: calc(100vw - 0px);
 	width: var(--allWidth);
 }
 .body{
@@ -350,13 +350,5 @@ html{
 }
 ::-webkit-scrollbar{
 	height: 0;
-	width: 10px;
-}
-
-::-webkit-scrollbar-track{
-	background: #fff;
-}
-::-webkit-scrollbar-thumb{
-	background: #999;
-	border-radius: 2px;
+	width: 0px;
 }
