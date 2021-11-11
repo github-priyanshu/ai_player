@@ -146,6 +146,7 @@ fullScrPan.addEventListener('click',(e)=>{/*full screen event*/
 		videoBox.requestFullscreen({navigationUI: "hide"});
 	}
 	fullScr=!fullScr
+	try{screen.orientation.lock("landscape-primary")};
 })
 
 checkEventToControl();
