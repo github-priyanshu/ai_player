@@ -49,7 +49,5 @@ if(sh){
 }
 aiSharedBy=localStorage.getItem("aiSharedBy");
 
-
-
 /*at last*/
 setTimeout(send,2000);

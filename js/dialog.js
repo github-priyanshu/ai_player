@@ -21,6 +21,7 @@ var dialog={
 		op(".dgBx .btp .yes span").classList.toggle("notWorking");
 	}
 }
+op(".dg").onclick=(e)=>{e.stopPropagation();}
 let elem,preVid=localStorage.getItem("aiCurVid");
 
 if(mid){
