@@ -3,7 +3,7 @@ bannerBox=op(".bannerBox"),
 mainSite="https://dl.gabc01.workers.dev/0:";
 
 /*
-give the next index 38
+give the next index 44
 
 bollywood=1
 southMovies=2
@@ -12,7 +12,8 @@ engMovieHindiDubbed=3
 */
 var allMovies=[
 /*['name',`${mainSite}lnk`,mid,'img',cat],*/
-/*['name',`${mainSite}lnk`,mid,'img',cat],*/
+['Home Sweet Home Alone',`${mainSite}/HollyWood/Disney+/Home.Sweet.Home.Alone.2021/Home.Sweet.Home.Alone.2021.Hindi.English.480p.WEB-DL.ESub-DudeFilms.in.mkv`,43,'https://bit.ly/3CeZfcy',3],
+['Red Notice',`${mainSite}/HollyWood/NetFlix/Red.Notice.2021/Red.Notice.2021.Hindi.English.480p.WEB-DL.ESub-DudeFilms.in.mkv`,42,'https://bit.ly/30tkFG2',3],
 ['Shang-Chi',`${mainSite}/HollyWood/Shang.Chi.2021/Shang.Chi.2021.480p.BluRay.Hindi.Clean-English.ESub.x264-DudeFilms.in.mkv`,41,'https://bit.ly/3c26NVy',3],
 ['Gully Rowdy',`${mainSite}/South.Movies/Gully.Rowdy.2021/Gully.Rowdy.2021.Hindi-Telugu.480p.HDRip.ESub-DudeFilms.in.mkv`,40,'https://bit.ly/3kt6bwC',2],
 ['No Time To Die',`${mainSite}/HollyWood/No.Time.To.Die.2021/No.Time.To.Die.2021.Hindi.(CAM).English.480p.HDRip-DudeFilms.in.mkv`,39,'https://bit.ly/3qsxYAZ',3],
