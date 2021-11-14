@@ -122,7 +122,7 @@ var vidSource={};
 if(ws){
 	vidSource={
 		name:mname,
-		src:mlnk.replace("__wsdomain",mainSite);
+		src:mlnk.replace("__wsdomain",mainSite)
 	}
 	log(vidSource);
 
