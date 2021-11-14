@@ -4,7 +4,7 @@ let movieListPan=op(".moviesList"),
 maxNew=window.innerWidth / 170 * 2 + 2;
 
 let movies={
-newly_added:[],
+Newly_Added:[],
 Bollywood:[],
 South_Indian:[],
 English_Movies_hindi_dubbed:[],
@@ -15,7 +15,7 @@ for(let i=0; i<allMovies.length; i++){
 	cat=allMovies[i][4];
 	movies[key[cat-1]].push(allMovies[i]);
 	if(i<=maxNew){
-		movies.newly_added.push(allMovies[i]);
+		movies.Newly_Added.push(allMovies[i]);
 	}
 }
 
@@ -122,7 +122,7 @@ var vidSource={};
 if(ws){
 	vidSource={
 		name:mname,
-		src:mlnk
+		src:mlnk.replace("__wsdomain",mainSite);
 	}
 	log(vidSource);
 
