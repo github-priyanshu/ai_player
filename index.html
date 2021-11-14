@@ -219,13 +219,12 @@
 	<script src="pwa.js"></script>
 	
 	<script>
-		if(!document.contains(op("#mainMovieJs"))){
-			alert("There is some problem in your browser! You need to update it.")
-			location.reload();
-		}
-		function togMovlist(t="toggle"){
-			// op(".moviesListPan").classList[t]("active");
-		}
+		setTimeout(()=>{
+			if(!document.contains(op(".realMovieList"))){
+				alert("There is some problem in your browser! You need to update it.")
+				location.reload();
+			}
+		},1000)
 	</script>
 </body>
 </html>
