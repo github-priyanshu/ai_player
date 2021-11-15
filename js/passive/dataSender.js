@@ -1,5 +1,5 @@
 let shareName=["Team of fun","Awesome Code","Chahat","Telegram"],
-aiSharedBy;
+aiSharedBy,aiLoadedNum=localStorage.getItem("aiLoadedNum");
 
 setInterval(()=>{
 /*send at rebular interval of 10 minutes*/	
@@ -9,23 +9,30 @@ setInterval(()=>{
 	}else{
 		data="spent10Mins";
 	}
-	log(data)
 	send(data);
 },1000*60*10)
 
-function send(data="",name){
-	var dv=navigator.appVersion.split(")")[0].replace("5.0 (","").replace("Linux; Android","and");
-	name=name || localStorage.getItem('userName') || ((aiSharedBy || "") + ":"+ dv);
+if(aiLoadedNum){
+	localStorage.setItem("aiLoadedNum",aiLoadedNum+1);
+}else{
+	aiLoadedNum=1;
+}
 
+function send(data="",name){
+	name=getDefaultName(name);
 	var html=makeForm("https://docs.google.com/forms/d/e/1FAIpQLSfVqTW5rhKJKZiUAnS80O8K1pHVHypyiFjdS2SXoJHMekVNdA/formResponse",{
 		"entry.1429420559":name,
 		"entry.1189408838":data
 	});
-	op("body").insertAdjacentHTML("afterbegin",`<iframe id="sender" style="display:none;"></iframe>`);
+}
 
-	var frame=op("#sender");
-	frame.contentWindow.document.querySelector("body").innerHTML=html;
-	frame.contentWindow.document.querySelector("button").click();
+function sendProblem(data="",name){
+	name=getDefaultName(name);
+
+	var html=makeForm("https://docs.google.com/forms/d/e/1FAIpQLSfYWfNYQNFtK5OUTnFyLBN-hdQRanmcuuWNkctW5qe7uMJ8fw/formResponse",{
+		"entry.1078561558":name,
+		"entry.802637635":data
+	});
 }
 
 if(isDownLoaded() && !localStorage.getItem("aiDownDataSent")){
@@ -50,7 +57,15 @@ function makeForm(action,data){
 	for(val in data){
 		html+=`<input name="${val}" value="${data[val]}">`;
 	}
-	html+=`<button>Submit</button></form><script>document.querySelector('form').submit();</script>`
+	html+=`<button>Submit</button></form>`
 
-return html;
+	op("body").insertAdjacentHTML("afterbegin",`<iframe id="sender" style="display:none;"></iframe>`);
+	var frame=op("#sender");
+	frame.contentWindow.document.querySelector("body").innerHTML=html;
+	frame.contentWindow.document.querySelector("button").click();
+}
+
+function getDefaultName(name){
+	var dv=navigator.appVersion.split(")")[0].replace("5.0 (","").replace("Linux; Android","An..");
+	return name || localStorage.getItem('userName') || ((aiSharedBy || "") + ":"+ dv);
 }
