@@ -22,7 +22,10 @@ function requestMovies(){
 	dialog.buttons("Cancel","Send");
 	dialog.success=()=>{
 		let mv = op("#dialogForm input[name='Name of movie']").value;
-		
+		sendProblem(mv);
+		dialog.inside(`<div fs="1.3em" col="#e73070">/...ThankYou :)</div><span col="#333" fs=".9em">For your request. It will be added soon. <b>Enjoy Now.</b></span>`);
+		dialog.buttons("Close","Okay");
+		dialog.show();
 	}
 }
 

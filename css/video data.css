@@ -38,6 +38,7 @@
 	justify-content: space-between;
 }
 
+
 .curData .left{
 	font-size: .8em;
 	margin-top: 4px;
@@ -179,8 +180,8 @@
 	letter-spacing: 2px;
 	margin-bottom: 20px;
 }
-.btnPan .buttons{
-	/*flex-flow: row wrap;*/
+.btnPan .buttons > div{
+	flex-flow: row wrap;
 }
 .btnPan button::before,
 .btnPan button{

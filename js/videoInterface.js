@@ -25,7 +25,6 @@ videoStoringInterval;
 /*get player start*/
 
 video.onerror=(e)=>{
-	log(videoBox.classList.contains("active"))
 	if(videoBox.classList.contains("active")){
 		let errCode=video.error.code-1;
 		let msgAry=["Loading was interrupted. Try again.","This video is not supported in this Browser.","Check your network connectivity","Video or audio not found!"];
@@ -34,6 +33,7 @@ video.onerror=(e)=>{
 		dialog.buttons("Close","Ok")
 		dialog.success=()=>{null};
 		dialog.show();
+		sendProblem("Try changin domain");
 	}
 }
 
