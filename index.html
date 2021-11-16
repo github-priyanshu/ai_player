@@ -32,7 +32,6 @@
 </style>
 <body class="body">
 
-
 	<div class="banner">
 		<div class="top flex">
 			<div class="left">
@@ -201,7 +200,7 @@
 		</div>
 	</div>
 
-	<div class="overlay" style="display: none;">
+	<div class="overlay"  style="display: none;">
 		<div id="helpIco" class="flex" onclick="help()"></div>
 	</div>
 
@@ -214,19 +213,17 @@
 	<script src="js/moviesList.js"></script>
 	<script src="js/dialog.js"></script>
 	<script src="js/passive/addUrlAnim.js"></script>
-	<script src="js/passive/dataSender.js"></script>
 	<script src="js/help.js"></script>
-
-
+	<script src="js/passive/dataSender.js"></script>
+	<script src="js/ads/addAds.js"></script>
 
 	<!-- pw -->
-	<script src="pwa.js"></script>
+	<!-- <script src="pwa.js"></script> -->
 	
 	<script>
 		setTimeout(()=>{
 			if(!document.contains(op(".realMovieList"))){
 				alert("There is some problem in your browser! You need to update it.")
-				location.reload();
 			}
 		},1000)
 	</script>
