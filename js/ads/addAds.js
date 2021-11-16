@@ -12,14 +12,15 @@ for(let a=0; a<mpans.length -1; a++){
 function getPan(cat){
 	var html=`<div class="movieSubCat adPan"><div class="subCatMovieList flex">`;
 	for(let i=1; i<=2; i++){
-		html+=getProduct(adsList[i*cat - 1]);
+		let rand=Math.floor(Math.random()*adsList.length);
+		html+=getProduct(adsList.splice(rand,1));
 	}
 	html+="</div></div>";
 	return html;
 }
 
 function getProduct(lnk){
-	return lnk? `<iframe style="width:120px;height:200px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="${lnk}"></iframe>`: "";
+	return lnk? `<iframe style="width:120px;height:200px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="${lnk[0]}"></iframe>`: "";
 }
 
 function setAdList(){
