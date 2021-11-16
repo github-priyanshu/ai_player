@@ -20,7 +20,7 @@ for(let i=0; i<allMovies.length; i++){
 }
 
 let movieHTML=`<div class="realMovieHead center">Top <span col='#e73070'>New Movies & Web Series</span> here free.</div>
-	<div class="flex menuBtn">
+	<div class="flex menuBtn frw">
 		<a href="#Bollywood"><button class="flex">Bollywood</button></a>
 		<a href="#English_Movies_hindi_dubbed"><button class="flex">English Movies</button></a>
 		<a href="#WebSeries"><button class="flex">Web Series</button></a>

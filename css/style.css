@@ -12,6 +12,9 @@ button a{
 .tran.active{
 	transform: scale(1);
 }
+.frw{
+	flex-flow: row wrap;
+}
 
 *{
 	margin: 0;padding: 0;

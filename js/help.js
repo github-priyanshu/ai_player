@@ -17,7 +17,7 @@ function help(){
 }
 
 function requestMovies(){
-	makeDialogForm("Add movies.",["Name of movie"]);
+	makeDialogForm("/...Add movies.",["Name of movie"]);
 	dialog.show();
 	dialog.buttons("Cancel","Send");
 	dialog.success=()=>{

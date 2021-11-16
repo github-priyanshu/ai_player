@@ -1,0 +1,12 @@
+.moviesListPan .realMovieList .movieSubCat.adPan{
+	border: none;
+	border-right: 5px solid #00b4c0;
+	/*height: 225px;*/
+	flex-flow: column wrap;
+	padding: 10px 0;
+}
+.adPan > iframe{
+	margin: 0 20px;
+	border-radius: 5px;
+	box-shadow: 0 5px 10px #0003;
+}

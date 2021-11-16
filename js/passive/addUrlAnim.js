@@ -3,7 +3,6 @@ document.body.insertAdjacentHTML("beforeend",`<div id="urlLoader"></div>`);
 var al=opp("a");
 
 var urlLoader=op("#urlLoader");
-log(urlLoader)
 
 function checkEvAUrl(){
 	al.forEach(val=>{
