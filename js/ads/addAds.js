@@ -25,6 +25,10 @@ function getProduct(lnk){
 
 function setAdList(){
 	adsList=[
+	[`//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=priyanshu07d2-21&language=en_IN&marketplace=amazon&region=IN&placement=B09GMGTGY3&asins=B09GMGTGY3&linkId=35a128994dc1dab90216323d1b9b3ccf&show_border=true&link_opens_in_new_window=true`],
+
+	[`//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=priyanshu07d2-21&language=en_IN&marketplace=amazon&region=IN&placement=B09C8SS7NQ&asins=B09C8SS7NQ&linkId=2e0af8f15c168d28a6d09a9f453de4cd&show_border=true&link_opens_in_new_window=true`],
+
 	[`//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=priyanshu07d2-21&language=en_IN&marketplace=amazon&region=IN&placement=B09H3LRDN8&asins=B09H3LRDN8&linkId=bd01d7980eed83249e3a8a920a2a7153&show_border=true&link_opens_in_new_window=true`],
 
 	[`//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=priyanshu07d2-21&language=en_IN&marketplace=amazon&region=IN&placement=B07LD783TM&asins=B07LD783TM&linkId=cdcef3619ac7499d2304686706168300&show_border=true&link_opens_in_new_window=true`],
