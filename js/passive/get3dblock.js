@@ -55,6 +55,7 @@ var allMovies=[
 ];
 
 let webseries=[
+  ["Lost In Space","webseries/index.html?ws='Lost In Space'","https://bit.ly/3oETOP8"],
   ["Akkad Bakkad Rafu Chakkar","webseries/index.html?ws='Akkad Bakkad Rafu Chakkar'","https://bit.ly/3nZX07X"],
   ["Call My Agent","webseries/index.html?ws='Call My Agent'","https://bit.ly/3o75oTf"],
   ["My Name","webseries/index.html?ws='My Name'","https://bit.ly/3BSziAc"],
