@@ -25,6 +25,18 @@ function getProduct(lnk){
 
 function setAdList(){
 	adsList=[
+	[`//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=priyanshu07d2-21&language=en_IN&marketplace=amazon&region=IN&placement=B09H3LRDN8&asins=B09H3LRDN8&linkId=bd01d7980eed83249e3a8a920a2a7153&show_border=true&link_opens_in_new_window=true`],
+
+	[`//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=priyanshu07d2-21&language=en_IN&marketplace=amazon&region=IN&placement=B07LD783TM&asins=B07LD783TM&linkId=cdcef3619ac7499d2304686706168300&show_border=true&link_opens_in_new_window=true`],
+
+	[`//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=priyanshu07d2-21&language=en_IN&marketplace=amazon&region=IN&placement=B09DLHXSHM&asins=B09DLHXSHM&linkId=31c9e56f3173cf5b671b633583c7775e&show_border=true&link_opens_in_new_window=true`],
+
+	[`//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=priyanshu07d2-21&language=en_IN&marketplace=amazon&region=IN&placement=B09DXKRWNB&asins=B09DXKRWNB&linkId=02e104de43370d678997330f87ba53fe&show_border=true&link_opens_in_new_window=true`],
+
+	[`//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=priyanshu07d2-21&language=en_IN&marketplace=amazon&region=IN&placement=B072N7YVCM&asins=B072N7YVCM&linkId=1ea1c57d955db89284a981fe9d57200b&show_border=true&link_opens_in_new_window=true`],
+
+	[`//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=priyanshu07d2-21&language=en_IN&marketplace=amazon&region=IN&placement=B072N7YVCM&asins=B072N7YVCM&linkId=1ea1c57d955db89284a981fe9d57200b&show_border=true&link_opens_in_new_window=true`],
+
 	[`//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=priyanshu07d2-21&language=en_IN&marketplace=amazon&region=IN&placement=B089MTR9K7&asins=B089MTR9K7&linkId=f5fc5bfddb5f2f3dccbbbf0d7e08cb1c&show_border=true&link_opens_in_new_window=true`],
 	[`//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=priyanshu07d2-21&language=en_IN&marketplace=amazon&region=IN&placement=B084DS51NC&asins=B084DS51NC&linkId=f5c9c8c49a60d27d92903f31e65d1441&show_border=true&link_opens_in_new_window=true`],
 	[`//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=priyanshu07d2-21&language=en_IN&marketplace=amazon&region=IN&placement=B08HQL67D6&asins=B08HQL67D6&linkId=ff5c259e6f13f9f2e2bbaf850dfacadf&show_border=true&link_opens_in_new_window=true`],
