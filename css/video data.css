@@ -81,6 +81,23 @@
   transition: all .15s
 }
 
+.moviesListPan .movie.poster{
+	height: 170px;
+}
+
+.moviesListPan .movie .moviePoster{
+	position: absolute;
+	height: 140px;
+	/*width: 120px;*/
+	left: 0;
+	top: 0;
+}
+.moviesListPan .movie .moviePoster img{
+	height: 140px;
+	width: 100%;
+	object-fit: cover;
+}
+
 .moviesListPan .movie:nth-of-type(2n){
   background: linear-gradient(281deg, #00000012 50%, #ffffff 50%);
 }
@@ -94,6 +111,19 @@
 .moviesListPan .movie .nameSize{
 	align-self: flex-start;
 	text-align: left;
+}
+.moviesListPan .movie.poster .btns{
+	bottom: 0px;
+}
+.moviesListPan .movie.poster button{
+	width: 28px;
+	height: 28px;
+}
+.moviesListPan .movie.poster .nameSize{
+	align-self: center;
+	text-align: center;
+	color: #fff;
+	text-shadow: 2px 2px 5px #000;
 }
 .movie .nameSize .curData{
 	justify-content: flex-start;
@@ -142,6 +172,9 @@
 	filter: hue-rotate(calc(var(--i)*85deg));
 }
 
+.moviesListPan .realMovieList .movieSubCat > *{
+	filter: hue-rotate(calc(var(--i)* -85deg))
+}
 .moviesListPan .subCatMovieList::after,
 .moviesListPan .subCatMovieList::before{
 	content: '';
