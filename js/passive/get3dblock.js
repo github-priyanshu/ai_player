@@ -55,7 +55,7 @@ var allMovies=[
 ];
 
 let webseries=[
-  ["Lost In Space","webseries/index.html?ws='Lost In Space'","https://bit.ly/3ova992"],
+  ["Lost In Space","webseries/index.html?ws='Lost In Space'","https://bit.ly/3oETOP8"],
   ["Akkad Bakkad Rafu Chakkar","webseries/index.html?ws='Akkad Bakkad Rafu Chakkar'","https://bit.ly/3nZX07X"],
   ["Call My Agent","webseries/index.html?ws='Call My Agent'","https://bit.ly/3o75oTf"],
   ["My Name","webseries/index.html?ws='My Name'","https://bit.ly/3BSziAc"],
@@ -93,7 +93,7 @@ function block(parent,cls,width,height,grith,){
     width: 100%;
     box-shadow: inset ${width}px ${height}px 0 #00000014;
     height: 100%;
-    ">${getBoxBnr(0)}</div>
+    ">${getWsBnr(0)}</div>
 
 
     <div id="${cls}-left" style="transform-origin: left; transform: rotateY(-90deg);
@@ -118,7 +118,7 @@ function block(parent,cls,width,height,grith,){
     box-shadow: inset ${width}px ${height}px 0 #0000002b;
     height: 100%;
     width: ${grith}px;
-    ">${getWsBnr(0)}</div>
+    ">${getWsBnr(1)}</div>
 
     <div id="${cls}-up" style="transform-origin: top; transform: rotateX(90deg);
     left: 0;
