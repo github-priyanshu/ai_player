@@ -13,7 +13,7 @@ for(let a=0; a<mpans.length -1; a++){
 function getPan(cat){
 	var html=`<div class="movieSubCat adPan"><div class="subCatMovieList flex">`;
 	for(let i=1; i<=2; i++){
-		let rand=adsSuffle?Math.floor(Math.random()*adsList.length) || 0;
+		let rand=adsSuffle?Math.floor(Math.random()*adsList.length) : 0;
 		html+=getProduct(adsList.splice(rand,1));
 	}
 	html+="</div></div>";
