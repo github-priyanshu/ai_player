@@ -49,16 +49,18 @@ function getsubCatMoviesList(subCat){
 		let onclickAttrxx=`onclick="setMovie('${val[1]}',${val[2]},'${val[0]}')"`;
 
 		htmlXX+=`
-		<div class="movie flex" ${onclickAttrxx} mid="${val[2]}" mlnk="${val[1]}">
+		<div class="movie flex ${val[3]!="false"? "poster":''}" ${onclickAttrxx} mid="${val[2]}" mlnk="${val[1]}">
+			${val[3]!="false"? `<div class="moviePoster w100p"><img src="${val[3]}"></div>`: ""}
+
 			<div class="nameSize">
 				<h4>${val[0]}</h4>
-
 				<div class="curData flex">
 					<div class="left flex">
 						${time?`<i></i><span>${getMinSec(time)}</span>`:''}
 					</div>
 				</div>
 			</div>
+
 			<div class="btns">
 				<button title="copy link" class="flex getLink">${elems.share}<span style="display: none;">${val[0]}</span></button>
 				<button class="flex" ${onclickAttrxx} title="play">${elems.play}<span style="display: none;">${val[0]}</span></button>
