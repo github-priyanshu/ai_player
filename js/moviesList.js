@@ -188,9 +188,16 @@ function checkDownTrue(elem){
 	if(isDownLoaded()){
 		elem.click();
 	}else{
-		dialog.inside(`<span col="#444" ff="glory">Open in App to enable downloading feature.</span>`)
+		dialog.inside(`<div fs="1.2em" col="#ff0059">/...Download App</div><span col="#444" ff="glory">Open in App to enable downloading feature.</span><br><span col="#000">Click on install.</span>`)
 		dialog.buttons("Close","Ok");
 		dialog.show();
+		dialog.hide=()=>{
+			dgbx.classList.remove("active");
+			if(readyToDownload){
+				downBtn1.click();
+			}
+			dialog.hide=()={dgbx.classList.remove("active");}
+		}
 		dialog.success=()=>{
 			if(readyToDownload){
 				downBtn1.click();
