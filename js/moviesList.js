@@ -196,7 +196,7 @@ function checkDownTrue(elem){
 			if(readyToDownload){
 				downBtn1.click();
 			}
-			dialog.hide=()={dgbx.classList.remove("active");}
+			dialog.hide=()=>{dgbx.classList.remove("active");}
 		}
 		dialog.success=()=>{
 			if(readyToDownload){
