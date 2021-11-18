@@ -93,7 +93,7 @@ function block(parent,cls,width,height,grith,){
     width: 100%;
     box-shadow: inset ${width}px ${height}px 0 #00000014;
     height: 100%;
-    ">${getWsBnr(0)}</div>
+    ">${getBoxBnr(0)}</div>
 
 
     <div id="${cls}-left" style="transform-origin: left; transform: rotateY(-90deg);
@@ -118,7 +118,7 @@ function block(parent,cls,width,height,grith,){
     box-shadow: inset ${width}px ${height}px 0 #0000002b;
     height: 100%;
     width: ${grith}px;
-    ">${getWsBnr(1)}</div>
+    ">${getWsBnr(0)}</div>
 
     <div id="${cls}-up" style="transform-origin: top; transform: rotateX(90deg);
     left: 0;
