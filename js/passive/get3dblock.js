@@ -12,13 +12,14 @@ engMovieHindiDubbed=3
 */
 var allMovies=[
 /*['name',`${mainSite}lnk`,mid,'img',cat],*/
-["Sooryavanshi",`${mainSite}/BollyWood/Sooryavanshi.2021.HQ.PreDVDRip/Sooryavanshi.2021.Hindi.480p.HQ.Pre.DVDRip-DudeFilms.in.mkv`,37,"https://bit.ly/3kacepE",1],
+['Dhamaka',`${mainSite}/BollyWood/NetFlix/Dhamaka.2021/Dhamaka.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv`,44,'https://bit.ly/3DOhveB',1],
 ['Home Sweet Home Alone',`${mainSite}/HollyWood/Disney+/Home.Sweet.Home.Alone.2021/Home.Sweet.Home.Alone.2021.Hindi.English.480p.WEB-DL.ESub-DudeFilms.in.mkv`,43,'https://bit.ly/3CeZfcy',3],
 ['Red Notice',`${mainSite}/HollyWood/NetFlix/Red.Notice.2021/Red.Notice.2021.Hindi.English.480p.WEB-DL.ESub-DudeFilms.in.mkv`,42,'https://bit.ly/30tkFG2',3],
 ['Shang-Chi',`${mainSite}/HollyWood/Shang.Chi.2021/Shang.Chi.2021.480p.BluRay.Hindi.Clean-English.ESub.x264-DudeFilms.in.mkv`,41,'https://bit.ly/3c26NVy',3],
 ['Gully Rowdy',`${mainSite}/South.Movies/Gully.Rowdy.2021/Gully.Rowdy.2021.Hindi-Telugu.480p.HDRip.ESub-DudeFilms.in.mkv`,40,'https://bit.ly/3kt6bwC',2],
 ['No Time To Die',`${mainSite}/HollyWood/No.Time.To.Die.2021/No.Time.To.Die.2021.Hindi.(CAM).English.480p.HDRip-DudeFilms.in.mkv`,39,'https://bit.ly/3qsxYAZ',3],
 ['Finch',`${mainSite}/HollyWood/Finch.2021/Finch.2021.720p.WEBRip.HINDI.DUB.MELBET-DudeFilms.in.mkv`,38,'https://bit.ly/3wDqvjV',3],
+["Sooryavanshi",`${mainSite}/BollyWood/Sooryavanshi.2021.HQ.PreDVDRip/Sooryavanshi.2021.Hindi.480p.HQ.Pre.DVDRip-DudeFilms.in.mkv`,37,"https://bit.ly/3kacepE",1],
 ["Marvel Eternals",`${mainSite}/HollyWood/Eternals.2021.HDcam/Eternals.2021.Hindi.English.480p.CAMRip-DudeFilms.in%20-.mkv`,36,"https://bit.ly/3ERerhS",3],
 ["Jai Bhim",`${mainSite}/South.Movies/Jai.Bhim.2021/Jai.Bhim.2021.480p.WEB-DL.Hindi-Tamil.DD5.1.ESub.x264-DudeFilms.in.mkv`,35,"https://bit.ly/3kcnHoK",2],
 ["Hum Do Hamare Do",`${mainSite}/BollyWood/hotstar/Hum.Do.Hamare.Do.2021/Hum.Do.Hamare.Do.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv`,33,"https://bit.ly/31m0Alf",1],
@@ -55,6 +56,8 @@ var allMovies=[
 ];
 
 let webseries=[
+  ["The wheel of Time","webseries/index.html?ws='The wheel of Time'","https://bit.ly/32bz1ex"],
+  ["Your Honor Season 2","webseries/index.html?ws='Your Honor Season 2'","https://bit.ly/30DfgMQ"],
   ["Lost In Space","webseries/index.html?ws='Lost In Space'","https://bit.ly/3ova992"],
   ["Akkad Bakkad Rafu Chakkar","webseries/index.html?ws='Akkad Bakkad Rafu Chakkar'","https://bit.ly/3nZX07X"],
   ["Call My Agent","webseries/index.html?ws='Call My Agent'","https://bit.ly/3o75oTf"],
