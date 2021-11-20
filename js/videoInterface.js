@@ -205,7 +205,7 @@ function vidOnStart(){
 	showLoadingMsg();
 
 	window.onhashchange=(e)=>{
-		if(location.hash!="#watching"){
+		if(location.hash==""){
 			stopPlaying();
 		}
 	}
