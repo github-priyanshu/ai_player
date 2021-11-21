@@ -62,7 +62,6 @@ var allMovies=[
 let webseries=[
   /*change the episod number to '__e' */
   /*[name,link,imgLink,totalEpisods,fristEpisodeLink]*/
-  ["Hellbound","webseries/index.html?ws='Hellbound'","https://bit.ly/30Mxr1W",6,"__wsdomain/WebSeries/NetFlix/Hellbound.S01/Hellbound.S01.E__e.720p.10Bit.Hindi.English.Korean.Esubs-DudeFilms.in.mkv"],
   ["The wheel of Time","webseries/index.html?ws='The wheel of Time'","https://bit.ly/32bz1ex",3,"__wsdomain/WebSeries/Amazon.Prime/The.Wheel.of.Time.S01/480p/The.Wheel.of.Time.S01.E__e.Hindi.English.480p.WEB-DL.ESub-DudeFilms.in.mkv"],
   ["Your Honor Season 2","webseries/index.html?ws='Your Honor Season 2'","https://bit.ly/30DfgMQ",5,'__wsdomain/WebSeries/Sony.Liv/Your.Honor.S02/Your.Honor.S02.E__e.720p.Web.Dl.Esub-DudeFilms.in.mkv'],
   ["Lost In Space","webseries/index.html?ws='Lost In Space'","https://bit.ly/3ova992",10,'__wsdomain/WebSeries/NetFlix/Lost.in.Space/S02/480p/Lost.in.Space.S02.E__e.480p.Hindi.Eng.WebDL.Esub-DudeFilms.in.mkv'],
