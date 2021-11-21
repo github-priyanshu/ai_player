@@ -1,5 +1,5 @@
 var log=console.log;
-let ws;
+let ws,ret={},imglnk,episodes,lnk;
 
 var search=decodeURI(location.search.replace("?",''));
 search=search.split('&');
@@ -7,8 +7,15 @@ for(let a=0; a<search.length; a++){
 	eval(search[a])
 }
 log(ws);
+ret.imglink=imgLnk;
+ret.episode=[];
 
-fetch(`webseries/webseriesdata/${ws}`).then(res=>{return res.json()}).then(applyLoad);
+for(let i=1; i<=episodes; i++){
+	if(String(i).length==1){i="0"+i}
+	log(i)
+	ret.episode.push(lnk.replace("__e",i));
+}
+applyLoad(ret)
 
 function applyLoad(ret){
 	log(ret)
@@ -21,7 +28,7 @@ function showLink(link){
 	var htmlxx="";
 	link.map((val,num)=>{
 		htmlxx+=`<div class="flex episode">
-			<a href="?ws=true&mlnk='${val}'&mname='${ws+" Episode "+(num+1)}'">Episode ${num+1}</a>
+			<a href="index.html?ws=true&mlnk='${val}'&mname='${ws+" Episode "+(num+1)}'">Episode ${num+1}</a>
 		</div>`;
 	})
 
