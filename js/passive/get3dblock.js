@@ -3,7 +3,7 @@ bannerBox=op(".bannerBox"),
 mainSite="https://dl.gabc01.workers.dev/0:";
 
 /*
-give the next index 44
+give the next index 47
 
 bollywood=1
 southMovies=2
@@ -12,6 +12,10 @@ engMovieHindiDubbed=3
 */
 var allMovies=[
 /*['name',`${mainSite}lnk`,mid,'img',cat],*/
+/*['name',`${mainSite}lnk`,mid,'https://bit.ly/30Mxr1W',cat],*/
+['Bunty Aur Babli 2021',`${mainSite}/BollyWood/Bunty.Aur.Babli.2021.HDCamRip/Bunty.Aur.Babli.2021.480p.CAMRip.HINDI-DudeFilms.in.mkv`,46,'https://bit.ly/3DCM9al',1],
+['Cash: NOTE-BANDI',`${mainSite}/BollyWood/hotstar/Cash.2021/Cash.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv`,45,'https://bit.ly/3FB7dPa',1],
+
 ['Dhamaka',`${mainSite}/BollyWood/NetFlix/Dhamaka.2021/Dhamaka.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv`,44,'https://bit.ly/3DOhveB',1],
 ['Home Sweet Home Alone',`${mainSite}/HollyWood/Disney+/Home.Sweet.Home.Alone.2021/Home.Sweet.Home.Alone.2021.Hindi.English.480p.WEB-DL.ESub-DudeFilms.in.mkv`,43,'https://bit.ly/3CeZfcy',3],
 ['Red Notice',`${mainSite}/HollyWood/NetFlix/Red.Notice.2021/Red.Notice.2021.Hindi.English.480p.WEB-DL.ESub-DudeFilms.in.mkv`,42,'https://bit.ly/30tkFG2',3],
@@ -56,15 +60,18 @@ var allMovies=[
 ];
 
 let webseries=[
-  ["The wheel of Time","webseries/index.html?ws='The wheel of Time'","https://bit.ly/32bz1ex"],
-  ["Your Honor Season 2","webseries/index.html?ws='Your Honor Season 2'","https://bit.ly/30DfgMQ"],
-  ["Lost In Space","webseries/index.html?ws='Lost In Space'","https://bit.ly/3ova992"],
-  ["Akkad Bakkad Rafu Chakkar","webseries/index.html?ws='Akkad Bakkad Rafu Chakkar'","https://bit.ly/3nZX07X"],
-  ["Call My Agent","webseries/index.html?ws='Call My Agent'","https://bit.ly/3o75oTf"],
-  ["My Name","webseries/index.html?ws='My Name'","https://bit.ly/3BSziAc"],
-  ["Tabbar SonyLiv","webseries/index.html?ws='Tabbar SonyLiv'","https://bit.ly/3FWSBdZ"],
-  ["Kota Factory season 2","webseries/index.html?ws='Kota Factory season 2'","https://bit.ly/3ALcKAB"],
-  ["House of Secrets","webseries/index.html?ws='House of Secrets'","https://bit.ly/3v3bYNt"]
+  /*change the episod number to '__e' */
+  /*[name,link,imgLink,totalEpisods,fristEpisodeLink]*/
+  ["Hellbound","webseries/index.html?ws='Hellbound'","https://bit.ly/30Mxr1W",6,"__wsdomain/WebSeries/NetFlix/Hellbound.S01/Hellbound.S01.E__e.720p.10Bit.Hindi.English.Korean.Esubs-DudeFilms.in.mkv"],
+  ["The wheel of Time","webseries/index.html?ws='The wheel of Time'","https://bit.ly/32bz1ex",3,"__wsdomain/WebSeries/Amazon.Prime/The.Wheel.of.Time.S01/480p/The.Wheel.of.Time.S01.E__e.Hindi.English.480p.WEB-DL.ESub-DudeFilms.in.mkv"],
+  ["Your Honor Season 2","webseries/index.html?ws='Your Honor Season 2'","https://bit.ly/30DfgMQ",5,'__wsdomain/WebSeries/Sony.Liv/Your.Honor.S02/Your.Honor.S02.E__e.720p.Web.Dl.Esub-DudeFilms.in.mkv'],
+  ["Lost In Space","webseries/index.html?ws='Lost In Space'","https://bit.ly/3ova992",10,'__wsdomain/WebSeries/NetFlix/Lost.in.Space/S02/480p/Lost.in.Space.S02.E__e.480p.Hindi.Eng.WebDL.Esub-DudeFilms.in.mkv'],
+  ["Akkad Bakkad Rafu Chakkar","webseries/index.html?ws='Akkad Bakkad Rafu Chakkar'","https://bit.ly/3nZX07X",10,'__wsdomain/WebSeries/Amazon.Prime/Akkad.Bakkad.Rafu.Chakkar.S01/Akkad.Bakkad.Rafu.Chakkar.S01.E__e.720p.x264-DudeFilms.in.mkv'],
+  ["Call My Agent","webseries/index.html?ws='Call My Agent'","https://bit.ly/3o75oTf",6,'__wsdomain/WebSeries/NetFlix/Call.My.Agent.Bollywood.S01/Call.My.Agent.Bollywood.S01.E__e.Hindi.720p.WEB-DL.ESub-DudeFilms.in.mkv'],
+  ["My Name","webseries/index.html?ws='My Name'","https://bit.ly/3BSziAc",8,'__wsdomain/WebSeries/NetFlix/My.Name.S01/My.Name.S01.E__e.Hindi.Korean.720p.HEVC.WEB-DL.ESub-DudeFilms.in.mkv'],
+  ["Tabbar SonyLiv","webseries/index.html?ws='Tabbar SonyLiv'","https://bit.ly/3FWSBdZ",8,'__wsdomain/WebSeries/Sony.Liv/Tabbar.S01/Tabbar.S01.E__e.Hindi.720p.WEB-DL-DudeFilms.in.mkv'],
+  ["Kota Factory season 2","webseries/index.html?ws='Kota Factory season 2'","https://bit.ly/3ALcKAB",5,'__wsdomain/WebSeries/NetFlix/Kota.Factory/S02/720p/Kota.Factory.S02.E__e.Hindi.720p.WEB-DL.Esubs-DudeFilms.in.mkv'],
+  ["House of Secrets","webseries/index.html?ws='House of Secrets'","https://bit.ly/3v3bYNt",3,'__wsdomain/WebSeries/NetFlix/House.of.Secrets.The.Burari.Deaths.S01/480p/House.of.Secrets.The.Burari.Deaths.S01.E__e.480p.WEB-DL.Hindi.ESub.x264-DudeFilms.in.mkv']
 
   // ["name","link","img"],
 ]
