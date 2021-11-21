@@ -172,7 +172,7 @@ function addWebSeries(){
 			  <div class="data flex">
 			    <div class="name" fs=".9em">${val[0]}</div>
 			  </div>
-			  <a href="webseries/index.html?ws='${val[0]}'" hidden></a>
+			  <a href="webseries/index.html?ws='${val[0]}'&lnk='${val[4]}'&episodes='${val[3]}'&imgLnk='${val[2]}'" hidden></a>
 			</div>`;
 		});
 		return htmlxx;
