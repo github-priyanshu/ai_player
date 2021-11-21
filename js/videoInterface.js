@@ -201,7 +201,6 @@ function vidOnStart(){
 	location.assign("#watching");
 	try{send(vidSource.name)}catch{};
 
-
 	showLoadingMsg();
 
 	window.onhashchange=(e)=>{
@@ -215,6 +214,7 @@ function vidOnStart(){
 	}else{
 		quality.btn.style.display="none"
 	}
+	try{ads.start();}catch{}
 }
 
 function stopPlaying(){/*to stop the video forcefully*/
@@ -233,6 +233,7 @@ function stopPlaying(){/*to stop the video forcefully*/
 	videoBox.classList.remove("active");
 	curVidDataPan.elem.classList.remove("active")
 	video.src='';
+	try{ads.close();}catch{}
 }
 
 /*screen rotate for get full screen*/
