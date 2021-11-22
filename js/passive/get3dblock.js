@@ -160,7 +160,7 @@ function getWsBnr(num){
   let ws=webseries[num];
   return `
   <div class="poster flex" onclick="this.children[0].click()">
-  <a href="${ws[1]}"></a>
+  <a href="webseries/index.html?ws='${ws[0]}'&lnk='${ws[4]}'&episodes='${ws[3]}'&imgLnk='${ws[2]}'"></a>
   <img src="${ws[2]}" alt="${ws[0]}">
   <div class="data flex c">
     <div class="name">${ws[0]}</div>
