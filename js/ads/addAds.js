@@ -106,6 +106,14 @@ function setAdList(){
 	`<a target="_blank" href="https://www.amazon.in/s?k=watches&amp;i=watches&amp;rh=n%253A2563504031%252Cp_36%253A3439817031%252Cp_n_pct-off-with-tax%253A27060457031&amp;dc&amp;qid=1637483972&amp;rnid=2665398031&amp;ref=sr_nr_p_n_pct-off-with-tax_6&_encoding=UTF8&tag=priyanshu07d2-21&linkCode=ur2&linkId=885511af33ca269f12bf76190c120653&camp=3638&creative=24630">Watches OFF 70%</a>`,
 	];
 	ads.adsList=[
+	[`B09GVN84H3&asins=B09GVN84H3&linkId=7bb1f25041d3605289ffe00d4dbf3c4b`],
+	[`B078HJH76G&asins=B078HJH76G&linkId=7fed4a9ca5cc6e63523ca3936a556e84`],
+	[`B08Z45LM7L&asins=B08Z45LM7L&linkId=72be6ae2c7ace4ddaa4571face43a311`],
+	[`B095WXPLGC&asins=B095WXPLGC&linkId=ece1cdf0eca194a92dae1e692e4f5481`],
+	/* rohit */
+	[`B09GMGTGY3&asins=B09GMGTGY3&linkId=35a128994dc1dab90216323d1b9b3ccf`],
+	[`B09C8SS7NQ&asins=B09C8SS7NQ&linkId=2e0af8f15c168d28a6d09a9f453de4cd`],
+
 	[`B07F8BCHSL&asins=B07F8BCHSL&linkId=6224126a57cd1b4d46864753dad73d39`],
 	[`B07GL4RYMC&asins=B07GL4RYMC&linkId=8ff07d11f7b282fc648c54bf91a817ca`],
 
@@ -113,9 +121,6 @@ function setAdList(){
 	[`B08D34RWM6&asins=B08D34RWM6&linkId=580af5db12dd46a8e34fad9e5cf175ea`],
 
 	[`B07Z7QDH3D&asins=B07Z7QDH3D&linkId=d6baac625d5f16b8d140a02880e95a7f`],
-	/* rohit */
-	[`B09GMGTGY3&asins=B09GMGTGY3&linkId=35a128994dc1dab90216323d1b9b3ccf`],
-	[`B09C8SS7NQ&asins=B09C8SS7NQ&linkId=2e0af8f15c168d28a6d09a9f453de4cd`],
 
 	[`B09H3LRDN8&asins=B09H3LRDN8&linkId=bd01d7980eed83249e3a8a920a2a7153`],
 
