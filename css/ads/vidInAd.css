@@ -23,8 +23,8 @@
 	padding: 10px;
 }
 
-.vidPan .vidInAds .mnContent .ads{
-
+.vidPan .vidInAds .mnContent .ads iframe{
+	margin: 15px;
 }
 .vidPan .vidInAds .mnContent .ads ol li{
 	padding: 5px 0;
@@ -44,4 +44,12 @@
 }
 .vidPan .vidInAds .mnContent #adSkiper.active{
 	pointer-events: auto;
+}
+@media screen and (max-width: 400px){
+.vidPan .vidInAds .mnContent .head{
+	display: none;
+}
+.vidPan .vidInAds .mnContent .ads iframe{
+	margin: 5px;
+}
 }
