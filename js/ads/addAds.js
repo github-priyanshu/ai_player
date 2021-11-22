@@ -1,11 +1,11 @@
 "use-strict";
 let mpans=opp(".movieSubCat"),
-adsSuffle=false,
+adsSuffle=true,
 ads={
 	adsList:[],
 	offerLinks:[],
 	timer:'',
-	linkAd:true,
+	linkAd:false,
 	vidInPan: op(".vidInAds"),
 	head: op(".vidInAds .head"),
 	adBox: op(".vidInAds .ads"),
@@ -24,13 +24,11 @@ ads={
 	showAdInVid: ()=>{
 		ads.setSkipper();
 		ads.vidInPan.classList.add("active");
-		playPause();
-		log("showing ads in video");
+		playing?playPause():'';
 	},
 	hideAdInVid: ()=>{
 		ads.vidInPan.classList.remove("active");
-		log("hiding ad from video");
-		playPause();
+		playing?'':playPause();
 		ads.start();
 	},
 	addAdsInVid: ()=>{
@@ -38,20 +36,31 @@ ads={
 			ads.head.innerHTML=`<span col="#005aff" fs="1.2em">/...Don't miss this <b>OFFERS</b> on Amazon.</span>`;
 			ads.adBox.innerHTML=ads.getRandomOfferLink();
 		}else{
-
+			ads.head.innerHTML=`<span col="#005aff" fs="1.2em">/...Some greate <b>Deals</b> on Amazon.</span>`;
+			ads.adBox.innerHTML=ads.getRandomBanner();
 		}
 		resetColS();
 		setAdList();
-		// ads.linkAd!=ads.linkAd;
+		// ads.linkAd=!ads.linkAd;
 	},
 
 	getRandomOfferLink:()=>{
 		let html="<ol>";
 		for(let i=0; i<5; i++){
-			let amalnk=ads.offerLinks.splice(Math.floor(Math.random()*(ads.offerLinks.length -1)),1);
+			let amalnk=ads.offerLinks.splice(Math.floor(Math.random()*(5-i)),1);
 			html+=`<li>${amalnk}</li>`;
 		}
 		html+="</ol>";
+		return html;
+	},
+	getRandomBanner:()=>{
+		let html='<div>',
+		space=Math.floor(video.offsetWidth * 90/100);
+		for(let i=0; i< space; i+=250){
+			let amalnk=ads.adsList.splice(Math.floor(Math.random()*(ads.adsList.length)),1)[0];
+			html+=getProduct(amalnk);
+		}
+		html+="</div>";
 		return html;
 	},
 	setSkipper:()=>{
@@ -63,7 +72,6 @@ ads={
 				ads.adSkiper.classList.add("active");
 				ads.adSkiper.innerHTML=`Skip Ad`;
 			}
-			log('coundtin')
 		}
 		ads.adSkiper.classList.remove("active");
 		let timerxx=4+Math.ceil(Math.random()*4),
