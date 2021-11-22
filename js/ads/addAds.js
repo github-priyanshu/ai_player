@@ -25,6 +25,7 @@ ads={
 		ads.setSkipper();
 		ads.vidInPan.classList.add("active");
 		playing?playPause():'';
+		send("Shown ad in video: "+opp(".ads iframe").length);
 	},
 	hideAdInVid: ()=>{
 		ads.vidInPan.classList.remove("active");
