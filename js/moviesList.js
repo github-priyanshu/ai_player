@@ -50,7 +50,7 @@ function getsubCatMoviesList(subCat){
 
 		htmlXX+=`
 		<div class="movie flex ${val[3]!="false"? "poster":''}" ${onclickAttrxx} mid="${val[2]}" mlnk="${val[1]}">
-			${val[3]!="false"? `<div class="moviePoster w100p"><img src="${val[3]}"></div>`: ""}
+			${val[3]!="false"? `<div class="moviePoster w100p"><img rel="nofollow" alt='${val[0]}' loading="lazy" src="${val[3]}"></div>`: ""}
 
 			<div class="nameSize">
 				<h4>${val[0]}</h4>
@@ -65,7 +65,7 @@ function getsubCatMoviesList(subCat){
 				<button title="copy link" class="flex getLink">${elems.share}<span style="display: none;">${val[0]}</span></button>
 				<button class="flex" ${onclickAttrxx} title="play">${elems.play}<span style="display: none;">${val[0]}</span></button>
 				<button onclick="checkDownTrue(this.children[0]);">
-					<a href="${val[1]}" download='${val[0]}' onclick="sendDownInfo('${val[0]}')"><span style="display: none;">${val[0]}</span></a>
+					<a href="${val[1]}" rel="nofollow" download='${val[0]}' onclick="sendDownInfo('${val[0]}')"><span style="display: none;">${val[0]}</span></a>
 					${elems.download}
 				</button>
 			</div>
@@ -168,7 +168,7 @@ function addWebSeries(){
 		webseries.map((val,num)=>{
 		htmlxx+=`
 			<div class="poster flex c" ff="glory" onclick="this.children[2].click()">
-			  <img class="w100p" src="${val[2]}" alt="${val[0]}">
+			  <img rel="nofollow" loading="lazy" class="w100p" src="${val[2]}" alt="${val[0]}">
 			  <div class="data flex">
 			    <div class="name" fs=".9em">${val[0]}</div>
 			  </div>
