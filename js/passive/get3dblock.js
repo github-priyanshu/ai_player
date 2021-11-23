@@ -176,4 +176,3 @@ function rotateBannerBox(){
     bannerBox.style.transform=`perspective(2000px) rotateY(${bannerRotated+'deg'})`;
   }
 }
-function addMeta 
