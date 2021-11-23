@@ -92,7 +92,7 @@ for(let a=0; a<mpans.length -1; a++){
 
 function getPan(cat){
 	var html=`<div class="movieSubCat adPan"><div class="subCatMovieList flex">`;
-	for(let i=1; i<=2; i++){
+	for(let i=1; i<=5; i++){
 		let rand=adsSuffle?Math.floor(Math.random()*ads.adsList.length) : 0;
 		html+=getProduct(ads.adsList.splice(rand,1));
 	}
@@ -138,7 +138,7 @@ function setAdList(){
 	[`B09DLHXSHM&asins=B09DLHXSHM&linkId=31c9e56f3173cf5b671b633583c7775e`],
 
 	[`B072N7YVCM&asins=B072N7YVCM&linkId=1ea1c57d955db89284a981fe9d57200b`],
-/*
+
 	[`B089MTR9K7&asins=B089MTR9K7&linkId=f5fc5bfddb5f2f3dccbbbf0d7e08cb1c`],
 	[`B084DS51NC&asins=B084DS51NC&linkId=f5c9c8c49a60d27d92903f31e65d1441`],
 	[`B08HQL67D6&asins=B08HQL67D6&linkId=ff5c259e6f13f9f2e2bbaf850dfacadf`],
@@ -146,7 +146,7 @@ function setAdList(){
 	[`B0987BTSDV&asins=B0987BTSDV&linkId=9303c295b970ad0c11049d2202a233e9`],
 	[`B07KVZD6XM&asins=B07KVZD6XM&linkId=6f0b777ff6299cfc1a0475829b4f272a`],
 	[`B08P8BRWN5&asins=B08P8BRWN5&linkId=8d5c3ea38a4a5b4f1df88bd155b017e8`],
-	[`B08P8BRWN5&asins=B08P8BRWN5&linkId=8d5c3ea38a4a5b4f1df88bd155b017e8`],*/
+	[`B08P8BRWN5&asins=B08P8BRWN5&linkId=8d5c3ea38a4a5b4f1df88bd155b017e8`],
 	]
 }
 
