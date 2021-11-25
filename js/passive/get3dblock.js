@@ -12,7 +12,7 @@ engMovieHindiDubbed=3
 */
 var allMovies=[
 /*['name',`${mainSite}lnk`,mid,'img',cat],*/
-/*['name',`${mainSite}lnk`,mid,'img',cat],*/
+['Satyameva Jayate 2',`${mainSite}/BollyWood/Satyameva.Jayate.2.2021.HDcam/Satyameva.Jayate.2.2021.Hindi.720p.HQPreDVDRipx264.AAC-DudeFilms.in.mkv`,51,'https://bit.ly/3HP6bRP',1],
 ['Annaatthe',`${mainSite}/South.Movies/Annaatthe.2021/Annaatthe.2021.Hindi-Tamil.DD5.1.480p.WEB-DL.x264-DudeFilms.in.mkv`,50,'https://bit.ly/3FQBCcD',2],
 ['A Boy ... Christmas',`${mainSite}/HollyWood/NetFlix/A.Boy.Called.Christmas.2021/A.Boy.Called.Christmas.2021.480p.WEBRRip.Hindi.English.Esubs-DudeFilms.in.mkv`,49,'https://bit.ly/3cLPEiW',3],
 ['Bruised',`${mainSite}/HollyWood/NetFlix/Bruised.2021/Bruised.2021.480p.WEBRRip.Hindi.English.Esubs-DudeFilms.in.mkv`,48,'https://bit.ly/311qeew',3],
