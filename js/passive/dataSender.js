@@ -1,4 +1,4 @@
-let shareName=["Team of fun","Awesome Code","Chahat","Telegram","Prashant","Swapnil","Akash"],
+let shareName=["Team of fun","Awesome Code","Chahat","Telegram","Prashant","Swapnil","Akash","Atul"],
 aiSharedBy,aiLoadedNum=localStorage.getItem("aiLoadedNum");
 
 setInterval(()=>{
