@@ -12,7 +12,11 @@ engMovieHindiDubbed=3
 */
 var allMovies=[
 /*['name',`${mainSite}lnk`,mid,'img',cat],*/
-/*['name',`${mainSite}lnk`,mid,'https://bit.ly/30Mxr1W',cat],*/
+/*['name',`${mainSite}lnk`,mid,'img',cat],*/
+['Annaatthe',`${mainSite}/South.Movies/Annaatthe.2021/Annaatthe.2021.Hindi-Tamil.DD5.1.480p.WEB-DL.x264-DudeFilms.in.mkv`,50,'https://bit.ly/3FQBCcD',2],
+['A Boy ... Christmas',`${mainSite}/HollyWood/NetFlix/A.Boy.Called.Christmas.2021/A.Boy.Called.Christmas.2021.480p.WEBRRip.Hindi.English.Esubs-DudeFilms.in.mkv`,49,'https://bit.ly/3cLPEiW',3],
+['Bruised',`${mainSite}/HollyWood/NetFlix/Bruised.2021/Bruised.2021.480p.WEBRRip.Hindi.English.Esubs-DudeFilms.in.mkv`,48,'https://bit.ly/311qeew',3],
+['Dhummas',`${mainSite}/Gujarati/Dhummas.2021/Dhummas.2021.Gujarati.480p.HDrip.x264.ESubs-DudeFilms.in.mkv`,47,'https://bit.ly/3HSsKoI',1],
 ['Bunty Aur Babli 2021',`${mainSite}/BollyWood/Bunty.Aur.Babli.2021.HDCamRip/Bunty.Aur.Babli.2021.480p.CAMRip.HINDI-DudeFilms.in.mkv`,46,'https://bit.ly/3DCM9al',1],
 ['Cash: NOTE-BANDI',`${mainSite}/BollyWood/hotstar/Cash.2021/Cash.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv`,45,'https://bit.ly/3FB7dPa',1],
 
@@ -61,7 +65,10 @@ var allMovies=[
 
 let webseries=[
   /*change the episod number to '__e' */
-  /*[name,link,imgLink,totalEpisods,fristEpisodeLink]*/
+  /*[name,link,imgLink,totalEpisods,fristEpisodeLink],*/
+  /*["Name","webseries/index.html?ws='Name'","imglink",totalEpisodes,"__wsdomain/linkOfFistEpisode__e"],*/
+  ["Illegal","webseries/index.html?ws='Illegal'","https://bit.ly/3r5pMHr",8,"__wsdomain/WebSeries/Voot/Illegal.S02/Illegal.S02.E__e.Hindi.720p.WEB-DL-DudeFilms.in.mkv"],
+  ["Hawkeye","webseries/index.html?ws='Hawkeye'","https://bit.ly/3DUs4wm",2,"__wsdomain/WebSeries/hotstar/Hawkeye.S01/480p/Hawkeye.S01.E__e.480p.x264.Hindi.English.Multi.Esubs-DudeFilms.in.mkv"],
   ["The wheel of Time","webseries/index.html?ws='The wheel of Time'","https://bit.ly/32bz1ex",3,"__wsdomain/WebSeries/Amazon.Prime/The.Wheel.of.Time.S01/480p/The.Wheel.of.Time.S01.E__e.Hindi.English.480p.WEB-DL.ESub-DudeFilms.in.mkv"],
   ["Your Honor Season 2","webseries/index.html?ws='Your Honor Season 2'","https://bit.ly/30DfgMQ",5,'__wsdomain/WebSeries/Sony.Liv/Your.Honor.S02/Your.Honor.S02.E__e.720p.Web.Dl.Esub-DudeFilms.in.mkv'],
   ["Lost In Space","webseries/index.html?ws='Lost In Space'","https://bit.ly/3ova992",10,'__wsdomain/WebSeries/NetFlix/Lost.in.Space/S02/480p/Lost.in.Space.S02.E__e.480p.Hindi.Eng.WebDL.Esub-DudeFilms.in.mkv'],

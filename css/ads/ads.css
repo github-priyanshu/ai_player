@@ -13,3 +13,6 @@
 .moviesListPan .realMovieList .adPan .subCatMovieList{
 	height: 200px;
 }
+.moviesListPan .realMovieList .adPan .subCatMovieList iframe{
+	margin: 0 5px;	
+}
