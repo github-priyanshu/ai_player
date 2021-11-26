@@ -203,6 +203,20 @@
 	flex-flow: column wrap;
 }
 
+
+.moviesListPan .realMovieList .subCatMovieList .showMoreBtn{
+	height: 100%;
+	padding: 10px;
+	border: 1px solid #aaa;
+	margin: 20px;
+	border-radius: 9px;
+	background: #0001;
+	cursor: pointer;
+	display: none;
+}
+.moviesListPan .realMovieList .subCatMovieList .showMoreBtn.active{
+	display: flex;
+}
 .btnPan{
 	flex-flow: column;
 	font-family: Encode Sans SC;

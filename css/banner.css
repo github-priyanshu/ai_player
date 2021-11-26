@@ -15,6 +15,10 @@
 	color: #000;
 	margin-bottom: 10px;
 }
+.banner .left p{
+  text-align: justify;
+  line-height:1.5em;
+}
 a{
   color: #000;
 }
