@@ -1,7 +1,7 @@
 var log=console.log;
 
 let movieListPan=op(".moviesList"),
-maxNew=window.innerWidth / 170 * 2 + 2;
+maxNew=Math.floor(window.innerWidth / 170 * 2 + 2);
 
 let movies={
 Newly_Added:[],
@@ -14,9 +14,7 @@ for(let i=0; i<allMovies.length; i++){
 	let key=["Bollywood","South_Indian","English_Movies_hindi_dubbed"],
 	cat=allMovies[i][4];
 	movies[key[cat-1]].push(allMovies[i]);
-	if(i<=maxNew){
-		movies.Newly_Added.push(allMovies[i]);
-	}
+	movies.Newly_Added.push(allMovies[i]);
 }
 
 let movieHTML=`<div class="realMovieHead center">Top <span col='#e73070'>New Movies & Web Series</span> here free.</div>
@@ -74,10 +72,10 @@ function getsubCatMoviesList(subCat){
 	}
 	return htmlXX;
 }
-addWebSeries();
 movieHTML+="</div>";
 
 movieListPan.innerHTML=movieHTML;
+addWebSeries();
 
 opp(".movie .btns").forEach(val=>{
 	val.addEventListener("click",e=>{
@@ -156,12 +154,12 @@ function sendDownInfo(data){
 }
 
 function addWebSeries(){
-	movieHTML+=`<div id="WebSeries" class="movieSubCat" style="--i: 0;">
+	op("#Newly_Added").insertAdjacentHTML("afterend",`<div id="WebSeries" class="movieSubCat" style="--i: 0;">
 		<div class="subCatHead" ff="glory">Web Series</div>
 		<div class="subCatMovieList flex">
 			${getWebSeriesList()}
 		</div>
-	</div>`;
+	</div>`);
 
 	function getWebSeriesList(){
 		let htmlxx=``;
@@ -205,3 +203,16 @@ function checkDownTrue(elem){
 		}
 	}
 }
+
+function addShowMore(){
+	var newAdded=op("#Newly_Added .subCatMovieList");
+	if(!newAdded.contains(op(".showMoreBtn"))){
+		var htmlxx=`<div class="showMoreBtn flex"><span>Show More</span></div>`;
+		newAdded.insertAdjacentHTML("beforeend",htmlxx);
+		var allMo=opp("#Newly_Added .movie");
+		for(let i=maxNew;i<allMo.length; i++){
+			allMo[i].style.display="none";
+		}
+	}
+}
+addShowMore();

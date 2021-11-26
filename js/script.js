@@ -100,7 +100,6 @@ downBtn2.innerHTML=elems.download+"App";
 speedBtn.innerHTML=elems.speed;
 quality.btn.innerHTML=elems.quality;
 quality.btn.style.display="none";
-helpIco.innerHTML=elems.help;
 
 
 speedIco.addEventListener('click',e=>{
@@ -376,6 +375,10 @@ function resetColS(){
 	opp("*[ff]").forEach(val=>{
 		val.style.fontFamily=val.getAttribute("ff")
 		val.removeAttribute("ff");
+	})
+	opp("*[fw]").forEach(val=>{
+		val.style.fontWeight=val.getAttribute("fw")
+		val.removeAttribute("fw");
 	})
 }
 
