@@ -1,6 +1,6 @@
 "use-strict";
 let mpans=opp(".movieSubCat"),
-adsSuffle=true,
+adsSuffle=false,
 ads={
 	adsList:[],
 	offerLinks:[],
@@ -115,6 +115,10 @@ function setAdList(){
 	`<a target="_blank" href="https://www.amazon.in/s?k=watches&amp;i=watches&amp;rh=n%253A2563504031%252Cp_36%253A3439817031%252Cp_n_pct-off-with-tax%253A27060457031&amp;dc&amp;qid=1637483972&amp;rnid=2665398031&amp;ref=sr_nr_p_n_pct-off-with-tax_6&_encoding=UTF8&tag=priyanshu07d2-21&linkCode=ur2&linkId=885511af33ca269f12bf76190c120653&camp=3638&creative=24630">Watches OFF 70%</a>`,
 	];
 	ads.adsList=[
+	/*shubham*/
+	[`B08KS5L7FD&asins=B08KS5L7FD&linkId=1a15898acec6d89e08f33dee567bc1e7`],
+	[`B08BJMHN3M&asins=B08BJMHN3M&linkId=40408efcf5b4f5921627a7a224b498c3`],
+
 	/*mobile*/
 	[`B09CGJK2HG&asins=B09CGJK2HG&linkId=93f5d882b3b036d4636bfb50f3666fb7`],
 
