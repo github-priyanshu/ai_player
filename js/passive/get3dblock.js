@@ -12,6 +12,12 @@ engMovieHindiDubbed=3
 */
 var allMovies=[
 /*['name',`${mainSite}lnk`,mid,'img',cat],*/
+/*['name',`${mainSite}lnk`,mid,'img',cat],*/
+/*['name',`${mainSite}lnk`,mid,'img',cat],*/
+['Chhorii',`${mainSite}/BollyWood/Amazon.Prime/Chhorii.2021/Chhorii.2021.480p.WEB-DL.x264.Hindi.AAC5.1.ESubs%20-DudeFilms.in.mkv`,55,'https://bit.ly/3xqWsMF',1],
+['A Castle For Christmas',`${mainSite}/HollyWood/NetFlix/A.Castle.For.Christmas.2021/A.Castle.For.Christmas.2021.Hindi.English.480p.WEB-DL.ESub-DudeFilms.in.mkv`,54,'https://bit.ly/3CW2CW7',3],
+['Antim',`${mainSite}/BollyWood/Antim.The.Final.Truth.2021.HDCAMRip/Antim.The.Final.Truth.2021.480p.HDCAMRip.HINDI-DudeFilms.in.mkv`,53,'https://bit.ly/3184Gxb',1],
+['Fast and Furios 9',`${mainSite}/HollyWood/F9.Hindi.ORG/Fast-9.2021.480p.BluRay.Hindi-English.DD5.1.ESub.x264-DudeFilms.in.mkv`,52,'https://bit.ly/3nUItLY',3],
 ['Satyameva Jayate 2',`${mainSite}/BollyWood/Satyameva.Jayate.2.2021.HDcam/Satyameva.Jayate.2.2021.Hindi.720p.HQPreDVDRipx264.AAC-DudeFilms.in.mkv`,51,'https://bit.ly/3HP6bRP',1],
 ['Annaatthe',`${mainSite}/South.Movies/Annaatthe.2021/Annaatthe.2021.Hindi-Tamil.DD5.1.480p.WEB-DL.x264-DudeFilms.in.mkv`,50,'https://bit.ly/3FQBCcD',2],
 ['A Boy ... Christmas',`${mainSite}/HollyWood/NetFlix/A.Boy.Called.Christmas.2021/A.Boy.Called.Christmas.2021.480p.WEBRRip.Hindi.English.Esubs-DudeFilms.in.mkv`,49,'https://bit.ly/3cLPEiW',3],
