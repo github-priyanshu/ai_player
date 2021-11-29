@@ -101,8 +101,9 @@ function getPan(cat){
 }
 
 function getProduct(lnk){
-	return lnk? `<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=priyanshu07d2-21&language=en_IN&marketplace=amazon&region=IN&placement=${lnk[0]}&show_border=true&link_opens_in_new_window=true"></iframe>`: "";
+	return lnk? `<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=priyanshu002b-21&language=en_IN&marketplace=amazon&region=IN&placement=${lnk[0]}&show_border=true&link_opens_in_new_window=true"></iframe>`: "";
 }
+
 
 function setAdList(){
 	ads.offerLinks=[
