@@ -14,6 +14,8 @@ var allMovies=[
 /*['name',`${mainSite}lnk`,mid,'img',cat],*/
 /*['name',`${mainSite}lnk`,mid,'img',cat],*/
 /*['name',`${mainSite}lnk`,mid,'img',cat],*/
+['Nothing Is Impossible',`${mainSite}/HollyWood/NetFlix/14.Peaks.Nothing.Is.Impossible.2021/14.Peaks.Nothing.Is.Impossible.2021.480p.WEBRip.Hindi.English.Esubs-DudeFilms.in.mkv`,57,'https://bit.ly/3177A5K',3],
+['Night of The Sicario',`${mainSite}/HollyWood/Night.of.The.Sicario.2021/Night.of.The.Sicario.2021.Hindi.English.480p.WEB-DL.ESub-DudeFilms.in.mkv`,56,'https://bit.ly/3d0iuMV',3],
 ['Chhorii',`${mainSite}/BollyWood/Amazon.Prime/Chhorii.2021/Chhorii.2021.480p.WEB-DL.x264.Hindi.AAC5.1.ESubs%20-DudeFilms.in.mkv`,55,'https://bit.ly/3xqWsMF',1],
 ['A Castle For Christmas',`${mainSite}/HollyWood/NetFlix/A.Castle.For.Christmas.2021/A.Castle.For.Christmas.2021.Hindi.English.480p.WEB-DL.ESub-DudeFilms.in.mkv`,54,'https://bit.ly/3CW2CW7',3],
 ['Antim',`${mainSite}/BollyWood/Antim.The.Final.Truth.2021.HDCAMRip/Antim.The.Final.Truth.2021.480p.HDCAMRip.HINDI-DudeFilms.in.mkv`,53,'https://bit.ly/3184Gxb',1],
@@ -73,6 +75,8 @@ let webseries=[
   /*change the episod number to '__e' */
   /*[name,link,imgLink,totalEpisods,fristEpisodeLink],*/
   /*["Name","webseries/index.html?ws='Name'","imglink",totalEpisodes,"__wsdomain/linkOfFistEpisode__e"],*/
+  ["Hiccups and Hookups","webseries/index.html?ws='Hiccups and Hookups'","https://bit.ly/3I485Ov",8,"__wsdomain/WebSeries/Hiccups.and.Hookups.S01/Hiccups.and.Hookups.S01.E__e.Hindi.720p.WEB-DL.ESub-DudeFilms.in.mkv"],
+  ["Dil Bekaraar","webseries/index.html?ws='Dil Bekaraar'","https://bit.ly/3I70XAJ",10,"__wsdomain/WebSeries/hotstar/Dil.Bekaraar.S01/Dil.Bekaraar.S01.E__e.720p.WEB-DL.x264-DudeFilms.in.mkv"],
   ["Illegal","webseries/index.html?ws='Illegal'","https://bit.ly/3r5pMHr",8,"__wsdomain/WebSeries/Voot/Illegal.S02/Illegal.S02.E__e.Hindi.720p.WEB-DL-DudeFilms.in.mkv"],
   ["Hawkeye","webseries/index.html?ws='Hawkeye'","https://bit.ly/3DUs4wm",2,"__wsdomain/WebSeries/hotstar/Hawkeye.S01/480p/Hawkeye.S01.E__e.480p.x264.Hindi.English.Multi.Esubs-DudeFilms.in.mkv"],
   ["The wheel of Time","webseries/index.html?ws='The wheel of Time'","https://bit.ly/32bz1ex",3,"__wsdomain/WebSeries/Amazon.Prime/The.Wheel.of.Time.S01/480p/The.Wheel.of.Time.S01.E__e.Hindi.English.480p.WEB-DL.ESub-DudeFilms.in.mkv"],
