@@ -1,6 +1,6 @@
 let bannerRotated=0,
 bannerBox=op(".bannerBox"),
-mainSite="https://dl.gabc01.workers.dev/0:";
+mainSite="https://dl.gabc03.workers.dev/0:";
 
 /*
 give the next index 47
