@@ -17,8 +17,8 @@ for(let i=0; i<allMovies.length; i++){
 	movies.Newly_Added.push(allMovies[i]);
 }
 
-let movieHTML=`<div class="realMovieHead center">
-<span col='#e73070'>THERE IS SOME PROBLEM.</span><br>Movies are currently not available now. It will be resolved soon. Then this messagr will be removed. THANKYOU!</div>
+let movieHTML=`<div class="realMovieHead center">All new
+<span col='#e73070'></span><br>Movies & Web Series</div> here. 
 	<div class="flex menuBtn frw">
 		<a href="#Bollywood"><button class="flex">Bollywood</button></a>
 		<a href="#English_Movies_hindi_dubbed"><button class="flex">English Movies</button></a>
