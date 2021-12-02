@@ -18,7 +18,7 @@ var showAll={
 		setTimeout(()=>{showAll.pan.classList.add("active");},100);
 	},
 	close:()=>{
-		try{send(search.in.value)}catch{};
+		try{send("/..s="+search.in.value)}catch{};
 		location.assign("#");
 		if(location.hash!="search"){
 			showAll.pan.classList.remove("active");
@@ -32,7 +32,7 @@ var showAll={
 	set:()=>{
 		let allMovieHtml="";
 		for(let val of allMovies){
-			let onclickAttrxx=`onclick="setMovie('${val[1]}',${val[2]},'${val[0]}');showAll.close()"`;
+			let onclickAttrxx=`onclick="showAll.close();setMovie('${val[1]}',${val[2]},'${val[0]}');"`;
 
 				allMovieHtml+=`
 				<div class="movie flex poster" ${onclickAttrxx} mid="${val[2]}" mlnk="${val[1]}">
@@ -45,7 +45,7 @@ var showAll={
 
 		allMovieHtml="";
 		for(let val of webseries){
-			let onclickAttrxx=`onclick="setMovie('${val[1]}',${val[2]},'${val[0]}');showAll.close()"`;
+			let onclickAttrxx=`onclick="showAll.close();setMovie('${val[1]}',${val[2]},'${val[0]}');"`;
 
 				allMovieHtml+=`
 				<div class="movie flex poster" onclick="this.children[1].click()">
