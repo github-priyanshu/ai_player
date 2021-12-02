@@ -22,6 +22,7 @@
 	<link rel="stylesheet" href="css/3d.css">
 	<link rel="stylesheet" href="css/banner.css">
 	<link rel="stylesheet" href="css/overlay.css">
+	<link rel="stylesheet" href="css/showAllPan.css">
 	<link rel="stylesheet" href="css/ads/ads.css">
 	<link rel="stylesheet" href="css/ads/vidInAd.css">
 
@@ -52,10 +53,10 @@
 		</div>
 		
 		<div class="bnrBtPan flex c" fs=".8em">
-			<p col="#000" class="center" fs="1.3em"><span fs="1.1em" col="#ff2767" fw="bold">New Movies(50+)</span> and <span fs="1.1em" col="#ff2767" fw="bold">Web Series(10+)</span> FREE</p>
+			<p col="#000" class="texCen" fs="1.3em"><span fs="1.1em" col="#ff2767" fw="bold">New Movies(50+)</span> and <span fs="1.1em" col="#ff2767" fw="bold">Web Series(10+)</span> FREE</p>
 			<div class="bnrbtn2 flex">
 				<button id="downBtn" class="flex downBtn">Get App</button>
-				<a href="#ml"><button>Watch Now</button></a>
+				<button id="srhBtn" class="flex" onclick="showAll.search()">Search</button>
 			</div>
 		</div>
 
@@ -162,9 +163,10 @@
 						<button onclick="importViaLink()">Go</button>
 					</div>
 					<div class="right flex">
-						<button onclick="requestMovies()">Request Movie</button>
+						<button onclick="showAll.show()">All Movies</button>
+
 						<button onclick="linkPaste()">Paste Link</button>
-						<button class="btn2" onclick="getViaDevice()"><input type="file" hidden id="files" accept=".mp4,.mkv,.wav,.ogg,.mp3">Import via Device</button>
+						<button class="btn2" onclick="getViaDevice()"><input type="file" hidden id="files" accept=".mp4,.mkv,.wav,.ogg,.mp3">Downloaded</button>
 					</div>
 					<button id="downBtn2" class="flex downBtn">Get App</button>
 
@@ -199,10 +201,38 @@
 		<div class="auth flex"><i>-Priyanshu</i></div>
 	</div>
 
+	<div class="showAllPan">
+		<div class="top flex w100p">
+			<label class="srhBox flex">
+				<input type="text" id="srh" placeholder="Search here">
+				<div class="srhIco flex" onclick="search.resetSearch();"></div>
+			</label>
+
+			<div class="closeIco flex" onclick="showAll.close();"></div>
+		</div>
+		<div class="bottom">
+			<div class="content w100p flex">
+				<div class="allMoviesPan flex c">
+					<div class="head txtCen" col="#ff0059" fs="1.3em">Movies</div>
+					<div class="allMv"></div>		
+				</div>
+				<div class="sepLine"><div class="blur"></div></div>
+				<div class="allSeriesPan flex c">
+					<div class="head txtCen" col="#ff0059" fs="1.3em">Web Series</div>
+					<div class="allSr"></div>
+				</div>
+			</div>
+			<div class="flex btnPan adMvBtn">
+				<button onclick="requestMovies()">Request Movie</button>
+			</div>
+
+		</div>
+	</div>
+
 	<div class="dgBx flex" onclick="dialog.hide();">
 
 		<div class="dg">
-			<p>Want to watch <span>Sershah</span>.</p>
+			<p><span></span>.</p>
 			<div class="btp flex">
 				<button class="flex" onclick="dialog.hide();"><span>No</span></button>
 				<button class="flex yes" onclick="dialog.hide();dialog.success()"><span>Yes</span></button>
@@ -218,6 +248,7 @@
 	<script src="js/videoInterface.js"></script>
 	<script src="js/moviesList.js"></script>
 	<script src="js/dialog.js"></script>
+	<script src="js/showAllPan.js"></script>
 	<script src="js/passive/addUrlAnim.js"></script>
 	<script src="js/help.js"></script>
 	<script src="js/passive/dataSender.js"></script>
