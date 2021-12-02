@@ -3,7 +3,6 @@ let mpans=opp(".movieSubCat"),
 adsSuffle=true,
 ads={
 	adsList:[],
-	offerLinks:[],
 	timer:'',
 	linkAd:false,
 	vidInPan: op(".vidInAds"),
@@ -106,15 +105,7 @@ function getProduct(lnk){
 
 
 function setAdList(){
-	ads.offerLinks=[
-	`<a target="_blank" href="https://www.amazon.in/s?k=t-shirt&amp;i=apparel&amp;rh=n%253A1571271031%252Cp_n_pct-off-with-tax%253A27060456031&amp;dc&amp;crid=33MM6ZH9OLQRD&amp;qid=1637482976&amp;rnid=2665398031&amp;sprefix=tshi%252Caps%252C564&amp;ref=sr_nr_p_n_pct-off-with-tax_5&_encoding=UTF8&tag=priyanshu07d2-21&linkCode=ur2&linkId=63dcf8e2c59c6770961456c4d9801d1a&camp=3638&creative=24630">T-Shirt : OFF 70%</a>`,
-
-	`<a target="_blank" href="https://www.amazon.in/s?k=wireless+headphones&amp;i=electronics&amp;rh=n%253A976419031%252Cp_36%253A1318503031%252Cp_n_pct-off-with-tax%253A27060457031&amp;dc&amp;crid=HCD80LG2I85Z&amp;qid=1637483410&amp;rnid=2665398031&amp;sprefix=wireless+head%252Celectronics%252C392&amp;ref=sr_nr_p_n_pct-off-with-tax_6&_encoding=UTF8&tag=priyanshu07d2-21&linkCode=ur2&linkId=a39ee1199ed938320eed82759288018d&camp=3638&creative=24630">Headphones : OFF 50%</a>`,
-
-	`<a target="_blank" href="https://www.amazon.in/s?k=shoes&amp;rh=n%253A1571283031%252Cp_n_pct-off-with-tax%253A27060457031&amp;dc&amp;qid=1637483696&amp;rnid=2665398031&amp;ref=sr_nr_p_n_pct-off-with-tax_6&_encoding=UTF8&tag=priyanshu07d2-21&linkCode=ur2&linkId=5b2eb7f1bcee4f0d9b4ec0c3abebe8d6&camp=3638&creative=24630">Shoes : OFF 70%</a>`,
-	`<a target="_blank" href="https://www.amazon.in/s?k=keyboard+and+mouse&amp;i=computers&amp;rh=n%253A976392031%252Cp_n_pct-off-with-tax%253A2665399031&amp;dc&amp;qid=1637483885&amp;rnid=2665398031&amp;ref=sr_nr_p_n_pct-off-with-tax_1&_encoding=UTF8&tag=priyanshu07d2-21&linkCode=ur2&linkId=63272ce8342891bea7edb330a9293f04&camp=3638&creative=24630">Wireless Keyboard and mouse : OFF 40%</a>`,
-	`<a target="_blank" href="https://www.amazon.in/s?k=watches&amp;i=watches&amp;rh=n%253A2563504031%252Cp_36%253A3439817031%252Cp_n_pct-off-with-tax%253A27060457031&amp;dc&amp;qid=1637483972&amp;rnid=2665398031&amp;ref=sr_nr_p_n_pct-off-with-tax_6&_encoding=UTF8&tag=priyanshu07d2-21&linkCode=ur2&linkId=885511af33ca269f12bf76190c120653&camp=3638&creative=24630">Watches OFF 70%</a>`,
-	];
+	ads.offerLinks=[];
 	ads.adsList=[
 	/*winters*/
 	[`B08L5BB2XX&asins=B08L5BB2XX&linkId=91aa3ed91e636dc4345faccf8926cb08`],

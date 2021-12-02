@@ -14,11 +14,12 @@ for(let i=0; i<allMovies.length; i++){
 	let key=["Bollywood","South_Indian","English_Movies_hindi_dubbed"],
 	cat=allMovies[i][4];
 	movies[key[cat-1]].push(allMovies[i]);
-	movies.Newly_Added.push(allMovies[i]);
+	if(i<=maxNew){
+		movies.Newly_Added.push(allMovies[i]);
+	}
 }
 
-let movieHTML=`<div class="realMovieHead center">All new
-<span col='#e73070'>Movies & Web Series</span>here.</div> 
+let movieHTML=`<div class="realMovieHead center">Top <span col='#e73070'>New Movies & Web Series</span> here free.</div>
 	<div class="flex menuBtn frw">
 		<a href="#Bollywood"><button class="flex">Bollywood</button></a>
 		<a href="#English_Movies_hindi_dubbed"><button class="flex">English Movies</button></a>
@@ -206,14 +207,10 @@ function checkDownTrue(elem){
 }
 
 function addShowMore(){
-	var newAdded=op("#Newly_Added .subCatMovieList");
-	if(!newAdded.contains(op(".showMoreBtn"))){
-		var htmlxx=`<div class="showMoreBtn flex"><span>Show More</span></div>`;
-		newAdded.insertAdjacentHTML("beforeend",htmlxx);
-		var allMo=opp("#Newly_Added .movie");
-		for(let i=maxNew;i<allMo.length; i++){
-			allMo[i].style.display="none";
-		}
+	var newAdded=opp(".subCatMovieList");
+	var htmlxx=`<div class="showMoreBtn active flex" onclick="showAll.show()"><span>Show More</span></div>`;
+	for(let val of newAdded){
+		val.insertAdjacentHTML("beforeend",htmlxx);
 	}
 }
 addShowMore();

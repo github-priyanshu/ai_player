@@ -195,6 +195,14 @@ function hideIntro(){
 	videoBox.classList.add("active");
 }
 
+
+window.onhashchange=(e)=>{
+	if(location.hash=="" || location.hash=="search"){
+		stopPlaying();
+	}
+	if(location.hash!="search"){log("hidedd");showAll.hide();}
+}
+
 function vidOnStart(){
 	hideIntro();
 	window.scrollTo(0,0);
@@ -202,12 +210,6 @@ function vidOnStart(){
 	try{send(vidSource.name)}catch{};
 
 	showLoadingMsg();
-
-	window.onhashchange=(e)=>{
-		if(location.hash==""){
-			stopPlaying();
-		}
-	}
 	let sr=video.src;
 	if(sr.includes("480") || sr.includes("720") || sr.includes("1080")){
 		quality.btn.style.display=""

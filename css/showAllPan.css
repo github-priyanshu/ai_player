@@ -1,0 +1,149 @@
+.txtCen{
+	text-align: center;
+}
+.showAllPan{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+  background: #eee;
+  display: none;
+  pointer-events: none;
+  z-index: 11;
+} 
+.showAllPan.active{
+  display: block;
+  pointer-events: all;
+}
+
+/*showall pan ka top bar*/
+.showAllPan .top{
+	height: 60px;
+	background: #fff;
+	padding: 0 20px;
+	justify-content: space-between;
+	box-shadow: 0 20px 40px #ff00d20f;
+}
+
+.showAllPan .top > *{
+	height: 30px;
+	min-width: 30px;
+	border-radius: 30px;
+	border: 1px solid #f0a;
+	cursor: pointer;
+}
+
+.showAllPan .top input::placeholder{
+	color: #ff00aaaa;
+}
+.showAllPan .top input{
+	color: #f0a;
+}
+
+.showAllPan .top .srhIco svg,
+.showAllPan .top > .closeIco svg{
+	width: 25px;
+	height: 25px;
+	fill: #444;
+}
+.showAllPan .top > label{
+	border-radius: 30px;
+	overflow: hidden;
+}
+.showAllPan .top > label > *{
+	height: 30px;
+	min-width: 30px;
+}
+.showAllPan .top > label > input{
+	outline: none;
+	border: none;
+	padding-left: 5px;
+}
+
+/*showAllPan botton*/
+
+.showAllPan .bottom{
+	padding: 20px;
+	height: calc(100vh - 60px);
+	overflow: auto;
+}
+.showAllPan .bottom > .content{
+	align-items: stretch;
+}/*
+.showAllPan .content .sepLine .blur{
+	width: 100%;
+	height: 100%;
+	position: absolute;background: #f0a;
+	filter: blur(11px);
+}*/
+.showAllPan .content .sepLine{
+	width: 3px;
+	max-width: 2%;
+	background: #ff00a5b5;
+}
+.allSeriesPan{
+	align-self: flex-start;
+}
+.allSeriesPan,.allMoviesPan{
+	min-width: 49%;
+}
+.showAllPan .bottom .content .head{
+	margin: 10px;
+	height: 30px;
+}
+.allMv,.allSr{
+	flex-flow: column;
+	width: 100%;
+	max-height: calc(100vh - 130px);
+	overflow: auto;
+	justify-content: flex-start;
+}
+
+
+/*movies*/
+
+.showAllPan .movie {
+	justify-content: space-between;
+	padding: 10px;
+	border-bottom: 1px solid #999;
+	width: 100%;
+	height: 40px;
+}
+
+.showAllPan .movie .nameSize{
+	overflow: hidden;
+}
+.showAllPan .movie h4{
+	width: max-content;
+}
+.showAllPan .movie .btns button{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+.showAllPan .movie .btns button svg{
+	width: 25px;
+	height: 25px;
+}
+
+.showAllPan .adMvBtn{
+	margin: 10px;
+}
+
+@media screen and (max-width: 680px){
+	.showAllPan .bottom > .content{
+	  flex-flow: column;		
+	}
+
+	.allSeriesPan{
+		align-self: center;
+	}
+
+	.allSeriesPan,.allMoviesPan{
+		min-width: 100%;
+	}
+	.allSeriesPan{
+		margin-top: 40px;
+	}
+}
