@@ -4,7 +4,6 @@ adsSuffle=true,
 ads={
 	adsList:[],
 	timer:'',
-	linkAd:false,
 	vidInPan: op(".vidInAds"),
 	head: op(".vidInAds .head"),
 	adBox: op(".vidInAds .ads"),
@@ -32,16 +31,10 @@ ads={
 		ads.start();
 	},
 	addAdsInVid: ()=>{
-		if(ads.linkAd){
-			ads.head.innerHTML=`<span col="#005aff" fs="1.2em">/...Don't miss this <b>OFFERS</b> on Amazon.</span>`;
-			ads.adBox.innerHTML=ads.getRandomOfferLink();
-		}else{
-			ads.head.innerHTML=`<span col="#005aff" fs="1.2em">/...Some greate <b>Deals</b> on Amazon.</span>`;
-			ads.adBox.innerHTML=ads.getRandomBanner();
-		}
-		resetColS();
 		setAdList();
-		// ads.linkAd=!ads.linkAd;
+		ads.head.innerHTML=`<span col="#005aff" fs="1.2em">/...Some great <b>Deals</b> on Amazon.</span>`;
+		ads.adBox.innerHTML=ads.getRandomBanner();
+		resetColS();
 	},
 
 	getRandomOfferLink:()=>{
@@ -93,14 +86,15 @@ function getPan(cat){
 	var html=`<div class="movieSubCat adPan"><div class="subCatMovieList flex">`;
 	for(let i=1; i<=5; i++){
 		let rand=adsSuffle?Math.floor(Math.random()*ads.adsList.length) : 0;
-		html+=getProduct(ads.adsList.splice(rand,1));
+		html+=getProduct(ads.adsList.splice(rand,1)[0]);
 	}
 	html+="</div></div>";
 	return html;
 }
 
 function getProduct(lnk){
-	return lnk? `<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=priyanshu002b-21&language=en_IN&marketplace=amazon&region=IN&placement=${lnk[0]}&show_border=true&link_opens_in_new_window=true"></iframe>`: "";
+	log(lnk);
+	return lnk? `<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=priyanshu002b-21&language=en_IN&marketplace=amazon&region=IN&placement=${lnk}&show_border=true&link_opens_in_new_window=true"></iframe>`: "";
 }
 
 
