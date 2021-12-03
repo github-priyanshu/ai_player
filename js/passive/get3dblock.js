@@ -13,7 +13,7 @@ engMovieHindiDubbed=3
 var allMovies=[
 /*['name',`${mainSite}lnk`,mid,'img',cat],*/
 /*['name',`${mainSite}lnk`,mid,'img',cat],*/
-/*['name',`${mainSite}lnk`,mid,'img',cat],*/
+['Bom Biswas',`${mainSite}/BollyWood/Zee5/Bob.Biswas.2021/Bob.Biswas.2021.480p.ZEE5.WEB-DL.Esub-DudeFilms.in.mkv`,58,'https://bit.ly/3IfgpLj',1],
 ['Nothing Is Impossible',`${mainSite}/HollyWood/NetFlix/14.Peaks.Nothing.Is.Impossible.2021/14.Peaks.Nothing.Is.Impossible.2021.480p.WEBRip.Hindi.English.Esubs-DudeFilms.in.mkv`,57,'https://bit.ly/3177A5K',3],
 ['Night of The Sicario',`${mainSite}/HollyWood/Night.of.The.Sicario.2021/Night.of.The.Sicario.2021.Hindi.English.480p.WEB-DL.ESub-DudeFilms.in.mkv`,56,'https://bit.ly/3d0iuMV',3],
 ['Chhorii',`${mainSite}/BollyWood/Amazon.Prime/Chhorii.2021/Chhorii.2021.480p.WEB-DL.x264.Hindi.AAC5.1.ESubs%20-DudeFilms.in.mkv`,55,'https://bit.ly/3xqWsMF',1],
