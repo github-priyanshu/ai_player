@@ -13,6 +13,8 @@ engMovieHindiDubbed=3
 var allMovies=[
 /*['name',`${mainSite}lnk`,mid,'img',cat],*/
 /*['name',`${mainSite}lnk`,mid,'img',cat],*/
+/*['name',`${mainSite}lnk`,mid,'img',cat],*/
+['Tadap',`${mainSite}/BollyWood/Tadap.2021.HDcam/Tadap.2021.Hindi.480p.HQ.PreDVD.Rip.x264.AAC-DudeFilms.in.mkv`,59,'https://bit.ly/32SRNYt',1],
 ['Bom Biswas',`${mainSite}/BollyWood/Zee5/Bob.Biswas.2021/Bob.Biswas.2021.480p.ZEE5.WEB-DL.Esub-DudeFilms.in.mkv`,58,'https://bit.ly/3IfgpLj',1],
 ['Nothing Is Impossible',`${mainSite}/HollyWood/NetFlix/14.Peaks.Nothing.Is.Impossible.2021/14.Peaks.Nothing.Is.Impossible.2021.480p.WEBRip.Hindi.English.Esubs-DudeFilms.in.mkv`,57,'https://bit.ly/3177A5K',3],
 ['Night of The Sicario',`${mainSite}/HollyWood/Night.of.The.Sicario.2021/Night.of.The.Sicario.2021.Hindi.English.480p.WEB-DL.ESub-DudeFilms.in.mkv`,56,'https://bit.ly/3d0iuMV',3],
@@ -74,7 +76,7 @@ var allMovies=[
 let webseries=[
   /*change the episod number to '__e' */
   /*[name,link,imgLink,totalEpisods,fristEpisodeLink],*/
-  /*["Name","webseries/index.html?ws='Name'","imglink",totalEpisodes,"__wsdomain/linkOfFistEpisode__e"],*/
+  ["Money Heist","webseries/index.html?ws='Money Heist'","https://bit.ly/3y7cko1",10,"__wsdomain/WebSeries/NetFlix/Money.Heist.S05/480p/Money.Heist.S05.E__e.Hindi.English.480p.WEB-DL.ESub-DudeFilms.co.mkv"],
   ["Hiccups and Hookups","webseries/index.html?ws='Hiccups and Hookups'","https://bit.ly/3I485Ov",8,"__wsdomain/WebSeries/Hiccups.and.Hookups.S01/Hiccups.and.Hookups.S01.E__e.Hindi.720p.WEB-DL.ESub-DudeFilms.in.mkv"],
   ["Dil Bekaraar","webseries/index.html?ws='Dil Bekaraar'","https://bit.ly/3I70XAJ",10,"__wsdomain/WebSeries/hotstar/Dil.Bekaraar.S01/Dil.Bekaraar.S01.E__e.720p.WEB-DL.x264-DudeFilms.in.mkv"],
   ["Illegal","webseries/index.html?ws='Illegal'","https://bit.ly/3r5pMHr",8,"__wsdomain/WebSeries/Voot/Illegal.S02/Illegal.S02.E__e.Hindi.720p.WEB-DL-DudeFilms.in.mkv"],
