@@ -76,7 +76,8 @@ var allMovies=[
 let webseries=[
   /*change the episod number to '__e' */
   /*[name,link,imgLink,totalEpisods,fristEpisodeLink],*/
-  ["Money Heist","webseries/index.html?ws='Money Heist'","https://bit.ly/3y7cko1",10,"__wsdomain/WebSeries/NetFlix/Money.Heist.S05/480p/Money.Heist.S05.E__e.Hindi.English.480p.WEB-DL.ESub-DudeFilms.co.mkv"],
+  ["Money Heist Part 2","webseries/index.html?ws='Money Heist Part 2'","https://bit.ly/3y7cko1",5,"__wsdomain/WebSeries/NetFlix/Money.Heist.S05/480p/Money.Heist.S05.E__e.Hindi.English.480p.WEB-DL.ESub-DudeFilms.co.mkv"],
+  ["Money Heist Part 1","webseries/index.html?ws='Money Heist Part 1'","https://bit.ly/3y7cko1",5,"__wsdomain/WebSeries/NetFlix/Money.Heist.S05/480p/Money.Heist.S05.E__e.Hindi.English.480p.WEB-DL.ESub-DudeFilms.in.mkv"],
   ["Hiccups and Hookups","webseries/index.html?ws='Hiccups and Hookups'","https://bit.ly/3I485Ov",8,"__wsdomain/WebSeries/Hiccups.and.Hookups.S01/Hiccups.and.Hookups.S01.E__e.Hindi.720p.WEB-DL.ESub-DudeFilms.in.mkv"],
   ["Dil Bekaraar","webseries/index.html?ws='Dil Bekaraar'","https://bit.ly/3I70XAJ",10,"__wsdomain/WebSeries/hotstar/Dil.Bekaraar.S01/Dil.Bekaraar.S01.E__e.720p.WEB-DL.x264-DudeFilms.in.mkv"],
   ["Illegal","webseries/index.html?ws='Illegal'","https://bit.ly/3r5pMHr",8,"__wsdomain/WebSeries/Voot/Illegal.S02/Illegal.S02.E__e.Hindi.720p.WEB-DL-DudeFilms.in.mkv"],
