@@ -1,4 +1,5 @@
-var log=console.log;
+var log=console.log,
+serverError=false;
 
 let movieListPan=op(".moviesList"),
 maxNew=Math.floor(window.innerWidth / 170 * 2 + 2);
@@ -19,7 +20,7 @@ for(let i=0; i<allMovies.length; i++){
 	}
 }
 
-let movieHTML=`<div class="realMovieHead center">Top <span col='#e73070'>New Movies & Web Series</span> here free.</div>
+let movieHTML=`<div class="realMovieHead center">${serverError ?`<span col='#e73070'>/... Problem</span> <br> <span fs=".8em" col="#111">Movies are currently unavailable. The problem will be resolved very soon.</span>`:"Top <span col='#e73070'>New Movies & Web Series</span> here free."}</div>
 	<div class="flex menuBtn frw">
 		<a href="#Bollywood"><button class="flex">Bollywood</button></a>
 		<a href="#English_Movies_hindi_dubbed"><button class="flex">English Movies</button></a>
