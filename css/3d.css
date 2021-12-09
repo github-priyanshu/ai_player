@@ -70,7 +70,10 @@
 }
 
 @media screen and (max-width: 900px){
-	.banner .top .left{
+	.banner .top{
+		flex-flow: column;
+	}
+	.banner .top .left > *:not(.aiHead){
 		display: none;
 	}
 

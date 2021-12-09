@@ -4,51 +4,74 @@
   padding: 10px;
   color: #333;
 }
+.mainBnr{
+  background: url("../img/bg/banner/banner.jpg");
+  background-size: cover;
+  padding-bottom: 0px;
+}
 .banner .top > *{
   min-width: 50%;
 }
 .banner > *{
-	margin-bottom: 10px;
+
 }
-.banner .bnrBtPan p,
 .banner .intro{
 	color: #000;
 	margin-bottom: 10px;
 }
-.banner .bnrBtPan p{
-  text-align: center;
+.banner .bnrBtPan {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  top: calc(100% - 16px);
+  transform: translateX(-50%);
 }
-.banner .left p{
-  text-align: justify;
-  line-height:1.5em;
+.aiHead{
+  text-shadow: 1px 4px 14px #000000a6;
 }
 a{
   color: #000;
 }
+.banner.last{
+  padding: 0;
+}
 
 .banner .contact{
+  padding: 10px;
+  background: linear-gradient(90deg,#040c1c,#271532);
   font-family: glory;
+  color: #fff;
 }
 .banner .contact .extLnk{
-  justify-content: flex-start;
   margin-top: 10px;
 }
-.banner .contact p{
-  text-shadow: 1px 4px 2px #ff980755;
+.banner .contact .info{
+  justify-content: space-between;
+  align-items: stretch;
+  margin-top: 10px;
+}
+
+.banner .contact .info .detail {
+  padding: 0 10px;
+}
+.banner .contact .info .detail p{
+  line-height: 1.6em; 
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+.banner .contact a img{
+  filter: invert(1);
 }
 .banner .contact a{
   width: 40px;
   height: 40px;
-  background: #fff;
-  border-radius: 2px;
   margin: 0 10px;
+  border-bottom: 2px solid #fff;
 }
 .banner .contact .svg {
   width: 30px;
   height: 30px;
-}
-.banner .auth{
-  justify-content: flex-end;
 }
 .banner button{
   background: none;
@@ -56,16 +79,17 @@ a{
   background: #ff2767;
   border-radius: 99px;
 }
-.banner .myPro .myPic{
-  border-radius: 50%;
-  border: 3px solid #0099ff;
+.banner .myPro{
+  height: 300px;
+  width: 300px;
 }
-.banner .myPro .myPic img{
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 50%;
+.banner .myPro img{
+  height: 100%;
   filter: brightness(1.2);
+  border-radius: 50%;
+}
+.banner .contact .head{
+  text-align: center;
 }
 
 .bnrbtn2 {
@@ -78,4 +102,43 @@ a{
   margin-right: 10px;
   height: 18px;
   fill: #fff;
+}
+
+.banner .icons{
+  flex-flow: row wrap;
+}
+
+.banner .icons .iPan{
+  width: 121px;
+  height: 100px;
+  border-radius: 10px;
+  background: #fff;
+  margin: 10px 50px;
+  animation: float 3s ease infinite alternate;
+  animation-delay: calc(var(--d) * -2s);
+  box-shadow: 10px 10px 30px #0004;
+}
+
+.banner .icons .iPan img{
+  width: 80px;
+}
+
+@keyframes float{
+  0%{
+    transform: translateY(-5px) scale(.99);
+  }
+  100%{
+    transform: translateY(5px) scale(1);
+  }
+}
+
+@media screen and (max-width: 608px){
+  .banner .contact .info{
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner .contact .info .detail{
+    margin-top: 20px;
+  }
 }

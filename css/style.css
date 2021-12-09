@@ -47,7 +47,7 @@ html{
 .body{
 	width: 100%;
 	min-height: 100vh;
-	background: url("../img/bg/bgh.jpg");
+	background: #d2d5eb;
 	background-size: cover;
 	background-attachment: fixed;
 	color: #333;
