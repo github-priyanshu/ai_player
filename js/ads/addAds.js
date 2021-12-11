@@ -101,6 +101,15 @@ function getProduct(lnk){
 function setAdList(){
 	ads.offerLinks=[];
 	ads.adsList=[
+	/*heaters*/
+	`B00ABMASXG&asins=B00ABMASXG&linkId=f030d3a2896fabe7bfc131c8c427afef`,
+	`B07WMS7TWB&asins=B07WMS7TWB&linkId=7a96fbce9c018b153411ba7e6c5d50a2`,
+	`B097R45BH8&asins=B097R45BH8&linkId=b073cf44b2fdf97101cd82f2e960adae`,
+
+	/*blankets*/
+	`B098YPMXT9&asins=B098YPMXT9&linkId=2abb379adb376a02694deb662d905622`,
+	`B081RNP84H&asins=B081RNP84H&linkId=e9c9a217b78f604372fe33794260b0f1`,
+
 	/*watches*/
 	`B09KPQNF6Q&asins=B09KPQNF6Q&linkId=7c314c9898f56a4f70bf04bd75f5af05`,
 	`B07WTHFBQS&asins=B07WTHFBQS&linkId=f82896b50a1d5643e1b667b891aecc70`,
