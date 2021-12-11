@@ -14,6 +14,7 @@ var allMovies=[
 /*['name',`${mainSite}lnk`,mid,'img',cat],*/
 /*['name',`${mainSite}lnk`,mid,'img',cat],*/
 /*['name',`${mainSite}lnk`,mid,'img',cat],*/
+['Chandigarh Kare Aashiqui',`${mainSite}/BollyWood/Chandigarh.Kare.Aashiqui.2021.PreDVD/Chandigarh.Kare.Aashiqui.2021.Hindi.480p.Pre-DVDRip-DudeFilms.in.mkv`,60,'https://bit.ly/3pL0Fr4',1],
 ['Tadap',`${mainSite}/BollyWood/Tadap.2021.HDcam/Tadap.2021.Hindi.480p.HQ.PreDVD.Rip.x264.AAC-DudeFilms.in.mkv`,59,'https://bit.ly/32SRNYt',1],
 ['Bom Biswas',`${mainSite}/BollyWood/Zee5/Bob.Biswas.2021/Bob.Biswas.2021.480p.ZEE5.WEB-DL.Esub-DudeFilms.in.mkv`,58,'https://bit.ly/3IfgpLj',1],
 ['Nothing Is Impossible',`${mainSite}/HollyWood/NetFlix/14.Peaks.Nothing.Is.Impossible.2021/14.Peaks.Nothing.Is.Impossible.2021.480p.WEBRip.Hindi.English.Esubs-DudeFilms.in.mkv`,57,'https://bit.ly/3177A5K',3],
@@ -76,7 +77,8 @@ var allMovies=[
 let webseries=[
   /*change the episod number to '__e' */
   /*[name,link,imgLink,totalEpisods,fristEpisodeLink],*/
-  ["Money Heist Part 2","webseries/index.html?ws='Money Heist Part 2'","https://bit.ly/3y7cko1",5,"__wsdomain/WebSeries/NetFlix/Money.Heist.S05/480p/Money.Heist.S05.E__e.Hindi.English.480p.WEB-DL.ESub-DudeFilms.co.mkv"],
+  ["Qatil Haseenaon Ke Naam","webseries/index.html?ws='Qatil Haseenaon Ke Naam'","https://bit.ly/3rWBWD0",6,"__wsdomain/WebSeries/Zee5/Qatil.Haseenaon.Ke.Naam.S01/Qatil.Haseenaon.Ke.Naam.S01.E__e.Hindi.720p.WEB-DL.ESub-DudeFilms.in.mkv"],
+  ["Arya Season 2","webseries/index.html?ws='Arya Season 2'","https://bit.ly/31KRxKU",8,"__wsdomain/WebSeries/hotstar/Aarya/S02/720p/Aarya.S02.E__e.Hindi.720p.WEB-DL.ESub-DudeFilms.in.mkv"],
   ["Money Heist Part 1","webseries/index.html?ws='Money Heist Part 1'","https://bit.ly/3y7cko1",5,"__wsdomain/WebSeries/NetFlix/Money.Heist.S05/480p/Money.Heist.S05.E__e.Hindi.English.480p.WEB-DL.ESub-DudeFilms.in.mkv"],
   ["Hiccups and Hookups","webseries/index.html?ws='Hiccups and Hookups'","https://bit.ly/3I485Ov",8,"__wsdomain/WebSeries/Hiccups.and.Hookups.S01/Hiccups.and.Hookups.S01.E__e.Hindi.720p.WEB-DL.ESub-DudeFilms.in.mkv"],
   ["Dil Bekaraar","webseries/index.html?ws='Dil Bekaraar'","https://bit.ly/3I70XAJ",10,"__wsdomain/WebSeries/hotstar/Dil.Bekaraar.S01/Dil.Bekaraar.S01.E__e.720p.WEB-DL.x264-DudeFilms.in.mkv"],
