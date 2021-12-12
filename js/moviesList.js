@@ -114,6 +114,7 @@ function setMovie(lnk,mid,name){
 let mid='',mlnk,sh,ws,mname;
 var search=decodeURI(location.search.replace("?",''));
 search=search.split('&');
+log(search);
 for(let a=0; a<search.length; a++){
 	eval(search[a])
 }
@@ -134,6 +135,7 @@ if(ws){
 	setLink(vidSource.src);
 }
 else if(mlnk){
+	mlnk=mlnk.replaceAll("~~","&");
 	setTimeout(()=>{
 		link.input.value=mlnk;link.btn.click();
 	},500)
