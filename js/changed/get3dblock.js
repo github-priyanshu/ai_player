@@ -13,7 +13,8 @@ engMovieHindiDubbed=3
 var allMovies=[
 /*['name',`${mainSite}lnk`,mid,'img',cat],*/
 /*['name',`${mainSite}lnk`,mid,'img',cat],*/
-/*['name',`${mainSite}lnk`,mid,'img',cat],*/
+['Spider-Man No Way Home',`${mainSite}https://dl.gabc03.workers.dev/0:/HollyWood/Spider-Man.No.Way.Home.2021.CamRip/Spider-Man.No.Way.Home.2021.English.480p.CAMRip-DudeFilms.in.mkv`,62,'https://bit.ly/30wVbaR',3],
+['Kurup',`${mainSite}https://dl.gabc03.workers.dev/0:/South.Movies/Kurup.2021/Kurup.2021.480p.WEB-DL.Hindi.DD5.1-Malayalam.ESub.x264-DudeFilms.in.mkv`,61,'https://bit.ly/30xggSp',2],
 ['Chandigarh Kare Aashiqui',`${mainSite}/BollyWood/Chandigarh.Kare.Aashiqui.2021.PreDVD/Chandigarh.Kare.Aashiqui.2021.Hindi.480p.Pre-DVDRip-DudeFilms.in.mkv`,60,'https://bit.ly/3pL0Fr4',1],
 ['Tadap',`${mainSite}/BollyWood/Tadap.2021.HDcam/Tadap.2021.Hindi.480p.HQ.PreDVD.Rip.x264.AAC-DudeFilms.in.mkv`,59,'https://bit.ly/32SRNYt',1],
 ['Bom Biswas',`${mainSite}/BollyWood/Zee5/Bob.Biswas.2021/Bob.Biswas.2021.480p.ZEE5.WEB-DL.Esub-DudeFilms.in.mkv`,58,'https://bit.ly/3IfgpLj',1],
@@ -77,13 +78,15 @@ var allMovies=[
 let webseries=[
   /*change the episod number to '__e' */
   /*[name,link,imgLink,totalEpisods,fristEpisodeLink],*/
+  ["The WhistleBlower","webseries/index.html?ws='The WhistleBlower'","https://bit.ly/3oWvbz0",9,"__wsdomain/WebSeries/Sony.Liv/The.WhistleBlower.S01/The.WhistleBlower.S01.E__e.720p.Hindi.WEB-DL.ESub-DudeFilms.in.mkv"],
+  ["The Witcher","webseries/index.html?ws='The Witcher'","https://bit.ly/3maR0Jd",8,"__wsdomain/WebSeries/NetFlix/The.Witcher/S01/The.Witcher.S01.E__e.Dual.Audio.Hindi.English.720p.HEVC.WEB-DL.ESub-DudeFilms.in.mkv"],
   ["Qatil Haseenaon Ke Naam","webseries/index.html?ws='Qatil Haseenaon Ke Naam'","https://bit.ly/3rWBWD0",6,"__wsdomain/WebSeries/Zee5/Qatil.Haseenaon.Ke.Naam.S01/Qatil.Haseenaon.Ke.Naam.S01.E__e.Hindi.720p.WEB-DL.ESub-DudeFilms.in.mkv"],
   ["Arya Season 2","webseries/index.html?ws='Arya Season 2'","https://bit.ly/31KRxKU",8,"__wsdomain/WebSeries/hotstar/Aarya/S02/720p/Aarya.S02.E__e.Hindi.720p.WEB-DL.ESub-DudeFilms.in.mkv"],
   ["Money Heist Part 1","webseries/index.html?ws='Money Heist Part 1'","https://bit.ly/3y7cko1",5,"__wsdomain/WebSeries/NetFlix/Money.Heist.S05/480p/Money.Heist.S05.E__e.Hindi.English.480p.WEB-DL.ESub-DudeFilms.in.mkv"],
   ["Hiccups and Hookups","webseries/index.html?ws='Hiccups and Hookups'","https://bit.ly/3I485Ov",8,"__wsdomain/WebSeries/Hiccups.and.Hookups.S01/Hiccups.and.Hookups.S01.E__e.Hindi.720p.WEB-DL.ESub-DudeFilms.in.mkv"],
   ["Dil Bekaraar","webseries/index.html?ws='Dil Bekaraar'","https://bit.ly/3I70XAJ",10,"__wsdomain/WebSeries/hotstar/Dil.Bekaraar.S01/Dil.Bekaraar.S01.E__e.720p.WEB-DL.x264-DudeFilms.in.mkv"],
   ["Illegal","webseries/index.html?ws='Illegal'","https://bit.ly/3r5pMHr",8,"__wsdomain/WebSeries/Voot/Illegal.S02/Illegal.S02.E__e.Hindi.720p.WEB-DL-DudeFilms.in.mkv"],
-  ["Hawkeye","webseries/index.html?ws='Hawkeye'","https://bit.ly/3DUs4wm",4,"__wsdomain/WebSeries/hotstar/Hawkeye.S01/480p/Hawkeye.S01.E__e.480p.x264.Hindi.English.Multi.Esubs-DudeFilms.in.mkv"],
+  ["Hawkeye","webseries/index.html?ws='Hawkeye'","https://bit.ly/3DUs4wm",5,"__wsdomain/WebSeries/hotstar/Hawkeye.S01/480p/Hawkeye.S01.E__e.480p.x264.Hindi.English.Multi.Esubs-DudeFilms.in.mkv"],
   ["The wheel of Time","webseries/index.html?ws='The wheel of Time'","https://bit.ly/32bz1ex",6,"__wsdomain/WebSeries/Amazon.Prime/The.Wheel.of.Time.S01/480p/The.Wheel.of.Time.S01.E__e.Hindi.English.480p.WEB-DL.ESub-DudeFilms.in.mkv"],
   ["Your Honor Season 2","webseries/index.html?ws='Your Honor Season 2'","https://bit.ly/30DfgMQ",5,'__wsdomain/WebSeries/Sony.Liv/Your.Honor.S02/Your.Honor.S02.E__e.720p.Web.Dl.Esub-DudeFilms.in.mkv'],
   ["Lost In Space","webseries/index.html?ws='Lost In Space'","https://bit.ly/3ova992",10,'__wsdomain/WebSeries/NetFlix/Lost.in.Space/S02/480p/Lost.in.Space.S02.E__e.480p.Hindi.Eng.WebDL.Esub-DudeFilms.in.mkv'],
