@@ -101,6 +101,12 @@ function getProduct(lnk){
 function setAdList(){
 	ads.offerLinks=[];
 	ads.adsList=[
+	/*free fire & pubg*/
+	`B09HL5R4SG&asins=B09HL5R4SG&linkId=85cdd31243189ef82bb0de1d1e1c8629`,
+	`B09LR11YBK&asins=B09LR11YBK&linkId=8584d44c6c4fb40422f8f282bd666f06`,
+	`B08DLZYNWY&asins=B08DLZYNWY&linkId=4b2109db4dcf16f16d3b0660e4e546bd`,
+	`B07Y7CYL8X&asins=B07Y7CYL8X&linkId=8fa598c329ea88c3115d276d0ed24d5f`,
+
 	/*bags*/
 	`B07Q7CNPMV&asins=B07Q7CNPMV&linkId=ce4a741e41ff5cd8edfef85366f00134`,
 	`B088XH1BP7&asins=B088XH1BP7&linkId=7abf18a365221a3acb34524c3302cc2a`,
@@ -110,15 +116,9 @@ function setAdList(){
 	`B07WMS7TWB&asins=B07WMS7TWB&linkId=7a96fbce9c018b153411ba7e6c5d50a2`,
 	`B097R45BH8&asins=B097R45BH8&linkId=b073cf44b2fdf97101cd82f2e960adae`,
 
-	/*blankets*/
-	`B098YPMXT9&asins=B098YPMXT9&linkId=2abb379adb376a02694deb662d905622`,
-	`B081RNP84H&asins=B081RNP84H&linkId=e9c9a217b78f604372fe33794260b0f1`,
-
 	/*watches*/
 	`B08FTFYTN8&asins=B08FTFYTN8&linkId=13e51a897276465cf32d712c22f64659`,
 	`B07Q17WT6M&asins=B07Q17WT6M&linkId=2070b54221e50dd2f449b747aa6ff737`,
-	`B09KPQNF6Q&asins=B09KPQNF6Q&linkId=7c314c9898f56a4f70bf04bd75f5af05`,
-	`B07WTHFBQS&asins=B07WTHFBQS&linkId=f82896b50a1d5643e1b667b891aecc70`,
 
 	/*shoes*/
 	`B074WBRN4X&asins=B074WBRN4X&linkId=8c8900ea4c617ae77f97428ea66d9e40`,
@@ -131,9 +131,9 @@ function setAdList(){
 	`B08XQQ1GM1&asins=B08XQQ1GM1&linkId=b3b4695ad1fb8be3e03879be1a632667`,
 
 	/*hoodie*/
-	`B08M47B44S&asins=B08M47B44S&linkId=8c10a67ba490abf56d8c2005d779a3fc`,
-	`B08263JLMQ&asins=B08263JLMQ&linkId=6ac605aa0cc70a40a5958a15fa780c7c`,
-	`B07ZVH9Z9X&asins=B07ZVH9Z9X&linkId=f9b827b09358a1b2b9d7198d38b54990`,
+	`B08JM7TGK8&asins=B08JM7TGK8&linkId=6b79f0a4ab81f61e09aad7beefde543c`,
+	`B08HVHT2V9&asins=B08HVHT2V9&linkId=112c15e3b1574805217fba7c99cfe4d0`,
+	`B08LYXNVXQ&asins=B08LYXNVXQ&linkId=08df43bc6914558e5a7a846b73c8a09c`,
 
 /*gloves*/
 	`B08L6QPD8N&asins=B08L6QPD8N&linkId=3d7db260bd675a49d5ff95fd7ec315b9`,
