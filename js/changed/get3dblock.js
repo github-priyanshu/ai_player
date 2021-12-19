@@ -16,7 +16,7 @@ var allMovies=[
 ['Pushpa',`${mainSite}/South.Movies/Pushpa.The.Rise-Part.1.2021.HDCam/Pushpa.The.Rise-Part.1.2021.480p.Hindi.V2.HDCAMRip.x264-DudeFilms.in.mkv`,65,'https://bit.ly/3IY2pWB',2],
 ['420 IPC',`${mainSite}/BollyWood/Zee5/420.IPC.2021/420.IPC.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv`,64,'https://bit.ly/3p3mBhT',1],
 ['Marakkar Arab Sagar',`${mainSite}/South.Movies/Marakkar.Arab.Sagar.Ka.Sher.2021/Marakkar.Arab.Sagar.Ka.Sher.2021.Hindi.Malayalam.480p.WEB-DL.ESub-DudeFilms.in.mkv`,63,'https://bit.ly/3IWOY9s',2],
-['Spider-Man No Way Home',`${mainSite}/HollyWood/Spider-Man.No.Way.Home.2021.CamRip/Spider-Man.No.Way.Home.2021.English.480p.CAMRip-DudeFilms.in.mkv`,62,'https://bit.ly/30wVbaR',3],
+['Spider-Man No Way Home',`${mainSite}/HollyWood/Spider-Man.No.Way.Home.2021.CamRip/Spider.Man.No.Way.Home.2021.Hindi.English.480p.CAMRip-DudeFilms.in.mkv`,62,'https://bit.ly/30wVbaR',3],
 ['Kurup',`${mainSite}/South.Movies/Kurup.2021/Kurup.2021.480p.WEB-DL.Hindi.DD5.1-Malayalam.ESub.x264-DudeFilms.in.mkv`,61,'https://bit.ly/30xggSp',2],
 ['Chandigarh Kare Aashiqui',`${mainSite}/BollyWood/Chandigarh.Kare.Aashiqui.2021.PreDVD/Chandigarh.Kare.Aashiqui.2021.Hindi.480p.Pre-DVDRip-DudeFilms.in.mkv`,60,'https://bit.ly/3pL0Fr4',1],
 ['Tadap',`${mainSite}/BollyWood/Tadap.2021.HDcam/Tadap.2021.Hindi.480p.HQ.PreDVD.Rip.x264.AAC-DudeFilms.in.mkv`,59,'https://bit.ly/32SRNYt',1],
