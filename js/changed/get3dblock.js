@@ -15,7 +15,7 @@ var allMovies=[
 /*['name',`${mainSite}lnk`,mid,'img', cat],*/
 /*['name',`${mainSite}lnk`,mid,'img', cat],*/
 ['The Matrix',`${mainSite}/HollyWood/The.Matrix.Resurrections.2021/The.Matrix.Resurrections.2021.480p.WEBRip.Hindi.CAM-English.ESub.x264-DudeFilms.in.mkv`,68,'https://bit.ly/33T06UR', 3],
-['Resident Evil...Raccoon',`${mainSite}/HollyWood/Resident.Evil.Welcome.to.Raccoon.City.2021/Resident.Evil.Welcome.to.Raccoon.City.2021.Hindi(CAM)-English.480p.BluRay.ESub-DudeFilms.in.mkv`,67,'https://bit.ly/3msQ8zI', 3],
+['Resident Evil...Raccoon',`${mainSite}/HollyWood/Resident.Evil.Welcome.to.Raccoon.City.2021/Resident.Evil.Welcome.to.Raccoon.City.2021.Hindi(CAM)-English.480p.BluRay.ESub-DudeFilms.in.mkv`,67,'https://bit.ly/33TXZA8', 3],
 ['Shock Wave',`${mainSite}/HollyWood/Shock.Wave.2.2020/Shock.Wave.2.2020.Hindi.Chinese.480p.BluRay.ESub-DudeFilms.in.mkv`,66,'https://bit.ly/3Fo7vcJ', 3],
 ['Pushpa',`${mainSite}/South.Movies/Pushpa.The.Rise-Part.1.2021.HDCam/Pushpa.The.Rise-Part.1.2021.480p.Hindi.V2.HDCAMRip.x264-DudeFilms.in.mkv`,65,'https://bit.ly/3IY2pWB',2],
 ['420 IPC',`${mainSite}/BollyWood/Zee5/420.IPC.2021/420.IPC.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv`,64,'https://bit.ly/3p3mBhT',1],
