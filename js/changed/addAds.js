@@ -101,15 +101,21 @@ function getProduct(lnk){
 function setAdList(){
 	ads.offerLinks=[];
 	ads.adsList=[
+	/*hoodie*/
+	`B08SCD1V6G&asins=B08SCD1V6G&linkId=fda65ec5a19319fad13ce965819d1a4b`,
+	`B091J1ZK77&asins=B091J1ZK77&linkId=8867cc870acf384bbe534d7d42b82d24`,
+	`B08XKGRCC1&asins=B08XKGRCC1&linkId=cbafd18749e897f324a612c6e4c4c3f4`,
+	`B08BLQKSJZ&asins=B08BLQKSJZ&linkId=8d2383b7f51e67b9ab8ac3fb1c440a74`,
+	`B08JM7TGK8&asins=B08JM7TGK8&linkId=6b79f0a4ab81f61e09aad7beefde543c`,
+	
+	/*Mobile*/
+	`B09FKDH6FS&asins=B09FKDH6FS&linkId=ad31c52354666960fb81005ffda84c38`,
+	`B089MTJVLD&asins=B089MTJVLD&linkId=c366f10a4285ebf5192dde62b6e928e8`,
+
 	/*free fire & pubg*/
 	`B09HL5R4SG&asins=B09HL5R4SG&linkId=85cdd31243189ef82bb0de1d1e1c8629`,
 	`B09LR11YBK&asins=B09LR11YBK&linkId=8584d44c6c4fb40422f8f282bd666f06`,
 	`B08DLZYNWY&asins=B08DLZYNWY&linkId=4b2109db4dcf16f16d3b0660e4e546bd`,
-	`B07Y7CYL8X&asins=B07Y7CYL8X&linkId=8fa598c329ea88c3115d276d0ed24d5f`,
-
-	/*bags*/
-	`B07Q7CNPMV&asins=B07Q7CNPMV&linkId=ce4a741e41ff5cd8edfef85366f00134`,
-	`B088XH1BP7&asins=B088XH1BP7&linkId=7abf18a365221a3acb34524c3302cc2a`,
 
 	/*heaters*/
 	`B00ABMASXG&asins=B00ABMASXG&linkId=f030d3a2896fabe7bfc131c8c427afef`,
@@ -117,6 +123,7 @@ function setAdList(){
 	`B097R45BH8&asins=B097R45BH8&linkId=b073cf44b2fdf97101cd82f2e960adae`,
 
 	/*watches*/
+	`B08GSRCGRG&asins=B08GSRCGRG&linkId=7603316b9b3ec422a78b7b6068657550`,
 	`B08FTFYTN8&asins=B08FTFYTN8&linkId=13e51a897276465cf32d712c22f64659`,
 	`B07Q17WT6M&asins=B07Q17WT6M&linkId=2070b54221e50dd2f449b747aa6ff737`,
 
@@ -129,11 +136,6 @@ function setAdList(){
 	`B09BNZLTDZ&asins=B09BNZLTDZ&linkId=4bcaa7276f5413e1894d607e7ec9b77f`,
 	`B09K5HBWVL&asins=B09K5HBWVL&linkId=8b9c8a9184e44ac974d71ee5271a724e`,
 	`B08XQQ1GM1&asins=B08XQQ1GM1&linkId=b3b4695ad1fb8be3e03879be1a632667`,
-
-	/*hoodie*/
-	`B08JM7TGK8&asins=B08JM7TGK8&linkId=6b79f0a4ab81f61e09aad7beefde543c`,
-	`B08HVHT2V9&asins=B08HVHT2V9&linkId=112c15e3b1574805217fba7c99cfe4d0`,
-	`B08LYXNVXQ&asins=B08LYXNVXQ&linkId=08df43bc6914558e5a7a846b73c8a09c`,
 
 /*gloves*/
 	`B08L6QPD8N&asins=B08L6QPD8N&linkId=3d7db260bd675a49d5ff95fd7ec315b9`,
