@@ -14,6 +14,8 @@ var allMovies=[
 /*['name',`${mainSite}lnk`,mid,'img',cat],*/
 /*['name',`${mainSite}lnk`,mid,'img', cat],*/
 /*['name',`${mainSite}lnk`,mid,'img', cat],*/
+['Atrangi Re',`${mainSite}/BollyWood/hotstar/Atrangi.Re.2021/Atrangi.Re.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv`,70,'https://bit.ly/33WZsFR', 1],
+['Switchh',`${mainSite}/BollyWood/Switchh.2021/Switchh.2021.Hindi.480p.WEB-DL-DudeFilms.in.mkv`,69,'https://bit.ly/3EtC9jo', 1],
 ['The Matrix',`${mainSite}/HollyWood/The.Matrix.Resurrections.2021/The.Matrix.Resurrections.2021.480p.WEBRip.Hindi.CAM-English.ESub.x264-DudeFilms.in.mkv`,68,'https://bit.ly/33T06UR', 3],
 ['Resident Evil...Raccoon',`${mainSite}/HollyWood/Resident.Evil.Welcome.to.Raccoon.City.2021/Resident.Evil.Welcome.to.Raccoon.City.2021.Hindi(CAM)-English.480p.BluRay.ESub-DudeFilms.in.mkv`,67,'https://bit.ly/33TXZA8', 3],
 ['Shock Wave',`${mainSite}/HollyWood/Shock.Wave.2.2020/Shock.Wave.2.2020.Hindi.Chinese.480p.BluRay.ESub-DudeFilms.in.mkv`,66,'https://bit.ly/3Fo7vcJ', 3],
@@ -60,6 +62,7 @@ var allMovies=[
 let webseries=[
   /*change the episod number to '__e' */
   /*[name,link,imgLink,totalEpisods,fristEpisodeLink],*/
+  ["Parampara Season 1","webseries/index.html?ws='Parampara Season 1'","https://bit.ly/3mrvfF5",7,"__wsdomain/WebSeries/hotstar/Parampara.S01/Parampara.S01.E__e.Hindi.720p.WEB-DL.ESub-DudeFilms.in.mkv"],
   ["The WhistleBlower","webseries/index.html?ws='The WhistleBlower'","https://bit.ly/3oWvbz0",9,"__wsdomain/WebSeries/Sony.Liv/The.WhistleBlower.S01/The.WhistleBlower.S01.E__e.720p.Hindi.WEB-DL.ESub-DudeFilms.in.mkv"],
   ["The Witcher","webseries/index.html?ws='The Witcher'","https://bit.ly/3maR0Jd",8,"__wsdomain/WebSeries/NetFlix/The.Witcher/S01/The.Witcher.S01.E__e.Dual.Audio.Hindi.English.720p.HEVC.WEB-DL.ESub-DudeFilms.in.mkv"],
   ["Qatil Haseenaon Ke Naam","webseries/index.html?ws='Qatil Haseenaon Ke Naam'","https://bit.ly/3rWBWD0",6,"__wsdomain/WebSeries/Zee5/Qatil.Haseenaon.Ke.Naam.S01/Qatil.Haseenaon.Ke.Naam.S01.E__e.Hindi.720p.WEB-DL.ESub-DudeFilms.in.mkv"],
