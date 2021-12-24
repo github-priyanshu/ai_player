@@ -16,9 +16,9 @@ var allMovies=[
 /*['name',`${mainSite}lnk`,mid,'img', cat],*/
 ['Atrangi Re',`${mainSite}/BollyWood/hotstar/Atrangi.Re.2021/Atrangi.Re.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv`,70,'https://bit.ly/33WZsFR', 1],
 ['Switchh',`${mainSite}/BollyWood/Switchh.2021/Switchh.2021.Hindi.480p.WEB-DL-DudeFilms.in.mkv`,69,'https://bit.ly/3EtC9jo', 1],
-['The Matrix',`${mainSite}/HollyWood/The.Matrix.Resurrections.2021/The.Matrix.Resurrections.2021.480p.WEBRip.Hindi.CAM-English.ESub.x264-DudeFilms.in.mkv`,68,'https://bit.ly/33T06UR', 3],
-['Resident Evil...Raccoon',`${mainSite}/HollyWood/Resident.Evil.Welcome.to.Raccoon.City.2021/Resident.Evil.Welcome.to.Raccoon.City.2021.Hindi(CAM)-English.480p.BluRay.ESub-DudeFilms.in.mkv`,67,'https://bit.ly/33TXZA8', 3],
-['Shock Wave',`${mainSite}/HollyWood/Shock.Wave.2.2020/Shock.Wave.2.2020.Hindi.Chinese.480p.BluRay.ESub-DudeFilms.in.mkv`,66,'https://bit.ly/3Fo7vcJ', 3],
+['The Matrix',`${mainSite}/HollyWood/The.Matrix.Resurrections.2021/The.Matrix.Resurrections.2021.480p.WEBRip.Hindi.CAM-English.ESub.x264-DudeFilms.in.mkv`,68,'https://bit.ly/3qli5uv', 3],
+['Resident Evil...Raccoon',`${mainSite}/HollyWood/Resident.Evil.Welcome.to.Raccoon.City.2021/Resident.Evil.Welcome.to.Raccoon.City.2021.Hindi(CAM)-English.480p.BluRay.ESub-DudeFilms.in.mkv`,67,'https://bit.ly/3swIsk7', 3],
+['Shock Wave',`${mainSite}/HollyWood/Shock.Wave.2.2020/Shock.Wave.2.2020.Hindi.Chinese.480p.BluRay.ESub-DudeFilms.in.mkv`,66,'https://bit.ly/3es8E6V', 3],
 ['Pushpa',`${mainSite}/South.Movies/Pushpa.The.Rise-Part.1.2021.HDCam/Pushpa.The.Rise-Part.1.2021.480p.Hindi.V2.HDCAMRip.x264-DudeFilms.in.mkv`,65,'https://bit.ly/3IY2pWB',2],
 ['420 IPC',`${mainSite}/BollyWood/Zee5/420.IPC.2021/420.IPC.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv`,64,'https://bit.ly/3p3mBhT',1],
 ['Marakkar Arab Sagar',`${mainSite}/South.Movies/Marakkar.Arab.Sagar.Ka.Sher.2021/Marakkar.Arab.Sagar.Ka.Sher.2021.Hindi.Malayalam.480p.WEB-DL.ESub-DudeFilms.in.mkv`,63,'https://bit.ly/3IWOY9s',2],
