@@ -1,6 +1,6 @@
 let bannerRotated=0,
 bannerBox=op(".bannerBox"),
-mainSite="https://dl.abc03.workers.dev";
+mainSite="https://dl.gdc04.workers.dev/0:";
 
 /*
 give the next index 47
@@ -12,8 +12,10 @@ engMovieHindiDubbed=3
 */
 var allMovies=[
 /*['name',`${mainSite}lnk`,mid,'img',cat],*/
-/*['name',`${mainSite}lnk`,mid,'img', cat],*/
-/*['name',`${mainSite}lnk`,mid,'img', cat],*/
+/*['name',`${mainSite}lnk`,mid,'img',cat],*/
+['83',`${mainSite}/BollyWood/83.2021.HDCam/83.2021.Hindi.480p.Pre.DVDRip-DudeFilms.in.mkv`,73,'https://bit.ly/3przmmP',1],
+['Encanto',`${mainSite}/HollyWood/Encanto.2021/Encanto.2021.Hindi.English.480p.WEB-DL.ESub-DudeFilms.in.mkv`,72,'https://bit.ly/3mxW3nk', 3],
+['Minnal Murali',`${mainSite}/SouthMovies/Minnal.Murali.2021/Minnal.Murali.2021.Hindi-Malayalam.480p.WEB-DL.ESub-DudeFilms.in.mkv`,71,'https://bit.ly/3sNMUev', 3],
 ['Atrangi Re',`${mainSite}/BollyWood/hotstar/Atrangi.Re.2021/Atrangi.Re.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv`,70,'https://bit.ly/33WZsFR', 1],
 ['Switchh',`${mainSite}/BollyWood/Switchh.2021/Switchh.2021.Hindi.480p.WEB-DL-DudeFilms.in.mkv`,69,'https://bit.ly/3EtC9jo', 1],
 ['The Matrix',`${mainSite}/HollyWood/The.Matrix.Resurrections.2021/The.Matrix.Resurrections.2021.480p.WEBRip.Hindi.CAM-English.ESub.x264-DudeFilms.in.mkv`,68,'https://bit.ly/3qli5uv', 3],
