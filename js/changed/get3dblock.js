@@ -13,6 +13,12 @@ engMovieHindiDubbed=3
 */
 var allMovies=[
 /*['name',`${mainSite}lnk`,mid,'img',cat],*/
+/*['name',`${mainSite}lnk`,mid,'img',cat],*/
+/*['name',`${mainSite}lnk`,mid,'img',cat],*/
+
+['Murder At...302',`${mainSite}/BollyWood/Murder.At.Teesri.Manzil.302/Murder.At.Teesri.Manzil.302.2009.Hindi.480p.WEB-Dl.ESub-DudeFilms.in.mkv`,77,'https://bit.ly/32P6jR4',1],
+['Wrong Turn',`${mainSite}/HollyWood/Wrong.Turn.2021/Wrong.Turn.2021.Hindi.English.480p.BluRay.ESub-DudeFilms.in.mkv`,76,'https://bit.ly/3FMpIAJ',3],
+['Old',`${mainSite}/HollyWood/Old.2021/Old.2021.Hindi.English.480p.BluRay.ESub-DudeFilms.in.mkv`,75,'https://bit.ly/3FVgXUU',3],
 ['Waah Zindagi',`${mainSite}/BollyWood/Zee5/Waah.Zindagi.2021/Waah.Zindagi.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv`,74,'https://bit.ly/32IPreN',1],
 ['83',`${mainSite}/BollyWood/83.2021.HDCam/83.2021.Hindi.480p.Pre.DVDRip-DudeFilms.in.mkv`,73,'https://bit.ly/3przmmP',1],
 ['Encanto',`${mainSite}/HollyWood/Encanto.2021/Encanto.2021.Hindi.English.480p.WEB-DL.ESub-DudeFilms.in.mkv`,72,'https://bit.ly/3mxW3nk', 3],

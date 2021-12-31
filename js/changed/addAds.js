@@ -101,7 +101,17 @@ function getProduct(lnk){
 function setAdList(){
 	ads.offerLinks=[];
 	ads.adsList=[
+	/*Jeans*/
+	`B099FCRKN6&asins=B099FCRKN6&linkId=4f74c5c6f447cb8eda6428ba37f7c5bf`,
+	`B0821RYFYH&asins=B0821RYFYH&linkId=a85a981cb6f0226e7db923fd658d00bd`,
+	`B0839JYY7C&asins=B0839JYY7C&linkId=a5e7808ee377e391b3024b5c59ab8eff`,
+
+	/*toys*/
+	`B0917LG43Z&asins=B0917LG43Z&linkId=a9bdc0b9277983442556b57cbfd6d08e`,
+	`B07T4VDWRD&asins=B07T4VDWRD&linkId=009762b0141234d08bb8a0d7cf3bb426`,
+
 	/*hoodie*/
+	`B08T7M259Y&asins=B08T7M259Y&linkId=6b13420d041acb4c506e3ffd0dde2a5d`,
 	`B08SCD1V6G&asins=B08SCD1V6G&linkId=fda65ec5a19319fad13ce965819d1a4b`,
 	`B091J1ZK77&asins=B091J1ZK77&linkId=8867cc870acf384bbe534d7d42b82d24`,
 	`B08XKGRCC1&asins=B08XKGRCC1&linkId=cbafd18749e897f324a612c6e4c4c3f4`,
@@ -109,6 +119,7 @@ function setAdList(){
 	`B08JM7TGK8&asins=B08JM7TGK8&linkId=6b79f0a4ab81f61e09aad7beefde543c`,
 	
 	/*Mobile*/
+	`B09MKPTK2Y&asins=B09MKPTK2Y&linkId=869edf141aad5c971bfb5dcccb554f38`,
 	`B09FKDH6FS&asins=B09FKDH6FS&linkId=ad31c52354666960fb81005ffda84c38`,
 	`B089MTJVLD&asins=B089MTJVLD&linkId=c366f10a4285ebf5192dde62b6e928e8`,
 
