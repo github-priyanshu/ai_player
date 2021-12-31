@@ -13,7 +13,7 @@ engMovieHindiDubbed=3
 */
 var allMovies=[
 /*['name',`${mainSite}lnk`,mid,'img',cat],*/
-/*['name',`${mainSite}lnk`,mid,'img',cat],*/
+['Waah Zindagi',`${mainSite}/BollyWood/Zee5/Waah.Zindagi.2021/Waah.Zindagi.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv`,74,'https://bit.ly/32IPreN',1],
 ['83',`${mainSite}/BollyWood/83.2021.HDCam/83.2021.Hindi.480p.Pre.DVDRip-DudeFilms.in.mkv`,73,'https://bit.ly/3przmmP',1],
 ['Encanto',`${mainSite}/HollyWood/Encanto.2021/Encanto.2021.Hindi.English.480p.WEB-DL.ESub-DudeFilms.in.mkv`,72,'https://bit.ly/3mxW3nk', 3],
 ['Minnal Murali',`${mainSite}/SouthMovies/Minnal.Murali.2021/Minnal.Murali.2021.Hindi-Malayalam.480p.WEB-DL.ESub-DudeFilms.in.mkv`,71,'https://bit.ly/3sNMUev', 3],
