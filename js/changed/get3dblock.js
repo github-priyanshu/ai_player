@@ -14,7 +14,6 @@ engMovieHindiDubbed=3
 var allMovies=[
 /*['name',`${mainSite}lnk`,mid,'img',cat],*/
 /*['name',`${mainSite}lnk`,mid,'img',cat],*/
-['Harry Potter 20th',`${mainSite}/HollyWood.English.Movies/Harry.Potter.20th.Anniversary.Return.to.Hogwarts.2022/Harry.Potter.20th.Anniversary.Return.to.Hogwarts.2022.480p.HDRip.English.x265.ESub-DudeFilms.in.mkv`,78,'https://bit.ly/3HuWAOO',3],
 
 ['Murder At...302',`${mainSite}/BollyWood/Murder.At.Teesri.Manzil.302/Murder.At.Teesri.Manzil.302.2009.Hindi.480p.WEB-Dl.ESub-DudeFilms.in.mkv`,77,'https://bit.ly/32P6jR4',1],
 ['Wrong Turn',`${mainSite}/HollyWood/Wrong.Turn.2021/Wrong.Turn.2021.Hindi.English.480p.BluRay.ESub-DudeFilms.in.mkv`,76,'https://bit.ly/3mKwU90',3],
