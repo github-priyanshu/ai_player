@@ -14,6 +14,9 @@ engMovieHindiDubbed=3
 var allMovies=[
 /*['name',`${mainSite}lnk`,mid,'img',cat],*/
 /*['name',`${mainSite}lnk`,mid,'img',cat],*/
+/*['name',`${mainSite}lnk`,mid,'img',cat],*/
+['Escape Room',`${mainSite}/HollyWood/Escape.Room.2017/Escape.Room.2017.Hindi.English.480p.BluRay.ESub-DudeFilms.in.mkv`,79,'https://bit.ly/32Wbwqm',3],
+['Endangered Species',`${mainSite}/HollyWood/Endangered.Species.2021/Endangered.Species.2021.Hindi.English.480p.BlyRay.ESub-DudeFilms.in.mkv`,78,'https://bit.ly/3pUPIUU',3],
 
 ['Murder At...302',`${mainSite}/BollyWood/Murder.At.Teesri.Manzil.302/Murder.At.Teesri.Manzil.302.2009.Hindi.480p.WEB-Dl.ESub-DudeFilms.in.mkv`,77,'https://bit.ly/32P6jR4',1],
 ['Wrong Turn',`${mainSite}/HollyWood/Wrong.Turn.2021/Wrong.Turn.2021.Hindi.English.480p.BluRay.ESub-DudeFilms.in.mkv`,76,'https://bit.ly/3mKwU90',3],
