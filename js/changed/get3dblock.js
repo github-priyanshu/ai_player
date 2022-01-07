@@ -1,6 +1,6 @@
 let bannerRotated=0,
 bannerBox=op(".bannerBox"),
-mainSite="https://dl.abc04.workers.dev";
+mainSite="https://dl.gcd06.workers.dev/0:";
 
 
 /*
