@@ -20,7 +20,7 @@ for(let i=0; i<allMovies.length; i++){
 	}
 }
 
-let movieHTML=`<div class="realMovieHead center">${serverError ?`<span col='#e73070'>/... Problem</span> <br> <span fs=".8em" col="#111">Movies are currently unavailable. The problem will be resolved very soon.</span>`:"Top <span col='#e73070'>New Movies & Web Series</span> here free. All working:)"}</div>
+let movieHTML=`<div class="realMovieHead center">${serverError ?`<span col='#e73070'>/... Problem</span> <br> <span fs=".8em" col="#111">Movies are currently unavailable. The problem will be resolved very soon.</span>`:"Top <span col='#e73070'>New Movies & Web Series</span>"}</div>
 	<div class="flex menuBtn frw">
 		<a href="#Bollywood"><button class="flex">Bollywood</button></a>
 		<a href="#English_Movies_hindi_dubbed"><button class="flex">English Movies</button></a>
