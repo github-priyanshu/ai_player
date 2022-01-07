@@ -1,6 +1,8 @@
 let bannerRotated=0,
 bannerBox=op(".bannerBox"),
-mainSite="https://dl.gdc06.workers.dev/0:";
+mainSite="https://dl.abc04.workers.dev";
+
+
 /*
 give the next index 47
 
@@ -12,7 +14,7 @@ engMovieHindiDubbed=3
 var allMovies=[
 /*['name',`${mainSite}lnk`,mid,'img',cat],*/
 /*['name',`${mainSite}lnk`,mid,'img',cat],*/
-/*['name',`${mainSite}lnk`,mid,'img',cat],*/
+['Cubicles',`${mainSite}/WebSeries/Sony.Liv/Cubicles.2022.S02/Cubicles.2022.Hindi.Season.2.480p.Complete.EP.01.05-DudeFilms.in.mkv`,80,'https://bit.ly/3HMiWLM',1],
 ['Escape Room',`${mainSite}/HollyWood/Escape.Room.2017/Escape.Room.2017.Hindi.English.480p.BluRay.ESub-DudeFilms.in.mkv`,79,'https://bit.ly/32Wbwqm',3],
 ['Endangered Species',`${mainSite}/HollyWood/Endangered.Species.2021/Endangered.Species.2021.Hindi.English.480p.BlyRay.ESub-DudeFilms.in.mkv`,78,'https://bit.ly/3pUPIUU',3],
 
