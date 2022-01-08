@@ -29,7 +29,8 @@ var allMovies=[
 ['The Matrix',`${mainSite}/HollyWood/The.Matrix.Resurrections.2021/The.Matrix.Resurrections.2021.480p.WEBRip.Hindi.CAM-English.ESub.x264-DudeFilms.in.mkv`,68,'https://bit.ly/3qli5uv', 3],
 ['Resident Evil...Raccoon',`${mainSite}/HollyWood/Resident.Evil.Welcome.to.Raccoon.City.2021/Resident.Evil.Welcome.to.Raccoon.City.2021.Hindi(CAM)-English.480p.BluRay.ESub-DudeFilms.in.mkv`,67,'https://bit.ly/3swIsk7', 3],
 ['Shock Wave',`${mainSite}/HollyWood/Shock.Wave.2.2020/Shock.Wave.2.2020.Hindi.Chinese.480p.BluRay.ESub-DudeFilms.in.mkv`,66,'https://bit.ly/3es8E6V', 3],
-['Pushpa',`${mainSite}/South.Movies/Pushpa.The.Rise-Part.1.2021.HDCam/Pushpa.The.Rise-Part.1.2021.480p.Hindi.V2.HDCAMRip.x264-DudeFilms.in.mkv`,65,'https://bit.ly/3IY2pWB',2],
+
+['Pushpa',`${mainSite}/South.Movies/Pushpa.The.Rise.-.Part.1.2021.Hindi(cleaned)/Pushpa.The.Rise.-.Part.1.2021.Hindi(cleaned).Telugu.480p.WEB-HDRip.ESub-DudeFilms.in.mkv`,65,'https://bit.ly/3IY2pWB',2],
 ['420 IPC',`${mainSite}/BollyWood/Zee5/420.IPC.2021/420.IPC.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv`,64,'https://bit.ly/3p3mBhT',1],
 ['Marakkar Arab Sagar',`${mainSite}/South.Movies/Marakkar.Arab.Sagar.Ka.Sher.2021/Marakkar.Arab.Sagar.Ka.Sher.2021.Hindi.Malayalam.480p.WEB-DL.ESub-DudeFilms.in.mkv`,63,'https://bit.ly/3IWOY9s',2],
 ['Spider-Man No Way Home',`${mainSite}/HollyWood/Spider-Man.No.Way.Home.2021.CamRip/Spider.Man.No.Way.Home.2021.Hindi.English.480p.CAMRip-DudeFilms.in.mkv`,62,'https://bit.ly/30wVbaR',3],
