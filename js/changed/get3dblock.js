@@ -1,6 +1,7 @@
 let bannerRotated=0,
 bannerBox=op(".bannerBox"),
-mainSite="https://dl.gdc06.workers.dev/0:";
+mainSite="https://dl.abc04.workers.dev";
+
 
 /*
 give the next index 47
@@ -13,6 +14,9 @@ engMovieHindiDubbed=3
 var allMovies=[
 /*['name',`${mainSite}lnk`,mid,'img',cat],*/
 /*['name',`${mainSite}lnk`,mid,'img',cat],*/
+['83',`${mainSite}/BollyWood/83.2021.HDCam/83.2021.Hindi.480p.Pre.DVDRip-DudeFilms.in.mkv`,73,'https://bit.ly/3przmmP',1],
+['Pushpa',`${mainSite}/South.Movies/Pushpa.The.Rise-Part.1.2021.HDCam/Pushpa.The.Rise-Part.1.2021.480p.Hindi.V2.HDCAMRip.x264-DudeFilms.in.mkv`,65,'https://bit.ly/3IY2pWB',2],
+['Satyameva Jayate 2',`${mainSite}/BollyWood/Satyameva.Jayate.2.2021.HDcam/Satyameva.Jayate.2.2021.Hindi.720p.HQPreDVDRipx264.AAC-DudeFilms.in.mkv`,51,'https://bit.ly/3HP6bRP',1],
 ['Cubicles',`${mainSite}/WebSeries/Sony.Liv/Cubicles.2022.S02/Cubicles.2022.Hindi.Season.2.480p.Complete.EP.01.05-DudeFilms.in.mkv`,80,'https://bit.ly/3HMiWLM',1],
 ['Escape Room',`${mainSite}/HollyWood/Escape.Room.2017/Escape.Room.2017.Hindi.English.480p.BluRay.ESub-DudeFilms.in.mkv`,79,'https://bit.ly/32Wbwqm',3],
 ['Endangered Species',`${mainSite}/HollyWood/Endangered.Species.2021/Endangered.Species.2021.Hindi.English.480p.BlyRay.ESub-DudeFilms.in.mkv`,78,'https://bit.ly/3pUPIUU',3],
@@ -21,7 +25,6 @@ var allMovies=[
 ['Wrong Turn',`${mainSite}/HollyWood/Wrong.Turn.2021/Wrong.Turn.2021.Hindi.English.480p.BluRay.ESub-DudeFilms.in.mkv`,76,'https://bit.ly/3mKwU90',3],
 ['Old',`${mainSite}/HollyWood/Old.2021/Old.2021.Hindi.English.480p.BluRay.ESub-DudeFilms.in.mkv`,75,'https://bit.ly/3FVgXUU',3],
 ['Waah Zindagi',`${mainSite}/BollyWood/Zee5/Waah.Zindagi.2021/Waah.Zindagi.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv`,74,'https://bit.ly/32IPreN',1],
-['83',`${mainSite}/BollyWood/83.2021.HDCam/83.2021.Hindi.480p.Pre.DVDRip-DudeFilms.in.mkv`,73,'https://bit.ly/3przmmP',1],
 ['Encanto',`${mainSite}/HollyWood/Encanto.2021/Encanto.2021.Hindi.English.480p.WEB-DL.ESub-DudeFilms.in.mkv`,72,'https://bit.ly/3mxW3nk', 3],
 ['Minnal Murali',`${mainSite}/SouthMovies/Minnal.Murali.2021/Minnal.Murali.2021.Hindi-Malayalam.480p.WEB-DL.ESub-DudeFilms.in.mkv`,71,'https://bit.ly/3sNMUev', 3],
 ['Atrangi Re',`${mainSite}/BollyWood/hotstar/Atrangi.Re.2021/Atrangi.Re.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv`,70,'https://bit.ly/33WZsFR', 1],
@@ -29,8 +32,6 @@ var allMovies=[
 ['The Matrix',`${mainSite}/HollyWood/The.Matrix.Resurrections.2021/The.Matrix.Resurrections.2021.480p.WEBRip.Hindi.CAM-English.ESub.x264-DudeFilms.in.mkv`,68,'https://bit.ly/3qli5uv', 3],
 ['Resident Evil...Raccoon',`${mainSite}/HollyWood/Resident.Evil.Welcome.to.Raccoon.City.2021/Resident.Evil.Welcome.to.Raccoon.City.2021.Hindi(CAM)-English.480p.BluRay.ESub-DudeFilms.in.mkv`,67,'https://bit.ly/3swIsk7', 3],
 ['Shock Wave',`${mainSite}/HollyWood/Shock.Wave.2.2020/Shock.Wave.2.2020.Hindi.Chinese.480p.BluRay.ESub-DudeFilms.in.mkv`,66,'https://bit.ly/3es8E6V', 3],
-
-['Pushpa',`${mainSite}/South.Movies/Pushpa.The.Rise.-.Part.1.2021.Hindi(cleaned)/Pushpa.The.Rise.-.Part.1.2021.Hindi(cleaned).Telugu.480p.WEB-HDRip.ESub-DudeFilms.in.mkv`,65,'https://bit.ly/3IY2pWB',2],
 ['420 IPC',`${mainSite}/BollyWood/Zee5/420.IPC.2021/420.IPC.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv`,64,'https://bit.ly/3p3mBhT',1],
 ['Marakkar Arab Sagar',`${mainSite}/South.Movies/Marakkar.Arab.Sagar.Ka.Sher.2021/Marakkar.Arab.Sagar.Ka.Sher.2021.Hindi.Malayalam.480p.WEB-DL.ESub-DudeFilms.in.mkv`,63,'https://bit.ly/3IWOY9s',2],
 ['Spider-Man No Way Home',`${mainSite}/HollyWood/Spider-Man.No.Way.Home.2021.CamRip/Spider.Man.No.Way.Home.2021.Hindi.English.480p.CAMRip-DudeFilms.in.mkv`,62,'https://bit.ly/30wVbaR',3],
@@ -44,7 +45,6 @@ var allMovies=[
 ['A Castle For Christmas',`${mainSite}/HollyWood/NetFlix/A.Castle.For.Christmas.2021/A.Castle.For.Christmas.2021.Hindi.English.480p.WEB-DL.ESub-DudeFilms.in.mkv`,54,'https://bit.ly/3CW2CW7',3],
 ['Antim',`${mainSite}/BollyWood/Antim.The.Final.Truth.2021.HDCAMRip/Antim.The.Final.Truth.2021.480p.HDCAMRip.HINDI-DudeFilms.in.mkv`,53,'https://bit.ly/3184Gxb',1],
 ['Fast and Furios 9',`${mainSite}/HollyWood/F9.Hindi.ORG/Fast-9.2021.480p.BluRay.Hindi-English.DD5.1.ESub.x264-DudeFilms.in.mkv`,52,'https://bit.ly/3nUItLY',3],
-['Satyameva Jayate 2',`${mainSite}/BollyWood/Satyameva.Jayate.2.2021.HDcam/Satyameva.Jayate.2.2021.Hindi.720p.HQPreDVDRipx264.AAC-DudeFilms.in.mkv`,51,'https://bit.ly/3HP6bRP',1],
 ['Annaatthe',`${mainSite}/South.Movies/Annaatthe.2021/Annaatthe.2021.Hindi-Tamil.DD5.1.480p.WEB-DL.x264-DudeFilms.in.mkv`,50,'https://bit.ly/3FQBCcD',2],
 ['A Boy ... Christmas',`${mainSite}/HollyWood/NetFlix/A.Boy.Called.Christmas.2021/A.Boy.Called.Christmas.2021.480p.WEBRRip.Hindi.English.Esubs-DudeFilms.in.mkv`,49,'https://bit.ly/3cLPEiW',3],
 ['Bruised',`${mainSite}/HollyWood/NetFlix/Bruised.2021/Bruised.2021.480p.WEBRRip.Hindi.English.Esubs-DudeFilms.in.mkv`,48,'https://bit.ly/311qeew',3],
