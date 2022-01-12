@@ -15,7 +15,7 @@ var allMovies=[
 /*['name',`${mainSite}lnk`,mid,'img',cat],*/
 /*['name',`${mainSite}lnk`,mid,'img',cat],*/
 ['83',`${mainSite}/BollyWood/83.2021.HDCam/83.2021.Hindi.480p.Pre.DVDRip-DudeFilms.in.mkv`,73,'https://bit.ly/3przmmP',1],
-['Pushpa',`${mainSite}/South.Movies/Pushpa.The.Rise-Part.1.2021.HDCam/Pushpa.The.Rise-Part.1.2021.480p.Hindi.V2.HDCAMRip.x264-DudeFilms.in.mkv`,65,'https://bit.ly/3IY2pWB',2],
+['Pushpa',`${mainSite}/SouthMovies/Pushpa.The.Rise.-.Part.1.2021.Hindi(cleaned)/Pushpa.The.Rise.-.Part.1.2021.Hindi(cleaned).Telugu.480p.WEB-HDRip.ESub-DudeFilms.in.mkv`,65,'https://bit.ly/3IY2pWB',2],
 ['Satyameva Jayate 2',`${mainSite}/BollyWood/Satyameva.Jayate.2.2021.HDcam/Satyameva.Jayate.2.2021.Hindi.720p.HQPreDVDRipx264.AAC-DudeFilms.in.mkv`,51,'https://bit.ly/3HP6bRP',1],
 ['Cubicles',`${mainSite}/WebSeries/Sony.Liv/Cubicles.2022.S02/Cubicles.2022.Hindi.Season.2.480p.Complete.EP.01.05-DudeFilms.in.mkv`,80,'https://bit.ly/3HMiWLM',1],
 ['Escape Room',`${mainSite}/HollyWood/Escape.Room.2017/Escape.Room.2017.Hindi.English.480p.BluRay.ESub-DudeFilms.in.mkv`,79,'https://bit.ly/32Wbwqm',3],
