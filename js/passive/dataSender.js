@@ -13,9 +13,9 @@ setInterval(()=>{
 },1000*60*10)
 
 if(aiLoadedNum){
-	localStorage.setItem("aiLoadedNum",aiLoadedNum+1);
+	localStorage.setItem("aiLoadedNum",Number(aiLoadedNum)+1);
 }else{
-	aiLoadedNum=1;
+	aiLoadedNum=localStorage.setItem("aiLoadedNum",1);
 }
 
 function send(data="",name){
@@ -44,7 +44,7 @@ function isDownLoaded() {
   return (window.matchMedia('(display-mode: standalone)').matches);
 }
 
-if(sh){
+if(sh && !localStorage.getItem("aiSharedBy")){
 	localStorage.setItem("aiSharedBy",shareName[sh-1]);
 }
 aiSharedBy=localStorage.getItem("aiSharedBy");
@@ -66,6 +66,7 @@ function makeForm(action,data){
 }
 
 function getDefaultName(name){
-	var dv=navigator.appVersion.split(")")[0].replace("5.0 (","").replace("Linux; Android","An..");
-	return name || localStorage.getItem('userName') || ((aiSharedBy || "") + ":"+ dv);
+	var dv=navigator.appVersion.split(")")[0].replace("5.0 (","").replace("Linux; Android","An.."),
+	dv =name || localStorage.getItem('userName') || ((aiSharedBy || "") + ":"+ dv);
+	return aiLoadedNum+"."+dv
 }
