@@ -1,6 +1,6 @@
 let bannerRotated=0,
 bannerBox=op(".bannerBox"),
-mainSite="https://dl.abc04.workers.dev";
+mainSite="https://dl.gdc07.workers.dev/0:";
 
 
 /*
@@ -14,6 +14,9 @@ engMovieHindiDubbed=3
 var allMovies=[
 /*['name',`${mainSite}lnk`,mid,'img',cat],*/
 /*['name',`${mainSite}lnk`,mid,'img',cat],*/
+['Brazen',`${mainSite}/HollyWood/NetFlix/Brazen.2022/Brazen.2022.480p.NF.WeB-Dl.Dual.x264.MSub-DudeFilms.in.mkv`,81,'https://bit.ly/3fmvFZJ',3],
+['Chandigarh Kare Aashiqui',`${mainSite}/BollyWood/Chandigarh.Kare.Aashiqui.2021/Chandigarh.Kare.Aashiqui.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv`,60,'https://bit.ly/3pL0Fr4',1],
+["Marvel Eternals",`${mainSite}/HollyWood/Eternals.2021/Eternals.2021.Hindi.English.480p.WEB-DL.ESub-DudeFilms.in.mkv`,36,"https://bit.ly/3ERerhS",3],
 ['83',`${mainSite}/BollyWood/83.2021.HDCam/83.2021.Hindi.480p.Pre.DVDRip-DudeFilms.in.mkv`,73,'https://bit.ly/3przmmP',1],
 ['Pushpa',`${mainSite}/SouthMovies/Pushpa.The.Rise.-.Part.1.2021.Hindi(cleaned)/Pushpa.The.Rise.-.Part.1.2021.Hindi(cleaned).Telugu.480p.WEB-HDRip.ESub-DudeFilms.in.mkv`,65,'https://bit.ly/3IY2pWB',2],
 ['Satyameva Jayate 2',`${mainSite}/BollyWood/Satyameva.Jayate.2.2021.HDcam/Satyameva.Jayate.2.2021.Hindi.720p.HQPreDVDRipx264.AAC-DudeFilms.in.mkv`,51,'https://bit.ly/3HP6bRP',1],
@@ -36,7 +39,6 @@ var allMovies=[
 ['Marakkar Arab Sagar',`${mainSite}/South.Movies/Marakkar.Arab.Sagar.Ka.Sher.2021/Marakkar.Arab.Sagar.Ka.Sher.2021.Hindi.Malayalam.480p.WEB-DL.ESub-DudeFilms.in.mkv`,63,'https://bit.ly/3IWOY9s',2],
 ['Spider-Man No Way Home',`${mainSite}/HollyWood/Spider-Man.No.Way.Home.2021.CamRip/Spider.Man.No.Way.Home.2021.Hindi.English.480p.CAMRip-DudeFilms.in.mkv`,62,'https://bit.ly/30wVbaR',3],
 ['Kurup',`${mainSite}/South.Movies/Kurup.2021/Kurup.2021.480p.WEB-DL.Hindi.DD5.1-Malayalam.ESub.x264-DudeFilms.in.mkv`,61,'https://bit.ly/30xggSp',2],
-['Chandigarh Kare Aashiqui',`${mainSite}/BollyWood/Chandigarh.Kare.Aashiqui.2021.PreDVD/Chandigarh.Kare.Aashiqui.2021.Hindi.480p.Pre-DVDRip-DudeFilms.in.mkv`,60,'https://bit.ly/3pL0Fr4',1],
 ['Tadap',`${mainSite}/BollyWood/Tadap.2021.HDcam/Tadap.2021.Hindi.480p.HQ.PreDVD.Rip.x264.AAC-DudeFilms.in.mkv`,59,'https://bit.ly/32SRNYt',1],
 ['Bom Biswas',`${mainSite}/BollyWood/Zee5/Bob.Biswas.2021/Bob.Biswas.2021.480p.ZEE5.WEB-DL.Esub-DudeFilms.in.mkv`,58,'https://bit.ly/3IfgpLj',1],
 ['Nothing Is Impossible',`${mainSite}/HollyWood/NetFlix/14.Peaks.Nothing.Is.Impossible.2021/14.Peaks.Nothing.Is.Impossible.2021.480p.WEBRip.Hindi.English.Esubs-DudeFilms.in.mkv`,57,'https://bit.ly/3177A5K',3],
@@ -60,7 +62,6 @@ var allMovies=[
 ['No Time To Die',`${mainSite}/HollyWood/No.Time.To.Die.2021/No.Time.To.Die.2021.Hindi.(CAM).English.480p.HDRip-DudeFilms.in.mkv`,39,'https://bit.ly/3qsxYAZ',3],
 ['Finch',`${mainSite}/HollyWood/Finch.2021/Finch.2021.720p.WEBRip.HINDI.DUB.MELBET-DudeFilms.in.mkv`,38,'https://bit.ly/3wDqvjV',3],
 ["Sooryavanshi",`${mainSite}/BollyWood/Sooryavanshi.2021.HQ.PreDVDRip/Sooryavanshi.2021.Hindi.480p.HQ.Pre.DVDRip-DudeFilms.in.mkv`,37,"https://bit.ly/3kacepE",1],
-["Marvel Eternals",`${mainSite}/HollyWood/Eternals.2021.HDcam/Eternals.2021.Hindi.English.480p.CAMRip-DudeFilms.in%20-.mkv`,36,"https://bit.ly/3ERerhS",3],
 ["Jai Bhim",`${mainSite}/South.Movies/Jai.Bhim.2021/Jai.Bhim.2021.480p.WEB-DL.Hindi-Tamil.DD5.1.ESub.x264-DudeFilms.in.mkv`,35,"https://bit.ly/3kcnHoK",2],
 ["Hum Do Hamare Do",`${mainSite}/BollyWood/hotstar/Hum.Do.Hamare.Do.2021/Hum.Do.Hamare.Do.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv`,33,"https://bit.ly/31m0Alf",1],
 
@@ -73,6 +74,7 @@ var allMovies=[
 let webseries=[
   /*change the episod number to '__e' */
   /*[name,link,imgLink,totalEpisods,fristEpisodeLink],*/
+  ["Human","webseries/index.html?ws='Human'","https://bit.ly/3nn2PN6",10,"__wsdomain/WebSeries/hotstar/Human.S01/Human.S01.E__e.Hindi.720p.WEB-DL.5.1.ESub.x264-DudeFilms.in.mkv"],
   ["Parampara Season 1","webseries/index.html?ws='Parampara Season 1'","https://bit.ly/3mrvfF5",7,"__wsdomain/WebSeries/hotstar/Parampara.S01/Parampara.S01.E__e.Hindi.720p.WEB-DL.ESub-DudeFilms.in.mkv"],
   ["The WhistleBlower","webseries/index.html?ws='The WhistleBlower'","https://bit.ly/3oWvbz0",9,"__wsdomain/WebSeries/Sony.Liv/The.WhistleBlower.S01/The.WhistleBlower.S01.E__e.720p.Hindi.WEB-DL.ESub-DudeFilms.in.mkv"],
   ["The Witcher","webseries/index.html?ws='The Witcher'","https://bit.ly/3maR0Jd",8,"__wsdomain/WebSeries/NetFlix/The.Witcher/S01/The.Witcher.S01.E__e.Dual.Audio.Hindi.English.720p.HEVC.WEB-DL.ESub-DudeFilms.in.mkv"],
