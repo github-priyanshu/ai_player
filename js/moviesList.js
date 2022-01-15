@@ -1,5 +1,5 @@
 var log=console.log,
-serverError=true;
+serverError=false;
 
 let movieListPan=op(".moviesList"),
 maxNew=Math.floor(window.innerWidth / 170 * 2 + 2);
