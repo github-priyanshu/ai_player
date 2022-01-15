@@ -1,6 +1,6 @@
 let bannerRotated=0,
 bannerBox=op(".bannerBox"),
-mainSite="https://dl.abc04.workers.dev";
+mainSite="https://dl.gdc07.workers.dev/0:";
 
 
 /*
@@ -9,7 +9,7 @@ give the next index 47
 bollywood=1
 southMovies=2
 engMovieHindiDubbed=3
-
+https://dl.gdc07.workers.dev/0:/BollyWood/Chandigarh.Kare.Aashiqui.2021/Chandigarh.Kare.Aashiqui.2021.Hindi.480p.WEB-DL.ESub-DudeFilms.in.mkv
 */
 var allMovies=[
 /*['name',`${mainSite}lnk`,mid,'img',cat],*/
