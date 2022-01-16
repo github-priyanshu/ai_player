@@ -1,12 +1,15 @@
-.info{display: none;}.info.active{display: flex;}
-.info img{
+.mainBnr .info{display: none;}
+.mainBnr .info.active{display: flex;}
+
+.mainBnr .info img{
   width: 300px;
   max-width: 90vw;
   height: 200px;
   margin-bottom: 20px;
   border-radius: 10px;
 }
-.info > p{
+
+.mainBnr .info > p{
   position: absolute;
   bottom: 30px;
   text-shadow: 2px 2px 4px #0008;
