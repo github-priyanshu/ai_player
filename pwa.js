@@ -28,7 +28,9 @@ function makeDown(f=true){
       });
     };
     }else{
-      val.onclick=shareApp;
+      val.onclick=()=>{
+        shareApp({title: "Ai Player",text: "Watch here all new movies",url=getURI()})
+      };
     }
   })
 }
