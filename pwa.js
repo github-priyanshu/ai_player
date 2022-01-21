@@ -29,7 +29,7 @@ function makeDown(f=true){
     };
     }else{
       val.onclick=()=>{
-        shareApp({title: "Ai Player",text: "Watch here all new movies",url=getURI()})
+        shareApp({title: "Ai Player",text: "Watch here all new movies",url:getURI()})
       };
     }
   })
