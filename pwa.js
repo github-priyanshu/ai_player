@@ -35,6 +35,7 @@ function makeDown(f=true){
   })
 }
 function shareApp(data){
+  log(data)
   try{
     navigator.share(data)
   }catch{
