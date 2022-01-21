@@ -4,13 +4,13 @@ if ('serviceWorker' in navigator) {
    window.addEventListener('load', function () { navigator.serviceWorker.register('sw.js').then(function (registration) { console.log('ServiceWorker registration successful with scope: ', registration.scope); }, function (err) { console.log('ServiceWorker registration failed: ', err); }); });
 }
 let deferredPrompt;
-downBtn1.style.display = "none"; 
-downBtn2.style.display = "none"; 
+downBtn1.classList.remove("active");
+downBtn2.classList.remove("active");
 
 window.addEventListener('beforeinstallprompt', (e) => {
    e.preventDefault(); deferredPrompt = e;
-   downBtn1.style.display = "";
-   downBtn2.style.display = "";
+   downBtn1.classList.add("active");
+   downBtn2.classList.add("active");
    readyToDownload=true;
    
    downBtn.forEach(val=>{
