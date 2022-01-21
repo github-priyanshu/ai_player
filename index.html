@@ -1,36 +1,31 @@
-<!-- to update
-css/banner.css only top part
-index.html only banner top part
-js/dataSender.js
- -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!-- <meta name="google-site-verification" content="PRevEAasLsr0bAa7RarwMOn3dydkdRKWC0RjVwdjT0I" /> -->
-	<!-- <meta name="msvalidate.01" content="E077C3C42CD92CA85746C40B664A6733" /> -->
+	<base href="https://ai-kit.netlify.app/player/">
 	<meta charset="UTF-8">
 	<!-- SEO -->
 	<meta name="description" content="Watch here all the new Movies and Web Series in free with a single click. You can also download the movies hear in a single click. This is also a video player having all the new features. Movies here taken from the open Internet and this website is not responsible for the links available here." />
 	<meta name="keywords" content="ai player, priyanshu, free new movies, index of movies, index of web series, download new movies">
   <meta name="author" content="Priyanshu Kumar">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Ai Player : Free Movies and  Webseries</title>
 	<meta name="theme-color" content="#222">
-	<!-- <link rel="manifest" href="manifest.json"> -->
+	<link rel="manifest" href="manifest.json">
 	<link rel="shortcut icon" href="logo/logo.ico" type="image/x-icon">
 
+	<!-- common stylesheets -->
+	<link rel="stylesheet" href="../common/css/style.css">
+	<link rel="stylesheet" href="../common/css/layout.css">
+	<link rel="stylesheet" href="../common/css/dev.css">
+	<link rel="stylesheet" href="../home/css/banner.css">
+
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/webSeries.css">
-	<link rel="stylesheet" href="css/video data.css">
-	<link rel="stylesheet" type="text/css" href="css/loader.css">
-	<link rel="stylesheet" href="css/dialog.css">
-	<link rel="stylesheet" href="css/3d.css">
 	<link rel="stylesheet" href="css/banner.css">
-	<link rel="stylesheet" href="css/overlay.css">
-	<link rel="stylesheet" href="css/showAllPan.css">
-	<link rel="stylesheet" href="css/ads/ads.css">
-	<link rel="stylesheet" href="css/ads/vidInAd.css">
+
+	<script src="../common/js/variables.js"></script>
+	<script src="../common/js/script.js"></script>
+	<script src="../common/js/movies.js"></script>
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,43 +35,41 @@ js/dataSender.js
 <style>
 
 </style>
-<body class="body">
+<body class="body flex c">
 
-	<div class="banner mainBnr flex c">
-		<div class="info flex" onclick="this.children[0].click()">
-			<a href="https://wish-me.netlify.app?by=Ai%20Player" hidden></a>
-			<img src="https://wish-me.netlify.app/img/poster.jpg">
-			<p fs="1.2em" col="#fff" fw="bold">WISH</p>
+	<div class="banner mainBnr flex c active"><!-- active -->
+	  <div class="top flex c">
+		  <div class="texCen head" fw="bolder">Ai Player</div>
 		</div>
-		<div class="top flex">
-			<div class="left">
-				<div class="aiHead txtCen" col="#fff" fs="2em">Ai Player</div>
-				<div class="icons flex">
-					<div class="iPan flex" style="--d: 2;"><img loading="lazy" src="logo/logo-transparent.png"></div>
-					<div class="iPan flex" style="--d: 3;">
-						<a href="https://www.youtube.com/c/AwesomeCode" target="__blank" class="flex"><img class="svg" loading="lazy" src="https://bit.ly/3DxWyDC" alt="Youtube"></a>
-					</div>
-					<div class="iPan flex" style="--d: 1;">
-						<a href="https://www.instagram.com/web.dev.priyanshu" target="__blank" class="flex"><img class="svg" loading="lazy" src="https://bit.ly/3IzDwR6" alt="insta"></a>
-					</div>
-				</div>
-			</div>
-			<div class="right flex">
-				<div class="bannerBox flex">
-				</div>
-			</div>
+		<div class="bottom flex c">
+		  <div class="bnrBtn flex">
+		  	<button class="downBtn flex"><span ico="download" class="active">Download</span><span class="noActive">Share</span></button>
+		  	<button class="flex" ico="search" onclick="op('#search').focus()">Search</button>
+		  </div>
+		  <div class="posPan flex"></div>
+		  <div class="apDown flex c downBtn">
+		  	<i></i><i></i>
+		  	<div class="active flex c">
+			  	<span fs=".6em" col="#f00">DOWNLOAD</span>
+			  	<span fs="1em" col="rgb(255, 96, 0)" fw="bold">APP</span>
+		  	</div>
+		  	<div class="flex c noActive">
+			  	<span fs=".6em" col="#f00">SHARE</span>
+			  	<span fs="1em" col="rgb(255, 96, 0)" fw="bold">APP</span>
+		  	</div>
+		  </div>
+		  <div class="bnrBtn flex down">
+		  	<button class="flex" ico="share" onclick="askLink()">Paste Link</button>
+		  	<button class="flex" onclick="getViaDevice()"><input type="file" hidden id="files"> Downloaded</button>
+		  </div>
 		</div>
-		
-		<div class="bnrBtPan flex c" fs=".8em">
-			<div class="bnrbtn2 flex">
-				<button id="downBtn" class="flex downBtn">Get App</button>
-				<button id="srhBtn" class="flex" onclick="showAll.search()">Search</button>
-			</div>
-		</div>
-
 	</div>
+	<script src="js/makeBnr.js"></script>
 
-	<div class="vidPan flex c">
+	<link rel="stylesheet" href="css/videoPan.css">
+	<link rel="stylesheet" href="css/ads/vidInAd.css">
+	<link rel="stylesheet" type="text/css" href="css/loader.css">
+	<div class="vidPan flex c"><!-- active -->
 		<div class="videoBox flex c">
 			<video width="100%"></video>
 			
@@ -156,129 +149,64 @@ js/dataSender.js
 		</div>
 
 		<div class="dataBox">
-			<div class="currentVideo">
+			<div class="currentVideo flex">
 				<div class="name" ff="glory"></div>
 				<div class="curData flex">
-					<div class="left flex"></div>
-					<div class="right"></div>
-				</div>
-			</div>
-
-			<div id="ml" class="w100p moviesListPan active">				
-				<div class="w100p flex moviesList"></div>
-			</div>
-
-			<div class="btnPan flex">
-				<p col="#000" fs="2em">Tap to</p>
-				<div class="flex buttons c">
-
-					<div class="left flex">
-						<input type="text" placeholder="Your link here">	
-						<button onclick="importViaLink()">Go</button>
-					</div>
-					<div class="right flex">
-						<button onclick="showAll.show()">All Movies</button>
-
-						<button onclick="linkPaste()">Paste Link</button>
-						<button class="btn2" onclick="getViaDevice()"><input type="file" hidden id="files" accept=".mp4,.mkv,.wav,.ogg,.mp3">Downloaded</button>
-					</div>
-					<button id="downBtn2" class="flex downBtn">Get App</button>
-
+					<div ico="download" bg="#ffa700"></div>
+					<div ico="share" bg="#"></div>
 				</div>
 			</div>
 		</div>
+
+	</div>
+	<script src="js/loading.js"></script>
+
+	<link rel="stylesheet" href="css/content.css">
+	<div class="content flex c">
+		<div class="head flex">
+			<div class="srhBox flex">
+				<input placeholder="Search here..." class="noBtn" oninput="doSearch()" id="search">
+				<div class="s flex" ico="search"></div>
+			</div>
+			<div class="catBox">
+				<select id="category" class="noBtn" onchange="searchCat()">
+					<option value="0">Movies</option>
+					<option value="1">Bollywood</option>
+					<option value="3">English Movies</option>
+					<option value="2">South Indian</option>
+					<option value="webseries">Webseries</option>
+				</select>
+			</div>
+		</div>
+		<p col="#666" onclick="category.value='webseries';searchCat();this.remove()">Tap to see <span fw="bold" style="border: 1px solid #666; padding: 4px; margin: 4px 0; display: inline-block;">WEB SERIES</span></p>
+		<div class="listPan flex w100p">
+			
+		</div>
+		<script src="js/moviesList.js"></script>
 	</div>
 
-	<div class="banner last">
-		<div class="contact">
-			<p fs="2em" class="head">Developer Contact.</p>
+  <div class="dev flex" id="dev">
+    <link rel="stylesheet" href="../common/css/dev.css">
+    <script src="../common/js/dev.js"></script>
+  </div>
 
-			<div class="info flex">
-				<div class="myPro flex">
-					<img src="img/pk.png" alt="Developer">
-				</div>
 
-				<div class="detail">
-					<p>This plateform does not streams the movies but just gathers all the new movies link available on the vast internet and aims to show them in just a single click without roaming form page to page.</p>
-					<p>I am a full stack web developer. You can contact me on the follwing links available.</p>
-
-					<div class="extLnk flex">
-						<a href="https://www.instagram.com/web.dev.priyanshu" class="flex">
-							<img class="svg" src="icons/insta.svg" alt="Youtube">
-						</a>
-						<a href="https://www.youtube.com/c/AwesomeCode" class="flex">
-							<img class="svg" src="icons/yt.svg" alt="Youtube">
-						</a>
-						<a href="https://www.facebook.com/Dev.Piyanshu/" class="flex">
-							<img class="svg" src="icons/fb.svg" alt="Facebook">
-						</a>
-					</div>
-				</div>
-			</div>
-
-		</div>
-
-	<div class="showAllPan">
-		<div class="top flex w100p">
-			<label class="srhBox flex">
-				<input type="text" id="srh" placeholder="Search here">
-				<div class="srhIco flex" onclick="search.resetSearch();"></div>
-			</label>
-
-			<div class="closeIco flex" onclick="showAll.close();"></div>
-		</div>
-		<div class="bottom">
-			<div class="content w100p flex">
-				<div class="allMoviesPan flex c">
-					<div class="head txtCen" col="#ff0059" fs="1.3em">Movies</div>
-					<div class="allMv"></div>		
-				</div>
-				<div class="sepLine"><div class="blur"></div></div>
-				<div class="allSeriesPan flex c">
-					<div class="head txtCen" col="#ff0059" fs="1.3em">Web Series</div>
-					<div class="allSr"></div>
-				</div>
-			</div>
-			<div class="flex btnPan adMvBtn">
-				<button onclick="requestMovies()">Request Movie</button>
-			</div>
-
-		</div>
-	</div>
-
+ 	<link rel="stylesheet" href="css/dialog.css">
 	<div class="dgBx flex" onclick="dialog.hide();">
-
 		<div class="dg">
-			<p><span></span>.</p>
+			<p></p>
 			<div class="btp flex">
 				<button class="flex" onclick="dialog.hide();"><span>No</span></button>
 				<button class="flex yes" onclick="dialog.hide();dialog.success()"><span>Yes</span></button>
 			</div>
 		</div>
 	</div>
-
-	<script src="js/variables.js"></script>
-	<script src="js/script.js"></script>
-	<script src="js/loading.js"></script>
-	<script src="js/changed/get3dblock.js"></script>
-	<script src="js/videoInterface.js"></script>
-	<script src="js/moviesList.js"></script>
 	<script src="js/dialog.js"></script>
-	<script src="js/showAllPan.js"></script>
-	<script src="js/passive/addUrlAnim.js"></script>
-	<script src="js/help.js"></script>
-	<script src="js/passive/dataSender.js"></script>
-	<script src="js/changed/addAds.js"></script>
 
-	<!-- pw -->
+	<script src="js/script.js"></script>
+	<script src="js/videoInterface.js"></script>
+	<script src="js/addAds.js"></script>
 	<script src="pwa.js"></script>
-	
-	<script>
-		setTimeout(()=>{
-			if(!document.contains(op(".realMovieList"))){
-				alert("There is some problem in your browser! You need to update it.")
-			}
-		},1000)
-	</script>
+	<script src="js/passive/dataSender.js"></script>
 </body>
 </html>
